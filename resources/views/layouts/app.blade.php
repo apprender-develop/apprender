@@ -22,6 +22,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     {{-- <link href="{{ asset('css/bootstrap.css.map') }}"> --}}
+
+    @yield('style')
 </head>
 <body>
     <div id="app">
@@ -31,5 +33,7 @@
             @yield('content')
         </main>
     </div>
+    @yield('javascript')
+    @stack('javascript')
 </body>
 </html>
