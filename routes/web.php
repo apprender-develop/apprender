@@ -25,3 +25,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
     Route::get('graficas', 'DashboardController@index');
 });
+
+Route::group(['prefix' => 'sandbox'], function () {
+    Route::group(['prefix' => 'jona'], function () {
+        Route::get('memorama', 'SandboxController@index');
+    });
+});
