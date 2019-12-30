@@ -1,4 +1,10 @@
-## Composer 
+## Librerias
+
+## JS
+* jquery 3.4.1
+* bootstrap 4.4.1
+
+### Composer 
 
 * laraveles/spanish
 * spatie/laravel-permission
