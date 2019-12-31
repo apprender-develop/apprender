@@ -12,6 +12,7 @@
 
 @endsection
 
+
 @section('javascript')
     <script>
 
