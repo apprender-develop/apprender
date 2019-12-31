@@ -194,7 +194,7 @@ var acumularTime = 0;
       var str = image;
       var res = str.split("jpg");
 
-      $newObj = '<div class="flip click_add col-xl-3 col-md-3 col-sm-3 col-6" data-id="'+res[0]+'">'+ 
+      $newObj = '<div class="flip click_add col-xl-3 col-md-3 col-sm-3 col-4" data-id="'+res[0]+'">'+ 
                 '<div class="card" style="border-radius: 20px;">'+ 
                 '<div class="face front" ></div>'+ 
                 '<image src="'+image+'" style="background-size:cover; width:100%; height:auto;transform: scaleX(-1);    border-radius: 20px"/>'+
