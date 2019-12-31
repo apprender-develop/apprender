@@ -1,0 +1,8 @@
+.delta-autohide {
+    display: inline-block !important;
+}
+@media (max-width: 1556px) {
+    .delta-autohide {
+        display: none !important;
+    }
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+
+@media only screen and (max-width: 1580px)
+{
+	.Curso-TxtUnidades {
+		right: 7%;
+	}
+}
+
+@media only screen and (max-width: 1460px)
+{
+	.Curso-TxtUnidades {
+		right: 4%;
+	}
+}
+
+@media only screen and (max-width: 1380px)
+{
+	.Curso-TxtUnidades {
+		right: 1%;
+	}
+}
+
+@media only screen and (max-width: 1400px)
+{
+	.Login-Form {
+		right: 15%;
+	}
+
+	.Unidad-Title {
+		font-size: 45px;
+	}
+
+	.Curso-ListUnidades {
+		width: 225px;
+	}
+
+	.Curso-ListUnidades p {
+		font-size: 28px;
+	}
+
+	.Curso-ContentObjetivos {
+		width: 200px;
+		font-size: 15px;
+		padding-right: 20px;
+	}
+
+	.Unidad-MenuUnidad {
+		width: 280px;
+	}
+}
+
+@media only screen and (max-width: 1330px)
+{
+	.Inicio-ItemMisCursos {
+		width: 200px;
+		margin-right: 35px;
+	}
+
+	.Inicio-ImgItemMisCursos {
+		width: 171px;
+	}
+}
+
+@media only screen and (max-width: 1300px)
+{
+	.Login-Form {
+		right: 10%;
+	}
+
+	.Login-Logo:before {
+		width: 400px;
+		height: 100px;
+	}
+
+	.Login-ImgSSPA {
+		width: 490px;
+		height: 177px;
+	}
+
+	.MainNav-ContentBottom {
+		width: 100%;
+	}
+
+	.MainNav-ContentBottom figure{
+		width: 100%;
+		background: #f0f0f0;
+		text-align: center;
+	}
+
+	.MainNav-Logo {
+		margin: 30px auto;
+	}
+
+	.MainNav-ContentBottom figure img{
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 1100px)
+{
+	.Login-Form {
+		right: 5%;
+	}
+
+	.Login-Logo:before {
+		width: 350px;
+		height: 88px;
+	}
+
+	.Login-ImgSSPA {
+		width: 440px;
+		height: 158px;
+	}
+}
+
+@media only screen and (max-width: 1080px)
+{
+	.ModalProgreso-Center {
+		width: 944px;
+	}
+
+	.ModalProgreso-Title {
+		font-size: 45px;
+	}
+
+	.ModalProgreso-ContentList, .ModalGlosario-ContentList, .ModalDescargas-ContentList, .ModalEvaluaciones-ContentList {
+		width: 620px;
+	}
+
+	.ModalEvaluaciones-ContentList {
+		width: 549px;
+	}
+
+	.ModalProgreso-Center--Ayuda {
+		width: 822px;
+	}
+
+	.ModalDescargas-ContentList {
+		width: 440px;
+	}
+}

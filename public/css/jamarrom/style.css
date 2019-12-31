@@ -1,0 +1,1059 @@
+html, body {
+    height: 100%;
+}
+
+body
+{
+  	font: 18px 'open_san';
+	color: #333333;
+	text-align: center;
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+strong
+{
+  	font-family: 'open_sansbold';
+}
+
+em
+{
+	font-family: 'open_sansitalic';
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	color: #3fa8f0;
+	font: 28px 'fjallaoneregular';
+
+}
+
+a, a:before
+{
+ 	color: #ffffff;
+ 	-webkit-transition: all 300ms ease-out;
+ 	-moz-transition: all 300ms ease-out;
+ 	-ms-transition: all 300ms ease-out;
+ 	-o-transition: all 300ms ease-out;
+ 	transition: all 300ms ease-out;
+}
+
+a:hover, a:hover:before
+{
+	cursor: pointer;
+ 	-webkit-transition: all 300ms ease-out;
+ 	-moz-transition: all 300ms ease-out;
+ 	-ms-transition: all 300ms ease-out;
+ 	-o-transition: all 300ms ease-out;
+ 	transition: all 300ms ease-out;
+}
+
+table tr, table tr th, table tr td
+{
+ 	vertical-align: middle;
+}
+
+input, textarea
+{
+	width: 95%;
+	height: 35px;
+	font: 16px 'open_san';
+	color: #000000;
+	background-color: #fff;
+	border: 2px solid #2d292f;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+
+textarea
+{
+	height: 95px;
+	padding-top: 8px;
+	padding-left: 16px;
+	margin-bottom: 8px;
+    resize: none;
+}
+
+input[type="number"]
+{
+    width: 51px;
+    padding-right: 0px;
+}
+
+input[type="radio"], input[type=checkbox]
+{
+	display: none;
+    width: auto;
+    height: auto;
+}
+
+input:focus, textarea:focus, .inputSeleccionado
+{
+	outline: 2px solid #ff8900;
+}
+
+input[type="checkbox"]
+{
+	width: auto;
+	height: auto;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+label
+{
+	font-size: 16px;
+}
+
+label.lbRadio
+{
+	font-size: 16px;
+    padding-left: 17px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+label.lbRadio:before
+{
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 6px;
+    background-color: #ffffff;
+    border: 2px solid #a1a1a1;
+    vertical-align: top;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+}
+
+label.lbCheckbox
+{
+	font-size: 16px;
+	padding-left: 13px;
+	margin-left: 10px;
+	position: relative;
+}
+
+label.lbCheckbox:before
+{
+    content: "";
+	display: inline-block;
+	width: 11px;
+    height: 12px;
+	left: 0;
+	top: 4px;
+	background-color: #1d0042;
+	vertical-align: top;
+	position: absolute;
+}
+
+input[type=radio]:checked + label.lbRadio:before
+{
+	content: "\2022";
+    color: #1d0042;
+    font-size: 18px;
+    text-align: center;
+    line-height: 10px;
+}
+
+input[type=checkbox]:checked + label.lbCheckbox:before
+{
+    content: "\2713";
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 12px;
+}
+
+fieldset
+{
+	background-color: #ffffff;
+ 	border: 2px solid #313131;
+ 	padding: 0px 20px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+legend
+{
+	color: #0d47a1;
+ 	font: 18px 'montserratbold';
+ 	padding-right: 2px;
+}
+
+/******************************************************Placeholder******************************************************/
+
+::-webkit-input-placeholder
+{
+ 	color: #000000;
+}
+
+::-o-input-placeholder
+{
+ 	color: #000000;
+}
+
+::-ms-input-placeholder
+{
+ 	color: #000000;
+}
+
+:-moz-input-placeholder
+{
+ 	color: #000000;
+}
+
+::-moz-input-placeholder
+{
+ 	color: #000000;
+}
+
+/******************************************************Login******************************************************/
+
+.Autentificacion-Ajuste
+{
+	height: 100%;
+	background: url(/images/fondos/bgLogin.jpg) center no-repeat;
+	position: relative;
+}
+
+/*#content
+{
+ 	height:80%;
+	padding-top: 8%;
+}
+
+.Login
+{
+	width: 417px;
+ 	height: 530px;
+	margin: 0px auto;
+	-webkit-border-radius: 1em;
+	-o-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-ms-border-radius: 1em;
+	border-radius: 1em;
+ 	behavior: url('PIE/PIE.htc');
+}*/
+
+.Login-Logo
+{
+	height: 154px;
+	position: relative;
+}
+
+.Login-Logo:before
+{
+	content: "";
+	width: 500px;
+    height: 124px;
+    background: url(/images/logo.png) no-repeat;
+    background-size: 100%;
+	position: absolute;
+	top: 65px;
+    left: 56px;
+    margin: 0px auto;
+}
+
+.Login-Logo span
+{
+ 	display: none;
+}
+
+
+.Login-ImgSSPA
+{
+	width: 590px;
+    height: 212px;
+    background: url(/images/logoSSPAPemex.png) no-repeat;
+    background-size: 100%;
+	position: absolute;
+	bottom: 0px;
+    left: 0px;
+}
+
+.Login-Titulo
+{
+	color: #ffffff;
+	font: 20px 'fjallaoneregular';
+	margin-bottom: 30px;
+}
+
+.Login-Form
+{
+	width: 350px !important;
+	background-color: #3359b1;
+	border: 1px solid #7fcaff;
+	padding: 50px 40px !important;
+	position: absolute;
+    right: 19%;
+}
+}
+
+.Login-Etiqueta
+{
+ 	display:block;
+ 	font-size:18px;
+ 	margin-bottom:5px;
+}
+
+.Login-Usuario
+{
+ 	background-image:url(/images/usuario.png);
+ 	background-repeat: no-repeat;
+ 	background-position: 4px 4px;
+}
+
+.Login-Contrasenia
+{
+ 	background-image:url(/images/contrasenia2.png);
+ 	background-repeat: no-repeat;
+ 	background-position: 4px 6px;
+}
+
+.Login input.text
+{
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border: 0px;
+ 	margin-bottom: 16px;
+ 	padding-left: 40px;
+}
+
+.Login-Boton
+{
+	width: 127px;
+    height: 42px;
+	margin-top: 11px;
+	padding-top: 0px;
+}
+
+.Login-Msj
+{
+	font-size: 14px;
+	color: #000000;
+	line-height: 18px;
+    margin: 20px 20px;
+    padding: 8px;
+    border: 2px dashed #ff8900;
+}
+
+.Login-TxtTengoCuenta{
+	margin-top: 20px;
+}
+
+/************************************************************************************/
+
+.BgInicio {
+	background: url(/images/fondos/bgInicio.jpg) center no-repeat;
+}
+
+.MainNav {
+	width: 100%;
+	height: 80px;
+	height: 65px;
+	background-color: #0351af;
+	border-right: 1px solid #7fcaff;
+	padding: 0px 60px;
+	position: relative;
+	z-index: 999;
+}
+
+.MainNav-BtnOcultar {
+    content: "";
+    display: inline-block;
+    width: 38px;
+    height: 80px;
+    background-color: #364b7f;
+    border: 1px solid #7fcaff;
+    border-radius: 0em 0.5em 0.5em 0em;
+    border-left: 0px;
+    position: absolute;
+    top: 42%;
+    right: -38px;
+}
+
+
+.MainNav-BtnOcultar:before {
+	content: "";
+    display: inline-block;
+    width: 13px;
+    height: 21px;
+    background: url(/images/flechaIzqCerrarMenu.png) no-repeat;
+    top: 30px;
+    left: 0px;
+    position: relative;
+}
+
+.MainNav-BtnOcultar.cerrado:before {
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.MainNav-BtnOcultar:hover {
+	cursor: pointer;
+}
+
+.MainNav-BtnOcultar:hover:before {
+	left: -3px;
+}
+
+.MainNav-BtnOcultar.cerrado:hover:before {
+	left: 3px;
+}
+
+.MainNav-Pleca{
+	display: inline-block;
+    width: 84px;
+    height: 94px;
+    background: url(/images/barraLogo.png) no-repeat;
+	background-size: 100%;
+	z-index: 99;
+}
+
+.MainNav-Logo{
+	width: 60px;
+	height: 57px;
+	background: url(/images/logoPlataformaSolo.png) no-repeat;
+	margin-top: 17px;
+	margin-left: 15px;
+}
+
+.MainNav-TxtLogo{
+	color: #fff;
+    font-size: 15px;
+	margin-top: 11px;
+	margin-top: 2px;
+    margin-left: 20px;
+}
+
+.MainNav-TxtLogo:hover a{
+	color: #42b2ff;
+}
+
+.MainNav-TxtLogo strong {
+	font-size: 38px;
+	margin-right: 10px;
+}
+
+.MainNav-TxtLogo span {
+	margin-top: 22px;
+}
+
+.MainNav-TxtNomUsu{
+	color: #fff;
+	margin-top: 22px;
+	margin-right: 15px;
+}
+
+.MainNav-ContentPerfil{
+	width: 23px;
+    height: 37px;
+    background: url(/images/icoPerfil.png) center no-repeat;
+    position: relative;
+    margin-top: 3px;
+	margin-right: 30px;
+	padding-bottom: 20px;
+}
+
+.MainNav-List{
+	display: none;
+	font-size: 16px;
+    background: #2f52ab;
+    border: 2px solid #3fa8f0;
+    margin-top: 50px;
+    margin-left: -60px;
+    padding: 0px 0px;
+    position: relative;
+    z-index: 10;
+}
+
+.MainNav-ContentPerfil:hover .MainNav-List{
+	display: inline-block;
+}
+
+.MainNav-List li {
+	/*background: url(/images/lineaItemMenu.png) left bottom no-repeat;
+	padding-top: 5px;
+    padding-bottom: 6px;*/
+}
+
+.MainNav-List a{
+	width: 100%;
+    padding: 10px 20px;
+}
+
+.MainNav-List a:hover,.MainNav-List a.activo{
+	background-color: #3fa8f0;
+}
+
+.MainNav-ContentBottom{
+	bottom: -5px;
+}
+
+.MainNav-Menu2{
+	margin-top: 30px;
+	margin-left: 550px;
+}
+
+.MainNav-Menu2 li{
+	margin-bottom: 5px;
+	padding-left: 21px;
+}
+
+.MainNav-Menu2 li.IcoPerfil{
+	background: url(/images/icoPerfil.png) 0px 5px no-repeat;
+}
+
+.MainNav-Menu2 li.IcoAyuda{
+	background: url(/images/icoAyuda.png) 0px 5px no-repeat;
+}
+
+.MainNav-Menu2 li.IcoChat{
+	background: url(/images/icoChat.png) 0px 5px no-repeat;
+}
+
+.MainNav-ItemMenu2:hover{
+	text-decoration: underline;
+}
+
+.MainNav-BtnCerrar{
+	width: 22px;
+	height: 24px;
+	background: url(/images/icoSalir.png) no-repeat;
+	margin-top: 22px;
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	position: relative;
+}
+
+.MainNav-BtnCerrar:before {
+	content: "";
+    width: 22px;
+    height: 12px;
+    background: url(/images/flechaSalir.png) no-repeat;
+    position: absolute;
+    top: 6px;
+    left: -6px;
+}
+
+.MainNav-BtnCerrar:hover:before {
+	left: -9px;
+}
+
+
+.Inicio {
+	background: url(/images/fondos/bgInicio.jpg) center no-repeat;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.Inicio--MisCursos{
+	background: none;
+}
+
+.Inicio-ListMisCursos{
+
+}
+
+
+.Inicio-ListMisCursos li{
+	width: 220px !important;
+}
+
+.Inicio-ItemMisCursos{
+	width: 195px;
+	text-align: center;
+	margin-bottom: 28px;
+	margin-right: 55px;
+	position: relative;
+	overflow: hidden;
+}
+
+.Inicio-ImgItemMisCursos{
+	width: 191px;
+	height: 246px;
+	background: center no-repeat;
+	border: 2px solid #d8d8d8;
+	margin-bottom: 15px;
+}
+
+.Inicio-ItemMisCursos.NoDisponible .Inicio-ImgItemMisCursos{
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.Inicio-ItemMisCursos p {
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 0px 10px;
+    padding-top: 100px;
+    position: absolute;
+	top: -250px;
+	opacity: 0;
+}
+
+.Inicio-ItemMisCursos:hover{
+    color: #8fd1ff;
+	-webkit-transform:translateY(-5px);
+	-o-transform:translateY(-5px);
+	-moz-transform:translateY(-5px);
+	-ms-transform:translateY(-5px);
+	transform:translateY(-5px);
+}
+
+.Inicio-ItemMisCursos.NoDisponible:hover{
+	color: #fff;
+	cursor: default;
+	-webkit-transform:translateY(0px);
+	-o-transform:translateY(0px);
+	-moz-transform:translateY(0px);
+	-ms-transform:translateY(0px);
+	transform:translateY(0px);
+}
+
+.Inicio-ItemMisCursos:hover p {
+	top: 0px;
+	opacity: 1;
+}
+
+.Inicio-Logos{
+	margin-top: -21px;
+}
+
+.Inicio-Logos img{
+
+}
+
+
+
+.Unidad {
+	/*background: url(/images/fondos/bgInicio.jpg) center no-repeat;*/
+    /*padding-left: 315px;*/
+}
+
+
+.Unidad-Header {
+	min-height: 256px;
+    background: url(/images/fondos/bgHeaderUnidad4.jpg) center no-repeat;
+	padding-left: 60px;
+	padding-right: 60px;
+	position: relative;
+}
+
+.Unidad-Title{
+	color: #ffffff;
+	font: 55px 'fjallaoneregular';
+	padding-top: 50px;
+	margin-bottom: 15px;
+}
+
+.Unidad-ListHeader{
+	margin-bottom: 13px;
+}
+
+.Unidad-ListHeader li {
+	margin-right: 14px;
+}
+
+.Unidad-ListHeader li a{
+	border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.Unidad-ListHeader li a:hover{
+	border-bottom: 2px solid #4385b6;
+}
+
+.Unidad-BtnEvaluciones{
+    height: 26px;
+    padding-top: 6px;
+}
+
+.Unidad-TxtProgreso{
+	color: #fff;
+	margin-top: 8px;
+	margin-left: 26px;
+}
+
+.progress {
+	display: inline-block;
+    width: 390px;
+    border: 1px solid #fff;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.Unidad-Content {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.Unidad-MenuUnidad {
+	width: 350px;
+    background-color: #d6eeff;
+    padding-left: 60px
+}
+
+.BtnVolver{
+	color: #293552;
+	font-size: 20.92px;
+	background: url(/images/icoVolver.png) 0px 7px no-repeat;
+	margin-top: 15px;
+	padding-left: 23px;
+}
+
+.BtnVolver:hover{
+	color: #13327d;
+	margin-left: -3px;
+}
+
+.Unidad-TitleMenuUnidad {
+	color: #3da4ef;
+	font: 34px 'open_sansextrabold';
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.Unidad-ListMenuUnidad{
+	display: inline-block;
+	padding-top: 50px;
+    padding-left: 20px;
+}
+
+.Unidad-ListMenuUnidad li a{
+	width: 100%;
+	color: #fff;
+	background: url(/images/lineaItemMenuUnidad.png) left bottom no-repeat;
+	padding: 10px 0px;
+}
+
+
+.Unidad-ListMenuUnidad li a.NoDisponible{
+	color: #6b6b6b;
+}
+
+.Unidad-ListMenuUnidad li a:hover {
+	color: #3fa8e5;
+}
+
+.Unidad-ContentInfo{
+	padding-top: 70px;
+}
+
+.Unidad-TitleContentInfo{
+	margin-bottom: 22px;
+}
+
+.Unidad-ContentInfo p{
+	margin-bottom: 16px;
+}
+
+.Unidad-ContentInfo--Introduccion{
+
+}
+
+.Unidad-AudioContentInfo{
+	margin-top: 14px;
+}
+
+.Unidad-ContentInfo--Equipo{
+	width: 800px;
+}
+
+
+/****************************************************************************************************/
+
+.ModalProgreso, .ModalGlosario, .ModalDescargas, .ModalEvaluaciones, .ModalAyuda{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(10,38,59,0.97);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+.ModalProgreso-Center{
+	width: 1044px;
+	color: #fff;
+	position: relative;
+	top: 5%;
+}
+
+.ModalDescargas-Center{
+	width: 763px;
+	color: #fff;
+	position: relative;
+	top: 15%;
+}
+
+.ModalProgreso-Center--Ayuda{
+    width: 973px;
+}
+
+.ModalProgreso-Title{
+	color: #66e0ff;
+    font-size: 55px;
+    margin-right: 50px;
+}
+
+.ModalProgreso-ContentList, .ModalGlosario-ContentList,.ModalDescargas-ContentList, .ModalEvaluaciones-ContentList{
+	width: 682px;
+    height: 681px;
+    background-color: rgba(0,0,0,0.30);
+    padding-top: 56px;
+	padding-left: 93px;
+	overflow-y: auto;
+}
+
+.ModalGlosario-ContentList{
+	width: 748px;
+	font-size: 15px;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ModalGlosario-ContentList--Ayuda{
+	font-size: 14px;
+}
+
+.ModalGlosario-ContentList p{
+	margin-bottom: 20px;
+}
+
+.ModalGlosario-ContentList--Ayuda p{
+	margin-bottom: 15px;
+}
+
+.ModalGlosario-ContentList p strong{
+	color: #7ce1f3;
+}
+
+.ModalDescargas-ContentList{
+	width: 398px;
+	height: 504px;
+	padding-left: 74px;
+}
+
+.ModalDescargas-ContentList li a{
+	margin-bottom: 44px;
+	padding: 19px 0px;
+	padding-left: 87px;
+}
+
+.ModalDescargas-ContentList li a:hover {
+	color: #66e0ff;
+}
+
+.ModalDescargas-ContentList li a.PowerPoint{
+	background: url(/images/icoArchivoPowerPoint.png) 0px 0px no-repeat;
+}
+
+.ModalDescargas-ContentList li a.PDF{
+	background: url(/images/icoArchivoPDF.png) 0px 0px no-repeat;
+}
+
+.ModalDescargas-ContentList li a.Word{
+	background: url(/images/icoArchivoWord.png) 0px 0px no-repeat;
+}
+
+.ModalDescargas-ContentList li a.Audio{
+	background: url(/images/icoArchivoAudio.png) 0px 0px no-repeat;
+}
+
+.ModalEvaluaciones-ContentList{
+	width: 599px
+}
+
+.ModalEvaluaciones-ContentList .progress{
+	margin-top: 10px;
+    margin-left: 0px;
+    border: 0px;
+}
+
+.ModalProgreso-ItemCursoList{
+	padding: 15px 0px;
+	background: url(/images/borderModalItemCurso.png) left bottom no-repeat;
+}
+
+.ModalProgreso-ImgCursoList{
+	width: 46px;
+	height: 58px;
+	background: center no-repeat;
+	border: 1px solid #fff;
+	margin-right: 17px;
+}
+
+.ModalProgreso-ItemCursoList p{
+	width: 255px;
+}
+
+.ModalProgreso-ItemCursoList ul {
+	display: none;
+	margin-top: 12px;
+}
+
+.ModalProgreso-ItemCursoList.activo ul {
+	display: block;
+}
+
+.ModalProgreso-ItemCursoList ul strong{
+	color: #66e0ff;
+}
+
+.ModalProgreso-ItemCursoList ul li:hover strong {
+    color: #4aacff;
+}
+
+.ModalProgreso-ItemCursoList:hover{
+	cursor: pointer;
+	color: #66e0ff;
+}
+
+.ModalProgreso-ContentProgresos{
+	display: none;
+	margin-top: 15px;
+}
+
+
+.ModalProgreso-ItemCursoList ul li.activo .ModalProgreso-ContentProgresos{
+	display: block;
+}
+
+.ModalProgreso-ContentProgresos p{
+	width: 455px;
+	font-size: 15px;
+}
+
+
+.ModalProgreso-ContentProgresos .progress{
+	border: 0px;
+	margin-bottom: 5px;
+}
+
+.ModalProgreso-ItemCursoList:hover .ModalProgreso-ContentProgresos p{
+	color: #fff;
+}
+
+.ModalProgreso-Cerrar, .ModalGlosario-Cerrar, .ModalDescargar-Cerrar, .ModalEvaluaciones-Cerrar, .ModalAyuda-Cerrar{
+	color: #99d4ff;
+	position: absolute;
+	top: -25px;
+	right: 0px;
+}
+
+.ModalProgreso-Cerrar span, .ModalGlosario-Cerrar span, .ModalDescargar-Cerrar span, .ModalEvaluaciones-Cerrar span, .ModalAyuda-Cerrar span{
+	color: #fff;
+}
+
+.ModalProgreso-Cerrar:hover, .ModalGlosario-Cerrar:hover, .ModalDescargar-Cerrar:hover, .ModalEvaluaciones-Cerrar:hover, .ModalAyuda-Cerrar:hover{
+	color: #66e0ff;
+	cursor: pointer;
+}
+
+.ModalAyuda-Btn{
+	padding-top: 7px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+/************************************************************************************************************/
+
+.Notificaciones-Cargado img
+{
+	display: none;
+    width: 50px;
+    margin-top: 20px;
+}
+
+/**********************************************************************************************/
+
+.Curso-ContentObjetivos{
+	width: 330px;
+	color: #fff;
+	padding-top: 35px;
+	padding-right: 40px;
+}
+
+.Curso-TitlrContentObjetivos {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.Curso-ContentUnidades{
+	width: 600px;
+}
+
+.Curso-ListUnidades{
+	margin-bottom: 30px;
+	position: absolute;
+	right: 40px;
+}
+
+.Curso-ListUnidades li {
+	width: 150px;
+    color: #3fa8f0;
+    font: 28px 'fjallaoneregular';
+    /*padding: 10px 15px;*/
+}
+
+.Curso-ListUnidades li:hover, .Curso-ListUnidades li.activo{
+	color: #fff;
+	background-color: #0097ff;
+	cursor: pointer;
+}
+
+
+.Curso-ListUnidades li.inActivo{
+	color: #3fa8f0;
+	background: none;
+	cursor: default;
+}
+
+.Curso-ListUnidades a{
+    color: #293552;
+    border: 1px solid #293552;
+    margin-left: 15px;
+    padding: 5px 21px;
+}
+
+
+.Curso-ListUnidades a:hover{
+	color: #fff !important;
+	background-color: #0097ff;
+}
+
+.Curso-ListUnidades a.inactivo:hover{
+	cursor: default;
+	color: #293552 !important;
+	background-color: #d6eeff;
+}
+
+.Curso-TxtUnidades{
+	color: #fff;
+	top: 58%;
+    right: 15%;
+}

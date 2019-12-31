@@ -1,0 +1,1116 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+ /* @import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,500,100); */
+ @import url('../../fonts/unidad2/roboto/roboto.css');
+.texto-login{
+	margin-top:40px;
+	width:100%;
+	text-align:right;
+	float:right;
+	font-family:"Roboto-Light", san-serif;
+	color:rgba(255,255,255,1.00);
+	}
+	
+
+.pleca_login{
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:2;
+	}
+	
+.login{
+	max-width: 300px;
+    margin: 80px auto 0;
+    background: rgba(0,102,204,0.64);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 320px;
+    padding: 5%;
+	padding-top: 50px;
+    margin-right: 0%;
+	}
+.btn-login{ 
+	background:#1b2c5d; 
+	color:rgba(255,255,255,1.00); 
+	border:none;
+	float: right;
+	}
+#text-login{
+	color:#FFFFFF;
+	font-family:"Roboto-Light", san-serif;
+}
+.text-crear{
+	color:#FFFFFF;
+	font-family:"Roboto-Light", san-serif;
+	text-decoration: underline;
+	
+	}
+	
+.cont_unidades{
+    padding-top: 50px;
+    max-width:645px;
+    margin: 0 auto;
+    background: #000;
+}
+.icon-log{
+	background:#FFFFFF;
+	top:0;
+	border:none;
+	}
+.input-log{
+	border: none;
+    padding: 5px;
+    height: 36px;
+	}
+	.footer-log{
+		
+	}
+.text-usuario{
+	text-align:center;
+	color:#FFFFFF;
+	font-family:'Roboto-Regular', sans-serif;
+	}
+.img-user{
+	border-color: #27E7FF !important;
+    border: 5px;
+    border-style: solid;
+    padding: 5px;
+
+	}
+.usuario{
+	    text-indent: 0 !important; 
+		}
+.item-menu{
+	color:#FFFFFF;
+	font-family:'Roboto-Regular', sans-serif;
+	border-bottom:1px rgba(255,255,255,0.40) solid;
+	font-size:24px;
+	}
+.logout{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+	background: #1b3b6e;
+    height: 100px;
+    padding: 20px;
+	}
+.item-logout{
+	background: #3399cc;
+    width: 90%;
+    height: 90%;
+    padding: 12px;
+    list-style: none;
+    border: none;
+    border-radius: 5px;
+	color: #FFFFFF;
+	font-family:'Roboto-Bold', sans-serif;
+		}
+.item-logout a {
+	color: #FFFFFF;
+	font-family:'Roboto-Bold', sans-serif;
+	}
+.text-unidades{
+	font-family:'Roboto-Regular', sans-serif;
+	text-align:right;
+  	color: rgb(16, 58, 115);
+  	line-height: 1.2;
+	font-size:30px;
+	font-size: 45px;
+    margin-right: 55px;
+	}
+.text-unidades2{
+	color:#434343;
+	font-family:'Roboto-Regular', sans-serif;
+	text-align:right;
+	margin-right: 55px;
+	}
+.link-unidad{
+	color:transparent;
+	/*text-shadow: 0px 0px 21.06px rgba(126, 128, 131, 0.75);*/
+	}
+
+.link-unidad:hover{
+	text-decoration:none !important;
+	color:#FFFFFF !important;
+	text-shadow: 0px 0px 21.06px rgba(126, 128, 131, 0.75);
+	}
+.num-unidad{
+	visibility: visible;
+    position: relative;
+    display: inline-block;
+    width: 128px;
+    height: 129px;
+    top: 5px;
+}
+.num-unidad:hover{
+    visibility: visible;
+    color:#fff;
+    text-shadow: 0px 0px 21.06px rgba(126, 128, 131, 0.75);
+    text-decoration:none !important;
+    background: rgba(0,0,0,0.5);
+    width: 126px;
+    height: 126px;
+    /*margin-left: 27px;*/
+    /*margin-top: 6px;*/
+    border-radius: 50%;
+}
+.link-leccion{    
+	color: #003c6a;
+    text-decoration: none;
+	}
+	
+.link-leccion:hover{    
+	color: #003c6a;
+    text-decoration: none;
+	}
+
+.lecciones-slide{
+	margin-top:50px;
+	}
+.text-leccion{
+	color:#003c6a;
+	font-family: 'Roboto-Light', sans-serif;
+	text-align:right;
+	margin-right: 75px;
+	}
+.img-introlecc{
+	width: 80%;
+    height: 80%;
+	}
+.btn-slider{
+	background: #1fa3d4;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 5px;
+	}	
+.subtitulo-leccion{
+	    color: #00a79d;
+		}
+.cont-video{
+	    margin-left: 35px;
+		}
+.casco{
+	position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 340px;
+	}
+.casco>a:hover, .casco>a:focus {
+	background:url(../../plataforma/vistas/curso1/unidad2/epp/images/play.png) center center no-repeat;
+}	
+.casco-punto{
+	position: absolute;
+    top: 8%;
+    left: 49%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-casco.png);
+    width: 128px;
+    height: 82px;
+}
+.casco h4{    
+	width: 100%;
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
+    padding: 10px;
+    color: #FFF;
+    font-size: 14px;
+	font-family:'Roboto-Regular', sans-serif;
+	}
+.img-pieza{
+	width:100%;
+	height:100%;
+	}	
+.back-piezas{
+	background: url(../../plataforma/vistas/curso1/unidad2/epp/images/back_piezas.png) no-repeat;
+    background-position: right center;
+	}
+.pantalon{
+	position: absolute;
+    top: 42%;
+    left: 58%;
+    width: 340px;
+	}
+.pantalon h4{
+	 width: 100%;
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
+    padding: 10px;
+    color: #FFF;
+    font-size: 12px;
+	font-family:'Roboto-Regular', sans-serif;
+	}
+.pantalon-punto{
+	position: absolute;
+    top: 50%;
+    left: 47%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-pantalon.png);
+    width: 224px;
+    height: 127px;
+	}	
+.botas{
+	position: absolute;
+    top: 70%;
+    left: 55%;
+    width: 340px;
+	}
+.botas h4{
+	width: 100%;
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
+    padding: 10px;
+    color: #FFF;
+    font-size: 12.4px;
+	font-family:'Roboto-Regular', sans-serif;
+	}
+.botas-punto{    
+	position: absolute;
+    top: 76%;
+    left: 52%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-botas.png);
+    width: 98px;
+    height: 93px;
+	}
+.chaqueton{
+	position: absolute;
+    top: 67%;
+    left: 20%;
+    width: 340px;
+	}
+.chaqueton h4{
+	width: 100%;
+    background: linear-gradient(to left,transparent,transparent,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
+    padding: 10px;
+    color: #FFF;
+    font-size: 14px;
+    font-family: 'Roboto-Regular', sans-serif;
+	}
+.chaqueton-punto{
+	position: absolute;
+    top: 49%;
+    left: 41%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-chaqueton.png);
+    width: 137px;
+    height: 142px;
+	}
+.guantes{
+	position: absolute;
+    top: 42%;
+    left: 16%;
+    width: 340px;
+	}
+.guantes h4{
+	width: 100%;
+    background: linear-gradient(to left,transparent,transparent,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
+    padding: 15px;
+    color: #FFF;
+    font-size: 14px;
+    font-family: 'Roboto-Regular', sans-serif;
+	}
+.guantes-punto{
+	position: absolute;
+    top: 48%;
+    left: 35%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-guantes.png);
+    width: 131px;
+    height: 32px;
+	}
+.monja{
+	position: absolute;
+    top: 14%;
+    left: 19%;
+    width: 340px;
+	}
+.monja h4{
+	width: 100%;
+    background: linear-gradient(to left,transparent,transparent,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
+    padding: 15px;
+    color: #FFF;
+    font-size: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+	}
+.monja-punto{
+	position: absolute;
+    top: 12%;
+    left: 40%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-monja.png);
+    width: 126px;
+    height: 45px;
+	}
+.fade-menu-left{
+	background: rgba(0,0,0,0.7);
+}
+#intro2 .modal-contenedor-leccion {
+    margin-top: 10% !important;
+}
+#intro2 .embed-responsive{
+    overflow: hidden !important;
+    height: auto !important;
+}
+
+#intro2>.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modal-contenedor-leccion{
+	background:none;
+	border: none;
+    box-shadow: none;
+    margin-top: 20%;
+	}
+.modal-header-leccion{
+	border:none;
+	}
+.modal-footer-leccion{
+	border:none;
+	}
+.modal-dialog-memorama{
+	width:750px;}
+
+.close-modal-leccion{
+	border-radius: 50% !important;
+    width: 25px !important;
+    height: 25px !important;
+    background: #FFF !important;
+	}
+.punto-pieza-casco{
+	position: absolute;
+    top: 4%;
+    left: 49%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+	z-index: 2;
+}
+.casco-pieza{
+	position: absolute;
+    top: 13%;
+    left: 29%;
+    width: 21%;
+	display:none;
+	}
+.casco-pieza-posicion{
+	position:relative;
+	}
+.linea-casco{ 
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(41, 214, 197);
+    background-color: rgb(41, 214, 197);
+    opacity: 0.302;
+    float: right;
+    width: 72%;
+    height: 1px;
+    transform: rotate(-20deg);
+	}
+.punto-pieza-pantalon{
+	position: absolute;
+    top: 68%;
+    left: 47%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    width: 25px;
+    height: 25px;
+	cursor:pointer;
+	z-index: 2;
+}
+.pantalon-pieza{
+	position: absolute;
+    top: 47%;
+    left: 48%;
+    width: 380px;
+	display:none;
+	}
+.linea-pantalon{ 
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(41, 214, 197);
+    background-color: rgb(41, 214, 197);
+    opacity: 0.302;
+    position: absolute;
+    width: 270px;
+    height: 1px;
+    margin-top: 21%;
+    transform: rotate(-16deg);
+	}
+.punto-pieza-botas{
+	position: absolute;
+    top: 86%;
+    left: 52%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    width: 25px;
+    height: 25px;
+	cursor:pointer;
+}
+.botas-pieza{
+	position: absolute;
+    top: 72%;
+    left: 53%;
+    width: 310px;
+	display:none;
+	}
+.linea-botas{ 
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(41, 214, 197);
+    background-color: rgb(41, 214, 197);
+    opacity: 0.302;
+    position: absolute;
+    width: 199px;
+    height: 1px;
+    margin-top: 19%;
+    transform: rotate(-12deg);
+	}
+.punto-pieza-chaqueton{
+	position: absolute;
+    top: 49%;
+    left: 48%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    width: 25px;
+    height: 25px;
+	cursor:pointer;
+	z-index: 2;
+}
+.chaqueton-pieza{
+	position: absolute;
+    top: 62%;
+    left: 30%;
+    width: 20%;
+	display:none;
+	}
+.chaqueton-pieza2{
+	position: absolute;
+    top: 62%;
+    left: 28%;
+    width: 280px;
+	display:none;
+	}
+.linea-chaqueton{ 
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(41, 214, 197);
+    background-color: rgb(41, 214, 197);
+    opacity: 0.302;
+    float: right;
+    width: 70%;
+    height: 1px;
+    transform: rotate(-34deg);
+	}
+.punto-pieza-guantes{
+	position: absolute;
+    top: 48%;
+    left: 43%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 2;
+}
+.chaqueton-pieza-posicion{    position: relative;
+    z-index: 4;}
+.guantes-pieza{
+	position: absolute;
+    top: 44%;
+    left: 21%;
+    width: 22%;
+	display:none;
+	}
+.guantes-pieza-posicion{
+    position: relative;
+    z-index: 4;
+	}
+.guantes-pieza2{
+	position: absolute;
+    top: 45%;
+    left: 17%;
+    width: 340px;
+	display:none;
+	}
+.linea-guantes{ 
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(41, 214, 197);
+    background-color: rgb(41, 214, 197);
+    opacity: 0.302;
+    float: right;
+    width: 67%;
+    height: 1px;
+    transform: rotate(-4deg);
+    margin-top: -15%;
+	}
+.punto-pieza-monja{
+	position: absolute;
+    top: 10%;
+    left: 51%;
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.monja-pieza{
+	position: absolute;
+    top: 16%;
+    left: 52%;
+    width: 320px;
+	display:none;
+	}
+.monja-pieza h4{    
+	width: 100%;
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
+    padding: 10px;
+    color: #FFF;
+    font-size: 14px;
+	font-family:'Roboto-Regular', sans-serif;
+	}
+.linea-monja{ 
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(41, 214, 197);
+    background-color: rgb(41, 214, 197);
+    opacity: 0.302;
+    position: absolute;
+    width: 217px;
+    height: 1px;
+    transform: rotate(20deg);
+	}
+.texto-modal-pieza{
+	text-align: justify;
+    color: #FFF;
+    font-family: "Roboto-Light",sans-serif;
+	margin-top:10%;
+	}
+.texto-bold-pieza{
+	font-family:'Roboto-Black', sans-serif;}
+.text-yellow{
+	font-family:'Roboto-Black', sans-serif;
+	color:#fff200;
+	}
+ .navbar{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/encabezado.jpg) right center repeat-x !important;
+    font-size: 22px;
+    color:#fff !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+ }
+
+ .navbar a{color:#fff !important;
+font-family: 'Roboto', sans-serif;
+    font-weight: 100;}
+
+
+.textounidad{font-size: 40px;
+font-family: 'Roboto', sans-serif;
+    font-weight: 100;}
+
+.textounidad strong{color:yellow;}
+
+ 
+
+.cont_unidades{
+    padding-top: 50px;
+    max-width:645px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.list_unidades{display: block;
+list-style: none;
+}
+
+.list_unidades li{display: inline-block;
+text-align: center;
+width:180px;
+height: 180px;
+}
+
+
+.objetivos{
+
+font-size: 18px;
+padding-top: 94px;
+color:#1b3d6e;
+
+}
+
+.but{
+font-size: 95px;
+padding-top: 20px;
+color:#fff;
+}
+
+.activo{/*background: url(../images/btn_unidades.png) center center no-repeat;*/}
+
+.unidad2-img{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/img-menu-2.png) center center no-repeat;}
+.unidad4-img{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/img-menu-4.png) center center no-repeat;}
+
+.revisado{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/btn_revisado.png) center center no-repeat;}
+
+.inactivo{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/btn_unidadesbloq.png) center center no-repeat; color: transparent;}
+
+.btn-guardar{color:#fff;background-color:#1b2c5d;border-color:#2e6da4}
+.btn-guardar:focus,.btn-primary.focus{color:#fff;background-color:#286090;border-color:#122b40}
+.btn-guardar:hover{color:#fff;background-color:#286090;border-color:#204d74}
+
+div.upload {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    color:#fff !important;
+    border-radius: 5px;
+}
+
+div.upload input {
+    display: block !important;
+    width: 100% !important;
+    height: 45px !important;
+    opacity: 1 !important;
+    color:#fff !important;
+}
+
+.etiqueta{
+font-family:"Roboto-Light", san-serif;
+    color:#1b2c5d;
+}
+
+
+.list_cursos ul{
+    list-style-type: none;
+}
+
+.list_cursos li{
+     list-style-type: none;
+padding:10px;
+list-style: none;
+
+}
+
+.list_cursos a{
+
+    font-family:"Roboto-Light", san-serif;
+color:#1b2c5d;
+text-decoration: none;
+}
+
+.et_calificaciones{
+    font-family:"Roboto-light", san-serif;
+color:#1b2c5d;
+}
+
+.et_calificaciones strong{
+    font-family:"Roboto-Black", san-serif;
+    font-weight: 400;
+color:#1b2c5d;
+padding-left:10px;
+}
+
+.progress-bar strong{
+    width:70px;
+    border: 1px solid #c5c5c5;
+    background: #fff;
+    color:#1c3d72;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.fazul{
+    background: #1c3d72 !important;
+}
+
+.texto_ayuda{
+    text-align: justify;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.texto_ayuda strong{
+font-family:"Roboto-Black", san-serif;
+color:#1b2c5d;
+}
+
+.list_descargas{
+width: 100%;
+margin-top: 20%;
+
+}
+.text-descargas-button{
+font-family:"Roboto-Regular", san-serif;
+font-size:20px;
+}
+.text-descargas{
+font-family:"Roboto-Regular", san-serif;
+color:#1b2c5d;
+text-align: justify;
+padding-left: 15px;
+font-size:20px;
+}
+.text-glosario{
+font-family:"Roboto-Regular", san-serif;
+color:#1b2c5d;
+text-align: justify;
+padding-left: 15px;
+font-size:20px;
+}
+.list_glosario a:hover{
+    text-decoration: none;
+}
+.list_descargas a:hover{
+    text-decoration: none;
+}
+.list_descargas li{padding: 10px;
+list-style-type: none;
+background-color: rgba(255, 255, 255, 0);
+box-shadow: inset 0px 0px 46px 0px rgba(197, 197, 197, 0.57);
+margin-top: 20px;
+}
+.list_glosario li{padding: 10px;
+list-style-type: none;
+background-color: rgba(255, 255, 255, 0);
+box-shadow: inset 0px 0px 46px 0px rgba(197, 197, 197, 0.57);
+margin-top: 20px;
+}
+.icon-glosario{
+color:#1b2c5d;
+}
+.list_glosario strong{
+    font-family:"Roboto-Black", san-serif;
+color:#1b2c5d;
+text-align: left;
+}
+.list_descargas strong{
+    font-family:"Roboto-Black", san-serif;
+color:#1b2c5d;
+text-align: left;
+}
+.text-leccion-glosario{
+    color: #003c6a;
+    font-family: 'Roboto-Light', sans-serif;
+}
+
+/*.list_glosario span{
+    font-family:"Roboto-light", san-serif;
+color:#1b2c5d;
+text-align: justify;
+padding-left: 15px;
+}*/
+
+.lista_extintores{
+    margin:0 auto;
+    text-align: center;
+}
+.lista_extintores ul{width: 80%;
+margin:0 auto; }
+
+.lista_extintores li{
+    display: inline-block;
+    padding-right: 20px;
+list-style-type: none;
+}
+
+.contenedor_extintores{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-extintores{
+    max-width: 120px;
+    height: 270px;
+}
+
+.tip_extintor{
+    width: 100%;
+    padding: 10px;
+    color:#fff;
+    position:relative;
+    top:-55px;
+}
+
+.tip_extintor img{ width: 80px;}
+
+.subtitulo{
+    margin-left: 30px !important;
+    text-align: center;
+    color: #434343;
+    font-family: 'Roboto-Regular',sans-serif;
+}
+
+.caudio{
+    text-align: center;
+    padding-top: 15px;
+}
+.audioright{
+   text-align: right;
+   padding-top: 15px;
+}
+
+.info_entintores{
+    color:#fff;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Roboto-light', sans-serif;
+}
+
+.info_modals{color:#fff;
+font-size: 20px;
+text-align: justify;}
+
+.checado{
+    float:left;
+    width:20px;
+}
+
+/* Toggle Styles */
+.fondo_unidades {
+    min-height: 100%;
+    height:auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/fondo_unidades.jpg) center fixed no-repeat;
+	background-size:cover;
+    overflow:hidden-x;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #02488A;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 60px 10px 10px 10px;
+
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+
+ #btn-ocultar
+{
+    position:fixed;
+    top:280px;
+    right: 0px;
+    padding-top: 35px;
+    margin:0px;
+    width: 30px;
+    height:80px;
+    background:#FF931E;
+    z-index:15;
+    border-radius: 3px 0px 0px 3px;
+}
+
+
+#btn-ocultar p
+{
+    color: #fff;
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+}
+
+#btn-ocultar a{
+
+    color:#fff;
+    text-decoration: none;
+}
+
+.fondo_lecciones{
+	min-height: 100%;
+    height:auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/fondo_lecciones.png) center fixed no-repeat;
+	background-size:cover;
+    overflow:hidden-x;
+	}
+.list-lecciones{
+	margin-top:140px;
+}
+.img-leccion{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+	width:50%;
+	height:100%;
+	}
+.item-checkbox{
+	color: #003c6a;
+	font-size:24px;
+	list-style:none;
+	
+	}
+.item-checkbox label{
+    font-family: 'Roboto-Light',sans-serif;
+    display:inline;
+	}
+.item-checkbox b{
+    font-family: 'Roboto-Black',sans-serif;
+	}
+	
+.item-checkbox input[type="checkbox"]{ display: none; }
+
+.item-checkbox input[type="checkbox"] + label span{
+ display: inline-block;
+ width: 25px;
+ height: 25px;
+ background: url(../../plataforma/vistas/curso1/unidad2/epp/images/check-inactive.png) left top no-repeat;
+ margin: -1px 4px 0 0;
+ vertical-align: middle;
+ cursor:pointer;
+}
+
+.item-checkbox input[type="checkbox"]:checked + label span{
+width: 25px;
+ height: 25px;
+ background: url(../../plataforma/vistas/curso1/unidad2/epp/images/check-active.png) no-repeat;
+}
+.opciones-memo{
+    color: #337ab7;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: normal;
+}
+
+@media(min-width:768px) {
+	
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+     #heady.toggled {
+        display:none;
+    }
+
+    #page-content-wrapper {
+        padding: 30px 10px 10px 10px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+@media all and (max-width: 1642px) {
+    .linea-guantes {
+        margin-top: 10%;
+    }
+    .linea-chaqueton {
+        border-style: solid;
+        border-width: 3px;
+        border-color: rgb(41, 214, 197);
+        background-color: rgb(41, 214, 197);
+        opacity: 0.302;
+        float: right;
+        width: 75%;
+        height: 1px;
+        transform: rotate(-26deg);
+    }
+    .linea-guantes {
+        border-style: solid;
+        border-width: 3px;
+        border-color: rgb(41, 214, 197);
+        background-color: rgb(41, 214, 197);
+        opacity: 0.302;
+        float: right;
+        width: 72%;
+        height: 1px;
+        transform: rotate(-4deg);
+        margin-top: 10%;
+    }
+    .fichasves img {
+        margin-bottom: 1%;
+        margin-right: 5%;
+    }
+}
