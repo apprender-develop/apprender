@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.delta')
 
 @section('style')
     <link href="{{ asset('css/chart.css') }}" rel="stylesheet">

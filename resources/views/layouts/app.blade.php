@@ -25,15 +25,10 @@
 
     @yield('style')
 </head>
-<body>
-    <div id="app">
-        @include('layouts.navbar')
+<body class="@yield('bodyClass')">
+    @include('layouts.navbar2')
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-        @yield('content2')
-    </div>
+    @yield('content2')
     @yield('javascript')
     @stack('javascript')
 </body>

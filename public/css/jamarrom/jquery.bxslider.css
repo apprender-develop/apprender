@@ -95,7 +95,7 @@ ul.bxslider {
     display: inline-block;
     width: 20px;
     height: 40px;
-    background: url(../images/icoPrev.png) no-repeat;
+    background: url(/images/icoPrev.png) no-repeat;
     position: relative;
 }
 
@@ -105,7 +105,7 @@ ul.bxslider {
 }
 .bx-wrapper .bx-next {
   -webkit-transform: rotate(180deg);
-  -o-transform: rotate(180deg); 
+  -o-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -118,7 +118,7 @@ ul.bxslider {
     display: inline-block;
     width: 20px;
     height: 40px;
-    background: url(../images/icoPrev.png) no-repeat;
+    background: url(/images/icoPrev.png) no-repeat;
     position: relative;
 }
 
@@ -140,7 +140,7 @@ ul.bxslider {
   -o-text-shadow: 2px 2px 2px rgba(0,0,0,0.50);
   -moz-text-shadow: 2px 2px 2px rgba(0,0,0,0.50);
   -ms-text-shadow: 2px 2px 2px rgba(0,0,0,0.50);
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.50);	
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.50);
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;

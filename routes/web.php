@@ -22,6 +22,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/curso/{curso_id}/', 'CursosController@show')->middleware('auth');
+
 Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
     Route::get('graficas', 'DashboardController@index');
 });
