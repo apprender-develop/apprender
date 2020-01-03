@@ -35,6 +35,7 @@
 // Route::get('email/verify', 'Auth\VerificationController@show')->name('verification.notice');
 // Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
 // Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
+Route::post('/user/password-change', 'Auth\CustomController@changePassword')->middleware('auth')->name('user.changePassword');
 
 Route::get('/', function () {
     if (Auth::user() != null) {
@@ -59,5 +60,8 @@ Route::group(['prefix' => 'sandbox'], function () {
         Route::get('memorama', 'SandboxController@index');
     });
 });
+
+Route::post('/calificar', 'CalificarController@calificar')->middleware('auth')->name('calificar');
+Route::post('/encuesta', 'EncuestaController@guardar')->middleware('auth')->name('encuesta');
 
 Route::get('/test/useragent', 'SandboxController@useragent');

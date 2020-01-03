@@ -13,14 +13,14 @@
     {{-- <script src="{{ asset('js/jquery-3.4.1.min.map') }}"></script> --}}
     <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
     {{-- <script src="{{ asset('js/bootstrap.js.map') }}"></script> --}}
-    <script src="{{ asset('js/bootstrap.js') }}"></script>
-    <script src="{{ asset('js/popper.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/bootstrap.js') }}"></script> --}}
+    {{-- <script src="{{ asset('js/popper.min.js') }}"></script> --}}
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> --}}
+    {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet"> --}}
     {{-- <link href="{{ asset('css/bootstrap.css.map') }}"> --}}
 
     @yield('style')

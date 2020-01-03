@@ -130,6 +130,13 @@
 
     </div>
 
+    <form style="display: none" id="formEncuesta" action="{{route('encuesta')}}">
+        @csrf
+        <input type="hidden" name="aciertos" id="aciertos">
+        <input type="hidden" name="total" id="total">
+        <input type="hidden" name="calificacion" id="calificacion">
+    </form>
+
     <div class="u-textRight">
         <a class="Pregunta-Btn Pregunta-Btn--Ant u-boton u-textCenter">Anterior</a>
         <a onclick="cambio(1)" class="Pregunta-Btn Pregunta-Btn--Sig u-boton u-textCenter">Siguiente</a>

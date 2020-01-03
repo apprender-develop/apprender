@@ -202,7 +202,7 @@
 				var calificacion = ((m+1)*2);
 
 				$(".MiPerfil-CalificacionEValuacion").eq(0).html("<strong>"+calificacion+"</strong>");
-
+                $('#evalua_contenido').val(calificacion)
 				$("#EvaluaContenido .MiPerfil-IcoEstrella").addClass("InActiva");
 
 				for(var a=0; a<(m+1); a++){
@@ -220,7 +220,7 @@
 				var calificacion = ((m+1)*2);
 
 				$(".MiPerfil-CalificacionEValuacion").eq(1).html("<strong>"+calificacion+"</strong>");
-
+                $('#evalua_facil').val(calificacion)
 				$("#EvaluaFacil .MiPerfil-IcoEstrella").addClass("InActiva");
 
 				for(var a=0; a<(m+1); a++){
@@ -237,7 +237,8 @@
 			{
 				var calificacion = ((m+1)*2);
 
-				$(".MiPerfil-CalificacionEValuacion").eq(2).html("<strong>"+calificacion+"</strong>");
+                $(".MiPerfil-CalificacionEValuacion").eq(2).html("<strong>"+calificacion+"</strong>");
+                $('#evalua_graficos').val(calificacion)
 
 				$("#EvaluaGraficos .MiPerfil-IcoEstrella").addClass("InActiva");
 
@@ -256,7 +257,7 @@
 				var calificacion = ((m+1)*2);
 
 				$(".MiPerfil-CalificacionEValuacion").eq(3).html("<strong>"+calificacion+"</strong>");
-
+                $('#evalua_interactivo').val(calificacion)
 				$("#EvaluaInteractivo .MiPerfil-IcoEstrella").addClass("InActiva");
 
 				for(var a=0; a<(m+1); a++){
@@ -274,7 +275,7 @@
 				var calificacion = ((m+1)*2);
 
 				$(".MiPerfil-CalificacionEValuacion").eq(4).html("<strong>"+calificacion+"</strong>");
-
+                $('#evalua_intuitivo').val(calificacion)
 				$("#EvaluaIntuitivo .MiPerfil-IcoEstrella").addClass("InActiva");
 
 				for(var a=0; a<(m+1); a++){

@@ -2,41 +2,61 @@
 	var ban = true;
 
 
-	$(document).ready(function() 
+	$(document).ready(function()
 	{
-			
+        $('#formEncuesta').on('submit', function(e){
+            e.preventDefault()
+            let form = $(this);
+            let url = form.attr('action');
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: form.serialize(), // serializes the form's elements.
+                success: function(data)
+                {
 
-	}); 
-	
-	
+                }
+            });
+        })
+
+	});
+
+
 	var posAct = 0;
-	var respuestas = new Array(0,0,3,0,1);	
-	
+	var respuestas = new Array(0,0,3,0,1);
+
     function cambio(pos){
 		var valid = true;
-		
+
 			if(pos == 0)
 				cambiar(pos);
 			else if(pos == 5){
 				var totalR = 0;
-				
+
 				for (var a=1; a < 6; a++){
 					var preg = parseInt($('input:radio[name=pregunta'+a+']:checked').val());
 					var resp = parseInt(respuestas[a-1]);
-					
+
 					//alert(preg);
 					if(preg == resp){
 						totalR = totalR + 1;
 					}
 				}
-				
+
 				var inact = 5 - totalR;
-				
+
 				for (var a=0; a < inact; a++){
 					$(".Pregunta-IcoEstrella").eq((4-a)).addClass("InActiva");
 				}
-				
+
 				$(".Pregunta-Calificacion").html((totalR)*2);
+
+                $('#aciertos').val(totalR)
+                $('#calificacion').val(totalR*2)
+                $('#total').val(5)
+
+                $('#formEncuesta').submit()
+
 
 				if(totalR>3){
 					$(".Respuesta1").slideUp("slow");
@@ -53,15 +73,15 @@
 			else if(pos > 0)
 			{
 				if ($('input[name="pregunta'+pos+'"]').is(':checked'))
-					cambiar(pos);	
+					cambiar(pos);
 				else
 				{
-					$('.lbRadio').effect('pulsate', { times:2 }, 1000);		
+					$('.lbRadio').effect('pulsate', { times:2 }, 1000);
                     $('.lbRadio').focus();
-					valid = false;		
+					valid = false;
 				}
 			}
-				
+
 				if(valid)
 				{
 					if(pos == 5){
@@ -79,7 +99,7 @@
 					}
 				}
         }
-			
+
 	function cambiar(pos){
 		$(".ContentPregunta").animate({'opacity':'0'}, 0);
 		$(".ContentPregunta").css({display:'none'});
@@ -95,4 +115,4 @@
 		$(".ContentPregunta").eq(pos).animate({'opacity':'1'}, 0);
 
         posAct = pos;
-       }		
+       }

@@ -138,5 +138,54 @@
             }
         });
         });
+        $(document).ready(function() {
+            $('#formRecuperarContrasenia').on('submit', function(e){
+                e.preventDefault()
+                let form = $(this);
+                let url = form.attr('action');
+
+                let password = $('#password').val()
+                let password_confirmation = $('#password_confirmation').val()
+
+                if (validatePassword(password, password_confirmation)) {
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: form.serialize(), // serializes the form's elements.
+                        success: function(data)
+                        {
+                            alert('Contraseñas actualizadas correctamente.'); // show response from the php script.
+                        }
+                    });
+                } else {
+                    alert('Las contraseñas no coinciden, favor de verificarlas.')
+                }
+
+            })
+
+            $('#formCalificanos').on('submit', function(e){
+                e.preventDefault()
+                let form = $(this);
+                let url = form.attr('action');
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: form.serialize(), // serializes the form's elements.
+                    success: function(data)
+                    {
+                        alert('Gracias por calificarnos.'); // show response from the php script.
+                    }
+                });
+
+            })
+
+            let validatePassword = (password, password_confirmation) => {
+                let pass = false;
+                if (password === password_confirmation) {
+                    pass = true
+                }
+                return pass
+            }
+        })
     </script>
 @endsection
