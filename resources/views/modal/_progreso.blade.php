@@ -7,7 +7,7 @@
         <div class="ModalProgreso-ContentList u-inline-block u-textLeft">
             <div class="ModalProgreso-ItemCursoList">
                 <figure class="ModalProgreso-ImgCursoList u-inline-block u-imagenFondoCover u-imagenFondoCover"
-                    style="background-image: url(../images/cursos/destacadacurso1.jpg);">
+                    style="background-image: url(/images/cursos/destacadacurso1.jpg);">
                 </figure>
 
                 <p class="u-inline-block">
@@ -110,7 +110,7 @@
 
             <div class="ModalProgreso-ItemCursoList">
                 <figure class="ModalProgreso-ImgCursoList u-inline-block u-imagenFondoCover"
-                    style="background-image: url(../images/cursos/destacadacurso2.jpg);">
+                    style="background-image: url(/images/cursos/destacadacurso2.jpg);">
                 </figure>
 
                 <p class="u-inline-block">
@@ -120,7 +120,7 @@
 
             <div class="ModalProgreso-ItemCursoList">
                 <figure class="ModalProgreso-ImgCursoList u-inline-block u-imagenFondoCover"
-                    style="background-image: url(../images/cursos/destacadacurso3.jpg);">
+                    style="background-image: url(/images/cursos/destacadacurso3.jpg);">
                 </figure>
 
                 <p class="u-inline-block">
@@ -130,7 +130,7 @@
 
             <div class="ModalProgreso-ItemCursoList">
                 <figure class="ModalProgreso-ImgCursoList u-inline-block u-imagenFondoCover"
-                    style="background-image: url(../images/cursos/destacadacurso4.jpg);">
+                    style="background-image: url(/images/cursos/destacadacurso4.jpg);">
                 </figure>
 
                 <p class="u-inline-block">
@@ -140,7 +140,7 @@
 
             <div class="ModalProgreso-ItemCursoList">
                 <figure class="ModalProgreso-ImgCursoList u-inline-block u-imagenFondoCover"
-                    style="background-image: url(../images/cursos/destacadacurso5.jpg);">
+                    style="background-image: url(/images/cursos/destacadacurso5.jpg);">
                 </figure>
 
                 <p class="u-inline-block">

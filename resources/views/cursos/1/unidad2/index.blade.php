@@ -34,10 +34,65 @@
     <script src="{{asset('/js/jamarrom/jquery-ui.js')}}"></script>
     <script src="{{asset('/js/jamarrom/jquery.bxslider.min.js')}}"></script>
     <script src="{{asset('/js/jamarrom/index.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $('#formRecuperarContrasenia').on('submit', function(e){
+                e.preventDefault()
+                let form = $(this);
+                let url = form.attr('action');
+
+                let password = $('#password').val()
+                let password_confirmation = $('#password_confirmation').val()
+
+                if (validatePassword(password, password_confirmation)) {
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: form.serialize(), // serializes the form's elements.
+                        success: function(data)
+                        {
+                            alert('Contraseñas actualizadas correctamente.'); // show response from the php script.
+                        }
+                    });
+                } else {
+                    alert('Las contraseñas no coinciden, favor de verificarlas.')
+                }
+
+            })
+
+            $('#formCalificanos').on('submit', function(e){
+                e.preventDefault()
+                let form = $(this);
+                let url = form.attr('action');
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: form.serialize(), // serializes the form's elements.
+                    success: function(data)
+                    {
+                        alert('Gracias por calificarnos.'); // show response from the php script.
+                    }
+                });
+
+            })
+
+            let validatePassword = (password, password_confirmation) => {
+                let pass = false;
+                if (password === password_confirmation) {
+                    pass = true
+                }
+                return pass
+            }
+        })
+    </script>
 </head>
 
 <body>
     @include('layouts.navbar2')
+    @include('modal._progreso')
+    @include('modal._evaluaciones')
+    @include('modal._perfil')
+    @include('modal._ayuda')
     @include('cursos.1._glosario')
     @include('cursos.1._descarga')
 

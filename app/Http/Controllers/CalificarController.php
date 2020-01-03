@@ -20,11 +20,16 @@ class CalificarController extends Controller
             'interactivo' => $request->input('evalua_interactivo', 0),
             'intuitivo' => $request->input('evalua_intuitivo', 0)
         ]);
-        $jsonResponse = [
-            'data' => $request->all(),
-            'user' => Auth::user()->nombreCompleto
-        ];
-        return response()->json($jsonResponse, 200);
+
+        if ($request->ajax()) {
+            $jsonResponse = [
+                'data' => $request->all(),
+                'user' => Auth::user()->nombreCompleto
+            ];
+            return response()->json($jsonResponse, 200);
+        }
+
+        return redirect()->back();
     }
 
     private function delete($user_id)
