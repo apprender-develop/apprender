@@ -14,7 +14,7 @@
 	font-family:"Roboto-Light", san-serif;
 	color:rgba(255,255,255,1.00);
 	}
-
+	
 
 .pleca_login{
 	position:fixed;
@@ -22,7 +22,7 @@
 	left:0;
 	z-index:2;
 	}
-
+	
 .login{
 	max-width: 300px;
     margin: 80px auto 0;
@@ -34,9 +34,9 @@
 	padding-top: 50px;
     margin-right: 0%;
 	}
-.btn-login{
-	background:#1b2c5d;
-	color:rgba(255,255,255,1.00);
+.btn-login{ 
+	background:#1b2c5d; 
+	color:rgba(255,255,255,1.00); 
 	border:none;
 	float: right;
 	}
@@ -48,9 +48,9 @@
 	color:#FFFFFF;
 	font-family:"Roboto-Light", san-serif;
 	text-decoration: underline;
-
+	
 	}
-
+	
 .cont_unidades{
     padding-top: 50px;
     max-width:645px;
@@ -68,7 +68,7 @@
     height: 36px;
 	}
 	.footer-log{
-
+		
 	}
 .text-usuario{
 	text-align:center;
@@ -83,7 +83,7 @@
 
 	}
 .usuario{
-	    text-indent: 0 !important;
+	    text-indent: 0 !important; 
 		}
 .item-menu{
 	color:#FFFFFF;
@@ -161,12 +161,12 @@
     /*margin-top: 6px;*/
     border-radius: 50%;
 }
-.link-leccion{
+.link-leccion{    
 	color: #003c6a;
     text-decoration: none;
 	}
-
-.link-leccion:hover{
+	
+.link-leccion:hover{    
 	color: #003c6a;
     text-decoration: none;
 	}
@@ -181,7 +181,7 @@
 	margin-right: 75px;
 	}
 .img-introlecc{
-	width: 80%;
+	width: 67%;
     height: 80%;
 	}
 .btn-slider{
@@ -189,7 +189,7 @@
     width: 40px !important;
     height: 40px !important;
     padding: 5px;
-	}
+	}	
 .subtitulo-leccion{
 	    color: #00a79d;
 		}
@@ -204,7 +204,7 @@
 	}
 .casco>a:hover, .casco>a:focus {
 	background:url(../../plataforma/vistas/curso1/unidad2/epp/images/play.png) center center no-repeat;
-}
+}	
 .casco-punto{
 	position: absolute;
     top: 8%;
@@ -213,7 +213,7 @@
     width: 128px;
     height: 82px;
 }
-.casco h4{
+.casco h4{    
 	width: 100%;
     background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
     padding: 10px;
@@ -224,7 +224,7 @@
 .img-pieza{
 	width:100%;
 	height:100%;
-	}
+	}	
 .back-piezas{
 	background: url(../../plataforma/vistas/curso1/unidad2/epp/images/back_piezas.png) no-repeat;
     background-position: right center;
@@ -250,7 +250,7 @@
     background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-pantalon.png);
     width: 224px;
     height: 127px;
-	}
+	}	
 .botas{
 	position: absolute;
     top: 70%;
@@ -265,7 +265,7 @@
     font-size: 12.4px;
 	font-family:'Roboto-Regular', sans-serif;
 	}
-.botas-punto{
+.botas-punto{    
 	position: absolute;
     top: 76%;
     left: 52%;
@@ -396,7 +396,7 @@
 .casco-pieza-posicion{
 	position:relative;
 	}
-.linea-casco{
+.linea-casco{ 
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -424,7 +424,7 @@
     width: 380px;
 	display:none;
 	}
-.linea-pantalon{
+.linea-pantalon{ 
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -452,7 +452,7 @@
     width: 310px;
 	display:none;
 	}
-.linea-botas{
+.linea-botas{ 
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -488,7 +488,7 @@
     width: 280px;
 	display:none;
 	}
-.linea-chaqueton{
+.linea-chaqueton{ 
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -529,7 +529,7 @@
     width: 340px;
 	display:none;
 	}
-.linea-guantes{
+.linea-guantes{ 
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -557,7 +557,7 @@
     width: 320px;
 	display:none;
 	}
-.monja-pieza h4{
+.monja-pieza h4{    
 	width: 100%;
     background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
     padding: 10px;
@@ -565,7 +565,7 @@
     font-size: 14px;
 	font-family:'Roboto-Regular', sans-serif;
 	}
-.linea-monja{
+.linea-monja{ 
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -606,7 +606,7 @@ font-family: 'Roboto', sans-serif;
 
 .textounidad strong{color:yellow;}
 
-
+ 
 
 .cont_unidades{
     padding-top: 50px;
@@ -1017,7 +1017,7 @@ text-align: justify;}
 	color: #003c6a;
 	font-size:24px;
 	list-style:none;
-
+	
 	}
 .item-checkbox label{
     font-family: 'Roboto-Light',sans-serif;
@@ -1026,7 +1026,7 @@ text-align: justify;}
 .item-checkbox b{
     font-family: 'Roboto-Black',sans-serif;
 	}
-
+	
 .item-checkbox input[type="checkbox"]{ display: none; }
 
 .item-checkbox input[type="checkbox"] + label span{
@@ -1051,7 +1051,7 @@ width: 25px;
 }
 
 @media(min-width:768px) {
-
+	
     #wrapper {
         padding-left: 250px;
     }

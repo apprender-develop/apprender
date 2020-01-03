@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unidad-Apprender</title>
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link href="{{asset('/css/jamarrom/reset.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/jamarrom/fonts.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/jamarrom/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/jamarrom/utilidades.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/jamarrom/style.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/jamarrom/animations.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/jamarrom/responsive.css')}}" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .Modal {
+            position: fixed;
+        }
+
+        .ModalGlosario-ContentList--MiPerfil {
+            width: 512px;
+            height: 538px;
+            overflow-y: scroll;
+        }
+    </style>
+
+    <!-- HTML 5 for older browsers -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+				<script src="../js/html5.js"></script>
+            <![endif]-->
+        <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
+    <script src="{{asset('/js/jamarrom/jquery-ui.js')}}"></script>
+    <script src="{{asset('/js/jamarrom/jquery.bxslider.min.js')}}"></script>
+    <script src="{{asset('/js/jamarrom/index.js')}}"></script>
+</head>
+
+<body>
+    @include('layouts.navbar2')
+    @include('cursos.1._glosario')
+    @include('cursos.1._descarga')
+
+    <header class="Unidad-Header u-imagenFondoCover u-textRight">
+        <h2 class="Unidad-Title">BÁSICO DE SEGURIDAD Y PROTECCIÓN AMBIENTAL</h2>
+
+
+        <ul class="Unidad-ListHeader u-textRight u-inline-block">
+            <li class="icoGlosario u-inline-block">
+                <a class="u-inline-block">GLOSARIO</a>
+            </li>
+            <li class="icoDescarga u-inline-block">
+                <a class=" u-inline-block">DESCARGAS</a>
+            </li>
+        </ul>
+        <div class="u-textRight u-inline-block">
+            <a class="Unidad-BtnEvaluciones u-boton u-inline-block u-redondeado--05 u-textCenter">Evaluaciones</a>
+
+            <p class="Unidad-TxtProgreso u-inline-block">Progreso: </p>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width:50%">
+                    50%
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="Unidad-Content u-imagenFondoCover u-textLeft">
+        <a href="{{route('curso', ['curso_id' => 1])}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
+
+        @include("cursos.1.unidad2.$tema")
+
+    </section>
+
+    @include('layouts._footer')
+
+</body>
+
+</html>

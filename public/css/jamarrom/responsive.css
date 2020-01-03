@@ -32,9 +32,6 @@
 		font-size: 45px;
 	}
 
-	.Curso-ListUnidades {
-		width: 225px;
-	}
 
 	.Curso-ListUnidades p {
 		font-size: 28px;
@@ -87,10 +84,6 @@
 		width: 100%;
 		background: #f0f0f0;
 		text-align: center;
-	}
-
-	.MainNav-Logo {
-		margin: 30px auto;
 	}
 
 	.MainNav-ContentBottom figure img{

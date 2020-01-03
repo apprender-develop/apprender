@@ -1,6 +1,6 @@
-<div class="ModalProgreso">
+<div class="Modal Modal--Progreso">
     <div class="ModalProgreso-Center u-inline-block">
-        <span class="ModalProgreso-Cerrar u-inline-block">CERRAR <span>x</span></span>
+        <span class="Modal-Cerrar u-inline-block">CERRAR <span>x</span></span>
 
         <h2 class="ModalProgreso-Title u-inline-block">PROGRESO</h2>
 
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="ModalProgreso-ItemTemario">
-                                <p>2.4 Equipo de proteccion personal</p>
+                                <p>2.4 Equipo de protección personal</p>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
                                         aria-valuemax="100" style="width:50%">

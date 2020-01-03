@@ -3,42 +3,65 @@
 	var banModal = true;
 	var banItemProgresoUnidad = true;
 
-	$(document).ready(function() 
+	$(document).ready(function()
 	{
-		
+
 		setTimeout(function(){
-			$(".MainNav-Logo").removeClass("girar");		
+			$(".MainNav-Logo").removeClass("girar");
 		},5800);
 
 		setInterval(function(){
 			$(".MainNav-Logo").addClass("girar");
 
 			setTimeout(function(){
-				$(".MainNav-Logo").removeClass("girar");		
+				$(".MainNav-Logo").removeClass("girar");
 			},5800);
 		},12000);
 
 
-		$('.Inicio-ListMisCursos').eq(0).bxSlider(
+
+		var slider1 = $('.Inicio-ListMisCursos').eq(0).bxSlider(
 		{
 			mode: 'horizontal',
 			auto: true,
+			touchEnabled: false,
+			//pause: 2000,
+			speed: 800,
 			minSlides: 8,
-			pause: 2000,
 			maxSlides: 8,
 			pager: false
 		});
-		
-		$('.Inicio-ListMisCursos').eq(1).bxSlider(
+
+		var slider2 = $('.Inicio-ListMisCursos').eq(1).bxSlider(
 		{
 			mode: 'horizontal',
 			auto: true,
-			pause: 2000,
+			speed: 800,
 			autoDirection: 'prev',
+			touchEnabled: false,
 			minSlides: 8,
 			maxSlides: 8,
 			pager: false
-		});	
+		});
+
+
+		$(".Inicio-ListMisCursos").eq(0).mouseover(function() {
+			slider1.stopAuto();
+		});
+
+		$(".Inicio-ListMisCursos").eq(0).mouseout(function() {
+			slider1.startAuto();
+		});
+
+		$(".Inicio-ListMisCursos").eq(1).mouseover(function() {
+			slider2.stopAuto();
+		});
+
+		$(".Inicio-ListMisCursos").eq(1).mouseout(function() {
+			slider2.startAuto();
+		});
+
+
 
 		$(".MainNav-BtnOcultar").click(function()
 		{
@@ -65,18 +88,42 @@
 			}
 		});
 
-		$(".MainNav-ItemList").eq(2).click(function()
+		//Cerrar modal
+		$(".Modal-Cerrar").click(function()
 		{
-			$(".ModalProgreso").fadeIn();
-			banModal = false;
-		});
-				
-		$(".ModalProgreso-Cerrar").click(function()
-		{
-			$(".ModalProgreso").fadeOut();
-			banModal = true;
+			$(".Modal").fadeOut();
 		});
 
+		//Modal mi perfil
+		$(".MainNav-ItemList").eq(0).click(function()
+		{
+            $(".Modal--MiPerfil").fadeIn();
+		});
+
+		//Modal evaluciones
+		$(".MainNav-ItemList").eq(1).click(function()
+		{
+			$(".Modal--Evaluaciones").fadeIn();
+		});
+
+		$(".ModalEvaluaciones-Cerrar").click(function()
+		{
+			$(".Modal--Evaluaciones").fadeOut();
+		});
+
+		//Modal progreso
+		$(".MainNav-ItemList").eq(2).click(function()
+		{
+			$(".Modal--Progreso").fadeIn();
+		});
+
+		$(".ModalProgreso-Cerrar").click(function()
+		{
+			$(".Modal--Progreso").fadeOut();
+		});
+
+
+		//List Modal progreso
 		$(".ModalProgreso-ItemCursoList").click(function(){
 			$(".ModalProgreso-ItemCursoList").removeClass("activo");
 			$(this).addClass("activo");
@@ -89,58 +136,43 @@
 		});
 
 
-
+		//Modal Glosario
 		$(".Unidad-ListHeader li a").eq(0).click(function()
 		{
-			$(".ModalGlosario").fadeIn();
-			banModal = false;
+			$(".Modal--Glosario").fadeIn();
 		});
-				
+
 		$(".ModalGlosario-Cerrar").click(function()
 		{
-			$(".ModalGlosario").fadeOut();
-			banModal = true;
+			$(".Modal--Glosario").fadeOut();
 		});
 
 
+		//Modal descargar
 		$(".Unidad-ListHeader li a").eq(1).click(function()
 		{
-			$(".ModalDescargas").fadeIn();
-			banModal = false;
+			$(".Modal--Descargas").fadeIn();
 		});
-				
+
 		$(".ModalDescargar-Cerrar").click(function()
 		{
-			$(".ModalDescargas").fadeOut();
-			banModal = true;
+			$(".Modal--Descargas").fadeOut();
 		});
 
 
-		$(".MainNav-ItemList").eq(1).click(function()
-		{
-			$(".ModalEvaluaciones").fadeIn();
-			banModal = false;
-		});
-				
-		$(".ModalEvaluaciones-Cerrar").click(function()
-		{
-			$(".ModalEvaluaciones").fadeOut();
-			banModal = true;
-		});
-
-
+		//Modal ayuda
 		$(".MainNav-ItemMenu2").eq(1).click(function()
 		{
 			$(".ModalAyuda").fadeIn();
 		});
-				
+
 		$(".ModalAyuda-Cerrar").click(function()
 		{
 			$(".ModalAyuda").fadeOut();
 		});
 
 
-
+		///Tab unidades
 		$(".Curso-ListUnidades li").each(function(m)
 		{
 			if(m==1 || m==3){
@@ -148,14 +180,110 @@
 				{
 					$(".Curso-ListUnidades li").removeClass('activo');
 					$(this).addClass('activo');
-	
+
 					$(".Unidad-ListMenuUnidad").animate({'opacity':'0'}, 100);
 					$(".Unidad-ListMenuUnidad").css({display:'none'});
-	
+
 					$(".Unidad-ListMenuUnidad").eq(m).css({display:'block'});
 					$(".Unidad-ListMenuUnidad").eq(m).animate({'opacity':'1'}, 200);
 				});
-			}			
+			}
 		});
-	}); 
-			
+
+		$(".BtnRecuperar").click(function()
+		{
+			$(".RecuperarContrasenia").toggle("slow");
+		});
+
+		$("#EvaluaContenido .MiPerfil-IcoEstrella").each(function(m)
+		{
+			$(this).click(function()
+			{
+				var calificacion = ((m+1)*2);
+
+				$(".MiPerfil-CalificacionEValuacion").eq(0).html("<strong>"+calificacion+"</strong>");
+
+				$("#EvaluaContenido .MiPerfil-IcoEstrella").addClass("InActiva");
+
+				for(var a=0; a<(m+1); a++){
+					$("#EvaluaContenido .MiPerfil-IcoEstrella").eq(a).removeClass("InActiva");
+				}
+
+			});
+		});
+
+
+		$("#EvaluaFacil .MiPerfil-IcoEstrella").each(function(m)
+		{
+			$(this).click(function()
+			{
+				var calificacion = ((m+1)*2);
+
+				$(".MiPerfil-CalificacionEValuacion").eq(1).html("<strong>"+calificacion+"</strong>");
+
+				$("#EvaluaFacil .MiPerfil-IcoEstrella").addClass("InActiva");
+
+				for(var a=0; a<(m+1); a++){
+					$("#EvaluaFacil .MiPerfil-IcoEstrella").eq(a).removeClass("InActiva");
+				}
+
+			});
+		});
+
+
+		$("#EvaluaGraficos .MiPerfil-IcoEstrella").each(function(m)
+		{
+			$(this).click(function()
+			{
+				var calificacion = ((m+1)*2);
+
+				$(".MiPerfil-CalificacionEValuacion").eq(2).html("<strong>"+calificacion+"</strong>");
+
+				$("#EvaluaGraficos .MiPerfil-IcoEstrella").addClass("InActiva");
+
+				for(var a=0; a<(m+1); a++){
+					$("#EvaluaGraficos .MiPerfil-IcoEstrella").eq(a).removeClass("InActiva");
+				}
+
+			});
+		});
+
+
+		$("#EvaluaInteractivo .MiPerfil-IcoEstrella").each(function(m)
+		{
+			$(this).click(function()
+			{
+				var calificacion = ((m+1)*2);
+
+				$(".MiPerfil-CalificacionEValuacion").eq(3).html("<strong>"+calificacion+"</strong>");
+
+				$("#EvaluaInteractivo .MiPerfil-IcoEstrella").addClass("InActiva");
+
+				for(var a=0; a<(m+1); a++){
+					$("#EvaluaInteractivo .MiPerfil-IcoEstrella").eq(a).removeClass("InActiva");
+				}
+
+			});
+		});
+
+
+		$("#EvaluaIntuitivo .MiPerfil-IcoEstrella").each(function(m)
+		{
+			$(this).click(function()
+			{
+				var calificacion = ((m+1)*2);
+
+				$(".MiPerfil-CalificacionEValuacion").eq(4).html("<strong>"+calificacion+"</strong>");
+
+				$("#EvaluaIntuitivo .MiPerfil-IcoEstrella").addClass("InActiva");
+
+				for(var a=0; a<(m+1); a++){
+					$("#EvaluaIntuitivo .MiPerfil-IcoEstrella").eq(a).removeClass("InActiva");
+				}
+
+			});
+		});
+
+
+	});
+

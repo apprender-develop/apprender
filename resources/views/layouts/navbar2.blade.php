@@ -7,10 +7,12 @@
     <p class="MainNav-TxtLogo u-inline-block"><a href="{{route('home')}}"><strong class="u-inline-block">Apprender</strong></a> <span class="u-inline-block">Plataforma de Capatación Integral</span></p>
 
     <a class="MainNav-BtnCerrar u-floatRight" href="{{ route('logout') }}" onclick="event.preventDefault();
-        document.getElementById('logout-form').submit();"></a>
+    document.getElementById('logout-form').submit();"><span>Salir</span></a>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         @csrf
     </form>
+    <a class="MainNav-BtnAyuda u-floatRight"><span>Guía</span></a>
+    <a class="MainNav-BtnPreguntas u-floatRight"><span>Ayuda</span></a>
 
     <div class="MainNav-ContentPerfil u-floatRight">
         <ul class="MainNav-List u-textLeft">

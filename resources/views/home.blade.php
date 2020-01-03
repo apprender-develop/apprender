@@ -3,11 +3,12 @@
 @section('style')
     <link href="{{asset('/css/jamarrom/reset.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('/css/jamarrom/fonts.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/jamarrom/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('/css/jamarrom/utilidades.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/jamarrom/jquery.bxslider.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('/css/jamarrom/style.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('/css/jamarrom/animations.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('/css/jamarrom/responsive.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('/css/jamarrom/jquery.bxslider.css')}}" rel="stylesheet" type="text/css">
 @endsection
 
 @section('bodyClass')
@@ -17,10 +18,11 @@
 @section('content2')
     @include('modal._progreso')
     @include('modal._evaluaciones')
+
     <section class="Inicio u-imagenFondoCover">
         <ul class="Inicio-ListMisCursos u-textCenter">
             <li class="u-inline-block">
-                <a href="curso1.php" class="Inicio-ItemMisCursos u-inline-block">
+                <a href="{{route('curso', ['curso_id' => 1])}}" class="Inicio-ItemMisCursos u-inline-block">
                     <figure class="Inicio-ImgItemMisCursos u-redondeado--05 u-imagenFondoCover u-inline-block" style="background-image: url(../images/cursos/destacadacurso1.jpg)"></figure>
                    <p class="u-box-sizing u-efecto u-redondeado--05">
                        Básico de Seguridad y Protección Ambiental
@@ -110,12 +112,7 @@
             </li>
        </ul>
 
-        <figure class="Inicio-Logos u-textRight">
-           <img src="../images/pemexOGO.png" alt="Pemex">
-           <img width="50px" src="../images/sspaLOGO.png" alt="SSPA">
-       </figure>
    </section>
-</div>
 @endsection
 
 @section('javascript')

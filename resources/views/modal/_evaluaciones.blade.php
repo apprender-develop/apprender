@@ -1,6 +1,6 @@
-<div class="ModalEvaluaciones">
+<div class="Modal Modal--Evaluaciones">
     <div class="ModalProgreso-Center u-inline-block">
-        <span class="ModalEvaluaciones-Cerrar u-inline-block">CERRAR <span>x</span></span>
+        <span class="Modal-Cerrar u-inline-block">CERRAR <span>x</span></span>
 
         <h2 class="ModalProgreso-Title u-inline-block">EVALUACIONES</h2>
 

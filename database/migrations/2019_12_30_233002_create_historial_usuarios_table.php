@@ -16,7 +16,10 @@ class CreateHistorialUsuariosTable extends Migration
         Schema::create('historial_usuarios', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id')->unsigned();
+            $table->integer('direccion_id')->unsigned();
+            $table->integer('terminal_id')->unsigned();
             $table->integer('accion_id')->unsigned();
+            $table->string('current_url')->nullable();
             $table->string('extra')->nullable();
             $table->timestamps();
             $table->softDeletes();

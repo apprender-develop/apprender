@@ -1,0 +1,75 @@
+
+
+.ContentPregunta{
+	min-width: 665px;
+}
+
+.Pregunta-Title{
+	color: #0351af;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.Pregunta-List{
+	margin-bottom: 20px;
+}
+
+.Pregunta-Btn{
+	display: inline-block;
+	padding-top: 5px;
+	margin: 60px 0px;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.Pregunta-Btn--Ant{
+	display: none;
+}
+
+.Pregunta-Btn--Sig{
+
+}
+
+.Pregunta-Col{
+	width: 40%;
+}
+
+.Pregunta-Resultados{
+	width: 425px;
+    padding-bottom: 80px;
+}
+
+.Pregunta-IcoEstrella{
+	width: 80px;
+    height: 80px;
+    background: url(/images/star1.png) no-repeat;
+    margin-top: 14px;
+}
+
+
+.Pregunta-IcoEstrella.InActiva{
+    background: url(/images/star0.png) no-repeat;
+}
+
+.Pregunta-Calificacion{
+	color: #0351af;
+	font: 40px 'fjallaoneregular';
+	margin-top: 29px;
+}
+
+.Pregunta-TxtsResultados{
+	max-width: 428px;
+	font-family: 'open_sansbold';
+	margin-bottom: 16px;
+}
+
+.Pregunta-TxtsResultados a{
+	color: #3fa8f0;
+}
+
+
+.Pregunta-TxtsResultados a:hover{
+    color: #0351af;
+}
+
+

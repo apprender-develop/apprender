@@ -6,8 +6,8 @@
 
 				$("#btnEntrar").click(function()
 				{
-					if(validar_campo("#txtNombre",11,"Nombre completo"))
-						if(validar_campo("#txtNoFicha",10,"No de ficha"))
+					if(validar_campo("#txtNombre",5,"Nombre completo"))
+						if(validar_campo("#txtNoFicha",6,"No de ficha"))
 						{					
 							$(".Notificaciones-Cargado img").css({"display": "inline"});
 							
