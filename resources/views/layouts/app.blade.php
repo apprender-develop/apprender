@@ -29,10 +29,12 @@
     @include('layouts.navbar2')
 
     @yield('content2')
-    @include('modal._progreso')
-    @include('modal._evaluaciones')
-    @include('modal._perfil')
-    @include('modal._ayuda')
+    @auth
+        @include('modal._progreso')
+        @include('modal._evaluaciones')
+        @include('modal._perfil')
+        @include('modal._ayuda')
+    @endauth
     @include('layouts._footer')
     @yield('javascript')
     @stack('javascript')

@@ -1,65 +1,85 @@
-@extends('layouts.app')
+@extends('layouts.app2')
+
+@section('style')
+<link href="{{asset('/css/jamarrom/reset.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/jamarrom/fonts.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/jamarrom/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/jamarrom/utilidades.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/jamarrom/jquery.bxslider.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/jamarrom/style.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/jamarrom/animations.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/jamarrom/responsive.css')}}" rel="stylesheet" type="text/css">
+@endsection
+
+@section('javascript')
+<script type="text/javascript" src="{{asset('/js/jamarrom/jquery-ui.js')}}"></script>
+<script type="text/javascript" src="{{asset('/js/jamarrom/login.js')}}"></script>
+<script type="text/javascript" src="{{asset('/js/funciones.js')}}"></script>
+@endsection
+
+@section('bodyClass')
+Autentificacion-Ajuste u-imagenFondoCover
+@endsection
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('password.update') }}">
-                        @csrf
+<article class="Login" id="login">
+    <h1 class="Login-Logo slideDown"><span>Apprender</span></h1>
+    <form name="form-login" id="form-login" class="Login-Form u-redondeado--1 u-desaparecer" method="POST" action="{{ route('password.update') }}">
+        @csrf
 
-                        <input type="hidden" name="token" value="{{ $token }}">
+        <input type="hidden" name="token" value="{{ $token }}">
+        <p class="Login-Titulo u-textLeft">
+            Reestablecer contraseña
+        </p>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+        <input type="email" name="email" id="txtEmail" class="text u-box-sizing required  u-redondeado--05"
+            placeholder="Correo institucional" onfocus="if(this.value == 'Correo institucional') { this.value = ''; }"
+            value="{{ $email ?? old('email') }}" required>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Reset Password') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <input type="password" name="password" id="txtPassword" class="text u-box-sizing required  u-redondeado--05"
+            placeholder="Nueva contraseña" required>
+        <input type="password" name="password_confirmation" id="txtPasswordConfirmation" class="text u-box-sizing required  u-redondeado--05"
+            placeholder="Reescribir contraseña" required>
+        @error('email')
+            {{-- <span class="invalid-feedback" role="alert"> --}}
+            <strong>{{ $message }}</strong>
+            {{-- </span> --}}
+        @enderror
+        <div class="u-textRight">
+            <input type="submit" name="btnEntrar" id="btnEntrar"
+                class="Login-Boton u-boton u-efecto u-textCenter u-redondeado--05 u-inline-block" value="ENVIAR">
         </div>
-    </div>
-</div>
+
+        <p class="u-textRight"><a href="index.php" class="Login-TxtTengoCuenta u-inline-block"
+                href="autentificacion.php"><strong>
+                    << Regresar</strong> </a> </p> <figure class="Notificaciones-Cargado u-textCenter">
+                        <img src="images/loading.gif" alt="Cargando..." />
+                        </figure>
+    </form>
+
+    <?php
+         if(isset($_POST['btnEntrar']))
+        {
+            if(!empty($msj))
+              {
+      ?>
+    <p class="Login-Msj u-textCenter">
+        <strong><?php echo $msj;?></strong>
+    </p>
+
+    <script type="text/javascript">
+        setTimeout(function()
+          {
+              $(".Login-Msj").slideUp("slow");
+          },3000);
+    </script>
+    <?php
+          }
+        }
+      ?>
+
+
+    <figure class="Login-ImgSSPA slideUp"></figure>
+</article>
 @endsection

@@ -25,7 +25,7 @@
 
     @yield('style')
 </head>
-<body>
+<body class="@yield('bodyClass')">
     @yield('content')
     @yield('javascript')
     @stack('javascript')

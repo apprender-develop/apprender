@@ -4,8 +4,11 @@
         <span class="MainNav-Logo girar u-inline-block"></span>
     </figure>
 
-    <p class="MainNav-TxtLogo u-inline-block"><a href="{{route('home')}}"><strong class="u-inline-block">Apprender</strong></a> <span class="u-inline-block">Plataforma de Capatación Integral</span></p>
+    <p class="MainNav-TxtLogo u-inline-block"><a href="{{route('home')}}"><strong
+                class="u-inline-block">Apprender</strong></a> <span class="u-inline-block">Plataforma de Capatación
+            Integral</span></p>
 
+    @auth
     <a class="MainNav-BtnCerrar u-floatRight" href="{{ route('logout') }}" onclick="event.preventDefault();
     document.getElementById('logout-form').submit();"><span>Salir</span></a>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -23,4 +26,5 @@
     </div>
 
     <p class="MainNav-TxtNomUsu u-floatRight"><strong>{{Auth::user()->nombreCompleto}}</strong></p>
+    @endauth
 </nav>
