@@ -17,7 +17,11 @@ class AccionesTableSeeder extends Seeder
         $datos = [
             ['nombre' => 'Inicio de sesión'],
             ['nombre' => 'Cierre de sesión'],
-            ['nombre' => 'Ingreso a págino']
+            ['nombre' => 'Ingreso a página']
         ];
+
+        foreach ($datos as $dato) {
+            $model->firstorcreate($dato);
+        }
     }
 }

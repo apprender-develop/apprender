@@ -20,6 +20,7 @@ class CreateHistorialUsuariosTable extends Migration
             $table->integer('terminal_id')->unsigned();
             $table->integer('accion_id')->unsigned();
             $table->string('current_url')->nullable();
+            $table->string('method')->nullable();
             $table->string('extra')->nullable();
             $table->timestamps();
             $table->softDeletes();
