@@ -46,7 +46,7 @@ Autentificacion-Ajuste u-imagenFondoCover
                 class="Login-Boton u-boton u-efecto u-textCenter u-redondeado--05 u-inline-block" value="ENVIAR">
         </div>
 
-        <p class="u-textRight"><a href="index.php" class="Login-TxtTengoCuenta u-inline-block"
+        <p class="u-textRight"><a href="{{route('login')}}" class="Login-TxtTengoCuenta u-inline-block"
                 href="autentificacion.php"><strong>
                     << Regresar</strong> </a> </p> <figure class="Notificaciones-Cargado u-textCenter">
                         <img src="images/loading.gif" alt="Cargando..." />
