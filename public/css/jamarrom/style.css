@@ -59,7 +59,7 @@ input, textarea
 	width: 95%;
 	height: 35px;
 	font: 16px 'open_san';
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fff;
 	border: 2px solid #2d292f;
 	margin: 0px;
