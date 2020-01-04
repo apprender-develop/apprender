@@ -30,7 +30,7 @@
     <!--[if lt IE 9]>
 				<script src="../js/html5.js"></script>
             <![endif]-->
-        <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
     <script src="{{asset('/js/jamarrom/jquery-ui.js')}}"></script>
     <script src="{{asset('/js/jamarrom/jquery.bxslider.min.js')}}"></script>
     <script src="{{asset('/js/jamarrom/index.js')}}"></script>
@@ -99,25 +99,24 @@
 
     <header class="Unidad-Header u-imagenFondoCover u-textRight">
         <h2 class="Unidad-Title">BÁSICO DE SEGURIDAD Y PROTECCIÓN AMBIENTAL</h2>
-
-
         <ul class="Unidad-ListHeader u-textRight u-inline-block">
             <li class="icoGlosario u-inline-block">
                 <a class="u-inline-block">GLOSARIO</a>
             </li>
             <li class="icoDescarga u-inline-block">
-                <a class=" u-inline-block">DESCARGAS</a>
+                <a class="u-inline-block">DESCARGAS</a>
             </li>
         </ul>
+
         <div class="u-textRight u-inline-block">
             <a class="Unidad-BtnEvaluciones u-boton u-inline-block u-redondeado--05 u-textCenter">Evaluaciones</a>
 
             <p class="Unidad-TxtProgreso u-inline-block">Progreso: </p>
 
             <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                    style="width:50%">
-                    50%
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                    style="width:30%">
+                    30%
                 </div>
             </div>
         </div>
@@ -125,10 +124,9 @@
 
 
     <section class="Unidad-Content u-imagenFondoCover u-textLeft">
-        <a href="{{route('curso', ['curso_id' => 1])}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
-
+        <a href="{{url()->previous().'?unidad=4'}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
+        {{-- <a href="curso1.php" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a> --}}
         @include("cursos.1.unidad4.$tema")
-
     </section>
 
     @include('layouts._footer')

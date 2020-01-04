@@ -1,0 +1,53 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+     
+        <title>Evaluacion</title> 
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+        <link href="example.css" media="all" rel="stylesheet" type="text/css" /> 
+         
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+        <script type="text/javascript" src="jquery.drag-blank-quiz.js"></script> 
+
+        <script type="text/javascript"> 
+         
+            $(document).ready(function(){
+                $('.quiz').dragBlankQuiz();
+            });
+         
+        </script> 
+     
+    </head> 
+    <body> 
+     
+        <div class="quiz" data-fake-answers='["como te llamas", "en casa de la vecina", "en algun lugar","blanco"]'>
+
+            <ol class="qs">
+                <li>Pregunta numero 1<span class="quiz-answer">como te llamas</span>.</li>
+                <li>Donde te Agarro el temblor? <span class="quiz-answer">en casa de la vecina</span>?</li>
+                <li>Donde se te perdio <span class="quiz-answer">en algun lugar</span> la cartera?</li>
+                <li>de que color era el caballo blanco de napoleon? <span class="quiz-answer">blanco</span>.</li>
+            </ol>
+            
+        </div>
+
+
+        <div class="quiz" 
+            data-fake-answers='["snake", "jungle", "buildings"]'>
+
+            <p class="qp">
+                You're in a <span class="quiz-answer">desert</span> walking
+                along in the <span class="quiz-answer">sand</span> when all of
+                the sudden you look down, and you see a <span
+                    class="quiz-answer">tortoise</span>. It's crawling toward
+                you. You reach down, you flip the tortoise over on its back.
+            </p>
+
+        </div>
+
+     
+     
+    </body> 
+</html> 
+ 

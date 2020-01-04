@@ -65,3 +65,7 @@ Route::post('/calificar', 'CalificarController@calificar')->middleware('auth')->
 Route::post('/encuesta', 'EncuestaController@guardar')->middleware('auth')->name('encuesta');
 
 Route::get('/test/useragent', 'SandboxController@useragent');
+
+Route::get('/iframe/vestir', function(){
+    return view('iframe.unidad2.vestir');
+});

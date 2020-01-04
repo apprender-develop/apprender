@@ -345,7 +345,7 @@
                 <div class="col-lg-12">
 
                     <iframe scrolling="no" frameborder="0" width="100%" height="666px"
-                        src="../iframe/unidad2/pruebavestir.html"></iframe>
+                        src="/iframe/vestir"></iframe>
 
                 </div>
 
