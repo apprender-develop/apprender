@@ -295,8 +295,9 @@ function modalExtintor(pos) {
 	$(".ModalExtintor-TitleContent").html(listExtintores[posicion][1]);
 	$(".ModalExtintor-Content div").html(listExtintores[posicion][3]);
 	$(".ModalExtintor-Content source").attr("src", "/audio/4_5/" + (listExtintores[posicion][2]));
-
-
+    let audioext = document.getElementById('audio-extintor')
+    audioext.setAttribute("src", "/audio/4_5/" + (listExtintores[posicion][2]));
+    audioext.load()
 	$(".Modal--Extintor").fadeIn();
 }
 

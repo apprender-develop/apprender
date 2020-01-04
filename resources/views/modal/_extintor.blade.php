@@ -13,7 +13,7 @@
 
                 <div></div>
 
-                <audio controls="">
+                <audio id="audio-extintor" controls="">
                     <source src="../audio/4_5/4_5_01_Agua.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
