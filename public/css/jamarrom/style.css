@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    /*height: 100%;*/
 }
 
 body
@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6
 
 a, a:before
 {
- 	color: #ffffff !important;
+ 	color: #ffffff;
  	-webkit-transition: all 300ms ease-out;
  	-moz-transition: all 300ms ease-out;
  	-ms-transition: all 300ms ease-out;
@@ -59,7 +59,7 @@ input, textarea
 	width: 95%;
 	height: 35px;
 	font: 16px 'open_san';
-	color: #000000 !important;
+	color: #000000;
 	background-color: #fff;
 	border: 2px solid #2d292f;
 	margin: 0px;
@@ -360,7 +360,7 @@ legend
 /************************************************************************************/
 
 .BgInicio {
-	background: url(/images/fondos/bgInicio.jpg) center no-repeat;
+	background: url(/images/fondos/bgInicio.jpg) fixed center no-repeat;
 }
 
 .MainNav {
@@ -495,7 +495,7 @@ legend
 }
 
 .MainNav-List li {
-	/*background: url(../images/lineaItemMenu.png) left bottom no-repeat;
+	/*background: url(/images/lineaItemMenu.png) left bottom no-repeat;
 	padding-top: 5px;
     padding-bottom: 6px;*/
 }
@@ -727,7 +727,7 @@ legend
 
 
 .Unidad {
-	/*background: url(../images/fondos/bgInicio.jpg) center no-repeat;*/
+	/*background: url(/images/fondos/bgInicio.jpg) center no-repeat;*/
     /*padding-left: 315px;*/
 }
 
@@ -839,7 +839,7 @@ legend
 
 
 .Unidad-ListMenuUnidad li a.NoDisponible{
-	color: #6b6b6b !important;
+	color: #6b6b6b;
 }
 
 .Unidad-ListMenuUnidad li a:hover {
@@ -871,6 +871,33 @@ legend
 }
 
 
+.Unidad-ContentVideo {
+	width: 30%;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+
+.Unidad-ContentVideo p{
+	color: #0351af;
+}
+
+.Unidad-ContentVideo video{
+	width: 100%;
+}
+
+
+.Unidad-TxtVideo {
+	width: 100%;
+}
+
+.Unidad-TxtVideo video{
+	width: 80%;
+}
+
+.Unidad-Carrusel {
+	width: 100% !important;
+}
+
 /****************************************************************************************************/
 
 .Modal{
@@ -897,7 +924,7 @@ legend
 }
 
 .ModalProgreso-Center{
-	width: 1044px;
+	width: 1046px;
 	color: #fff;
 	position: relative;
 	top: 5%;
@@ -905,6 +932,11 @@ legend
 
 .ModalProgreso-Center--MiPerfil{
 	width: 550px;
+}
+
+
+.ModalProgreso-Center--Extintor {
+	width: 570px;
 }
 
 .ModalDescargas-Center{
@@ -924,7 +956,7 @@ legend
     margin-right: 50px;
 }
 
-.ModalProgreso-ContentList, .ModalGlosario-ContentList,.ModalDescargas-ContentList, .ModalEvaluaciones-ContentList{
+.ModalProgreso-ContentList, .ModalGlosario-ContentList,.ModalDescargas-ContentList, .ModalEvaluaciones-ContentList, .ModalExtintor-ContentList{
 	width: 682px;
     height: 681px;
     background-color: rgba(0,0,0,0.30);
@@ -939,6 +971,15 @@ legend
     padding-top: 16px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.ModalExtintor-ContentList{
+	width: 510px;
+	height: 550px;
+	font-size: 15.5px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 29px;
 }
 
 .ModalGlosario-ContentList--MiPerfil{
@@ -1097,6 +1138,23 @@ legend
     margin-right: 20px;
 }
 
+.ModalExtintor-Img img{
+	width: 70px;
+}
+
+.ModalExtintor-Content{
+	width:  400px;
+	margin-left: 30px;
+}
+
+.ModalExtintor-Content p{
+	margin-bottom: 15px;
+}
+
+.ModalExtintor-Content audio{
+	margin-top: 40px;
+}
+
 /************************************************************************************************************/
 
 .Modal--MiPerfil a:hover
@@ -1109,7 +1167,7 @@ legend
 }
 
 .BtnRecuperar{
-	margin-top: 20px;
+	margin-top: -24px;
 }
 
 .BtnEvaluanos{
@@ -1277,3 +1335,4 @@ legend
 .Footer a:hover{
 	color: #fff;
 }
+
