@@ -9,7 +9,7 @@
 .u-size-center
 {
  	height: auto;
- 	margin: 0px auto;	
+ 	margin: 0px auto;
  	float: none !important;
 }
 
@@ -55,7 +55,7 @@
 	-o-border-radius: 0.4em;
 	-moz-border-radius: 0.4em;
 	-ms-border-radius: 0.4em;
-	border-radius: 0.4em; 
+	border-radius: 0.4em;
 	behavior: url('PIE/PIE.htc');
 }
 
@@ -95,7 +95,7 @@
 	-o-border-radius: 100%;
 	-moz-border-radius: 100%;
 	-ms-border-radius: 100%;
-	border-radius: 100%;			
+	border-radius: 100%;
 	behavior: url('PIE/PIE.htc');
 }
 
@@ -109,7 +109,7 @@
     width: 295px;
     width: 127px;
     height: 28px;
-    color: #fff;
+    color: #fff !important;
     font: 16px 'open_sansbold';
     background-color: #3fa8f0;
     line-height: normal;
@@ -179,10 +179,10 @@
  	overflow: hidden;
  	position: relative;
  	cursor: pointer;
- 	/*padding-top: 10px;*/	
+ 	/*padding-top: 10px;*/
 }
 
-.u-subirArchivo .input-file 
+.u-subirArchivo .input-file
 {
 	margin: 0;
 	padding: 0;
@@ -266,12 +266,12 @@
 	{
 		background-size: 100% 100% !important;
 	}
-	
+
 	.u-imagenFondo100
 	{
 		background-size: 100% !important;
 	}
-	
+
 	.u-imagenFondoCover
 	{
 		-webkit-background-size: cover !important;
@@ -280,7 +280,7 @@
 		-ms-background-size: cover !important;
 		background-size: cover !important;
 	}
-	
+
 /*}*/
 
 /*@media only screen and (max-width: 1143px)
@@ -297,7 +297,7 @@
 	-o-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	box-sizing: border-box;		
+	box-sizing: border-box;
 }
 
 .u-position-absolute
