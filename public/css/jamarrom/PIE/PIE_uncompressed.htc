@@ -341,7 +341,7 @@ PIE.GradientUtil = {
     }
 
 };/**
- * 
+ *
  */
 PIE.Observable = function() {
     /**
@@ -1254,7 +1254,7 @@ PIE.BoundsInfo.prototype = {
     },
 
     getBounds: function() {
-        return this._locked ? 
+        return this._locked ?
                 ( this._lockedBounds || ( this._lockedBounds = this.getLiveBounds() ) ) :
                 this.getLiveBounds();
     },
@@ -1734,7 +1734,7 @@ PIE.BackgroundStyleInfo = PIE.StyleInfoBase.newStyleInfo( {
         }
         return val;
     },
-    
+
     /**
      * The isActive logic is slightly different, because getProps() always returns an object
      * even if it is just falling back to the native background properties.  But we only want
@@ -2509,7 +2509,7 @@ PIE.RendererBase = {
     },
 
     unhideBorder: function() {
-        
+
     },
 
 
@@ -3859,7 +3859,7 @@ PIE.IE9BorderImageRenderer = PIE.RendererBase.newRenderer( {
             addImage( elW - widthR, 0, widthR, widthT, imgW - sliceR, 0, sliceR, sliceT, widthR, widthT ); // top right
             addImage( 0, widthT, widthL, middleH, 0, sliceT, sliceL, imgMiddleH, widthL, tileSizeL ); // middle left
             if ( props.fill ) { // center fill
-                addImage( widthL, widthT, centerW, middleH, sliceL, sliceT, imgCenterW, imgMiddleH, 
+                addImage( widthL, widthT, centerW, middleH, sliceL, sliceT, imgCenterW, imgMiddleH,
                           tileSizeT || tileSizeB || imgCenterW, tileSizeL || tileSizeR || imgMiddleH );
             }
             addImage( elW - widthR, widthT, widthR, middleH, imgW - sliceR, sliceT, sliceR, imgMiddleH, widthR, tileSizeR ); // middle right
