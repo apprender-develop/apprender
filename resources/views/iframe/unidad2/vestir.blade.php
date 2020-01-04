@@ -78,7 +78,7 @@ function drop(ev) {
         $('#mono'+img).css('display','block');
         /*divM = document.getElementById('respuesta');
         divM.innerHTML = "Correcto";*/
-        $('#respuesta').css('background','url(images/correcto.png) no-repeat');
+        $('#respuesta').css('background','url(/images/vestir/correcto.png) no-repeat');
         $('#respuesta').css('display','block');
         $('#'+data).css('visibility','hidden');
         lista.push(cont);
@@ -97,7 +97,7 @@ function drop(ev) {
             }
         }
     else {
-        $('#respuesta').css('background','url(images/incorrecto.png) no-repeat');
+        $('#respuesta').css('background','url(/images/vestir/incorrecto.png) no-repeat');
         $('#respuesta').css('display','block');
         /*divM = document.getElementById('respuesta');
         divM.innerHTML = "Incorrecto";*/
