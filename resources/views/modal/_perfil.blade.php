@@ -6,11 +6,13 @@
 
         <div class="ModalGlosario-ContentList ModalGlosario-ContentList--MiPerfil u-inline-block u-textJustify">
 
-            <p class="MiPerfil-Col u-inline-block"><strong>Nombre y apellido: </strong> <br />{{Auth::user()->nombreCompleto}}</p>
-            <p class="MiPerfil-Col u-inline-block u-sinMargen"><strong>No. de ficha</strong> <br />{{Auth::user()->pseudoficha}}</p>
+            <p class="MiPerfil-Col u-inline-block"><strong>Nombre y apellido: </strong>
+                <br />{{Auth::user()->nombreCompleto}}</p>
+            <p class="MiPerfil-Col u-inline-block u-sinMargen"><strong>No. de ficha</strong>
+                <br />{{Auth::user()->pseudoficha}}</p>
             <p><strong>Correo institucional:</strong> <br />{{Auth::user()->email}}</p>
 
-            <p><strong><a class="BtnRecuperar u-inline-block">Cambiar contraseña</a></strong></p>
+            <p class="u-textRight" style="margin-bottom: -3px;"><strong><a class="BtnRecuperar u-inline-block">Cambiar contraseña</a></strong></p>
 
             <form name="formReperarContrasenia" id="formRecuperarContrasenia" class="RecuperarContrasenia" method="post"
                 action="{{route('user.changePassword')}}">
@@ -33,11 +35,12 @@
                     class="Login-Boton u-boton u-efecto u-textCenter u-redondeado--05 u-inline-block" value="Cambiar">
             </form>
 
-            <p><strong><a class="BtnEvaluanos">Evalúanos</a></strong></p>
+            <p class="u-textCenter"><strong><a class="BtnEvaluanos">Evalúanos</a></strong></p>
 
-            <form class="MiPerfil-ContentEvaluaciones" id="formCalificanos" method="POST" action="{{route('calificar')}}">
+            <form class="MiPerfil-ContentEvaluaciones" id="formCalificanos" method="POST"
+                action="{{route('calificar')}}">
                 @csrf
-                <p>En apprender su opinión es importante, agradecemos nos ayudes a mejorar.</p>
+                <p>En Apprender su opinión es importante, agradecemos nos ayude a mejorar continuamente.</p>
 
                 <div>
                     <p class="MiPerfil-TextEvaluacion u-inline-block"><strong>Contenido</strong></p>
@@ -48,7 +51,7 @@
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
-                        <input type="hidden" name="evalua_contenido" id="evalua_contenido">
+                        <input type="hidden" name="evalua_contenido" id="evalua_contenido" value="0">
                     </div>
                 </div>
 
@@ -61,7 +64,7 @@
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
-                        <input type="hidden" name="evalua_facil" id="evalua_facil">
+                        <input type="hidden" name="evalua_facil" id="evalua_facil" value="0">
                     </div>
                 </div>
 
@@ -74,7 +77,7 @@
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
-                        <input type="hidden" name="evalua_graficos" id="evalua_graficos">
+                        <input type="hidden" name="evalua_graficos" id="evalua_graficos" value="0">
                     </div>
                 </div>
 
@@ -87,7 +90,7 @@
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
-                        <input type="hidden" name="evalua_interactivo" id="evalua_interactivo">
+                        <input type="hidden" name="evalua_interactivo" id="evalua_interactivo" value="0">
                     </div>
                 </div>
 
@@ -100,10 +103,11 @@
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
                         <span class="MiPerfil-IcoEstrella u-inline-block u-imagenFondo100 InActiva"></span>
-                        <input type="hidden" name="evalua_intuitivo" id="evalua_intuitivo">
+                        <input type="hidden" name="evalua_intuitivo" id="evalua_intuitivo" value="0">
                     </div>
                 </div>
                 <div class="u-textRight">
+                    <!-- <a class="MiPerfil-BtnCalificar u-inline-block u-boton u-textCenter">Calificar</a> -->
                     <button type="submit" class="MiPerfil-BtnCalificar u-inline-block u-boton u-textCenter">Calificar</button>
                 </div>
             </form>
