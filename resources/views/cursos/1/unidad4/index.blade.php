@@ -95,6 +95,7 @@
     @include('modal._evaluaciones')
     @include('modal._perfil')
     @include('modal._ayuda')
+    @include('modal._extintor')
 
     <header class="Unidad-Header u-imagenFondoCover u-textRight">
         <h2 class="Unidad-Title">BÁSICO DE SEGURIDAD Y PROTECCIÓN AMBIENTAL</h2>
