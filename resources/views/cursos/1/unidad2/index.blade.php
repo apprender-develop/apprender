@@ -100,32 +100,31 @@
         <h2 class="Unidad-Title">BÁSICO DE SEGURIDAD Y PROTECCIÓN AMBIENTAL</h2>
 
 
-        <ul class="Unidad-ListHeader u-textRight u-inline-block">
-            <li class="icoGlosario u-inline-block">
-                <a class="u-inline-block">GLOSARIO</a>
-            </li>
-            <li class="icoDescarga u-inline-block">
-                <a class=" u-inline-block">DESCARGAS</a>
-            </li>
-        </ul>
-        <div class="u-textRight u-inline-block">
-            <a class="Unidad-BtnEvaluciones u-boton u-inline-block u-redondeado--05 u-textCenter">Evaluaciones</a>
+       <ul class="Unidad-ListHeader u-textRight u-inline-block">
+           <li class="icoGlosario u-inline-block">
+               <a class="u-inline-block">GLOSARIO</a>
+           </li>
+           <li class="icoDescarga u-inline-block">
+               <a class=" u-inline-block">DESCARGAS</a>
+           </li>
+       </ul>
+       <div class="u-textRight u-inline-block">
+           <a class="Unidad-BtnEvaluciones u-boton u-inline-block u-redondeado--05 u-textCenter">Evaluaciones</a>
 
-            <p class="Unidad-TxtProgreso u-inline-block">Progreso: </p>
+           <p class="Unidad-TxtProgreso u-inline-block">Progreso: </p>
 
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                    style="width:50%">
-                    50%
-                </div>
-            </div>
-        </div>
-    </header>
-
+           <div class="progress">
+             <div class="progress-bar" role="progressbar" aria-valuenow="50"
+             aria-valuemin="0" aria-valuemax="100" style="width:50%">
+               50%
+             </div>
+           </div>
+       </div>
+   </header>
 
     <section class="Unidad-Content u-imagenFondoCover u-textLeft">
         <a href="{{route('curso', ['curso_id' => 1])}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
-
+        {{-- <a href="{{route('curso', ['curso_id' => 1])}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a> --}}
         @include("cursos.1.unidad2.$tema")
 
     </section>

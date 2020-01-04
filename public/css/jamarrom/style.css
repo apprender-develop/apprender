@@ -807,9 +807,10 @@ legend
 .BtnVolver{
 	color: #293552;
 	font-size: 20.92px;
-	background: url(/images/icoVolver.png) 0px 7px no-repeat;
+	background: url(../images/icoVolver.png) 0px 7px no-repeat;
 	margin-top: 15px;
 	padding-left: 23px;
+	z-index: 99;
 }
 
 .BtnVolver:hover{
