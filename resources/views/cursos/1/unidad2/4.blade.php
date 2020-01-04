@@ -185,9 +185,8 @@
             </div>
 
             <div class="item">
-
                 <h4 class="text-leccion subtitulo-leccion" style="font-size: 1.2vw;text-align: center;">
-                    <b>INSTRUCCIONES:</b> HAZ CLIC EN CADA PIEZA DEL EQUIPO PARA CONOCER SU DESCRIPCIÓN</h4>
+                    <b>INSTRUCCIONES:</b> HAZ CLIC EN CADA PIEZA DEL EQUIPO DE PROTECCIÓN Y CONOCE EL ÓRDEN DE SU POSTURA</h4>
 
                 <br>
 
