@@ -124,7 +124,7 @@
 
 
     <section class="Unidad-Content u-imagenFondoCover u-textLeft">
-        <a href="{{url()->previous().'?unidad=4'}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
+        <a href="{{route('curso', ['curso_id' => 1]).'?unidad=4'}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
         {{-- <a href="curso1.php" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a> --}}
         @include("cursos.1.unidad4.$tema")
     </section>

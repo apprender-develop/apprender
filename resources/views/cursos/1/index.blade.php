@@ -20,6 +20,14 @@
     <script type="text/javascript" src="{{asset('/js/jamarrom/jquery-ui.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/jamarrom/jquery.bxslider.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/jamarrom/index.js')}}"></script>
+
+    <script>
+        $(document).ready(function(){
+            let unidad_lv = {{$unidad_lv}}
+            element_unit = document.getElementById(`unidad-${unidad_lv}`)
+            element_unit.click()
+        })
+    </script>
 @endsection
 
 @section('bodyClass')
@@ -32,11 +40,11 @@
         <h2 class="Unidad-Title u-textRight">BÁSICO DE SEGURIDAD Y PROTECCIÓN AMBIENTAL</h2>
 
         <ul class="Curso-ListUnidades u-inline-block">
-           <li class="u-inline-block u-efecto inActivo">Unidad 1</li>
-           <li class="activo u-inline-block u-efecto">Unidad 2</li>
-           <li class="u-inline-block u-efecto inActivo">Unidad 3</li>
-           <li class="u-inline-block u-efecto">Unidad 4</li>
-           <li class="u-inline-block u-efecto inActivo">Unidad 5</li>
+           <li id="unidad-1" class="u-inline-block u-efecto inActivo">Unidad 1</li>
+           <li id="unidad-2" class="activo u-inline-block u-efecto">Unidad 2</li>
+           <li id="unidad-3" class="u-inline-block u-efecto inActivo">Unidad 3</li>
+           <li id="unidad-4" class="u-inline-block u-efecto">Unidad 4</li>
+           <li id="unidad-5" class="u-inline-block u-efecto inActivo">Unidad 5</li>
        </ul>
    </header>
 

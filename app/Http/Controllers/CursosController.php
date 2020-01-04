@@ -6,9 +6,11 @@ use Illuminate\Http\Request;
 
 class CursosController extends Controller
 {
-    public function show($curso_id)
+    public function show($curso_id, Request $request)
     {
-        return view("cursos.$curso_id.index");
+        // dd($request->all());
+        $unidad_lv = $request->input('unidad', '2');
+        return view("cursos.$curso_id.index", compact('unidad_lv'));
     }
 
     public function unidad($curso_id, $unidad_id, $tema)
