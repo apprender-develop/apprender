@@ -37,12 +37,7 @@
 // Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 Route::post('/user/password-change', 'Auth\CustomController@changePassword')->middleware('auth')->name('user.changePassword');
 
-Route::get('/', function () {
-    if (Auth::user() != null) {
-        return redirect()->route('home');
-    }
-    return view('auth.register');
-});
+Route::get('/', 'GeneralController@welcome');
 
 Auth::routes();
 
@@ -66,6 +61,4 @@ Route::post('/encuesta', 'EncuestaController@guardar')->middleware('auth')->name
 
 Route::get('/test/useragent', 'SandboxController@useragent');
 
-Route::get('/iframe/vestir', function(){
-    return view('iframe.unidad2.vestir');
-});
+Route::get('/iframe/vestir', 'GeneralController@vestir');
