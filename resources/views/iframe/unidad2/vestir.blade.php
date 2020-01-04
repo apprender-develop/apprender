@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Documento sin título</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <link href="/css/jamarrom/unidad2/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
     <style type="text/css">
         .mono {
