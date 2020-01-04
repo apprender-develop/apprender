@@ -5,7 +5,7 @@
  */
 
  /* @import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,500,100); */
- @import url('../../fonts/unidad2/roboto/roboto.css');
+ @import url('/fonts/unidad2/roboto/roboto.css');
 .texto-login{
 	margin-top:40px;
 	width:100%;
@@ -13,16 +13,16 @@
 	float:right;
 	font-family:"Roboto-Light", san-serif;
 	color:rgba(255,255,255,1.00);
-	}
-	
+}
+
 
 .pleca_login{
 	position:fixed;
 	bottom:0;
 	left:0;
 	z-index:2;
-	}
-	
+}
+
 .login{
 	max-width: 300px;
     margin: 80px auto 0;
@@ -33,13 +33,13 @@
     padding: 5%;
 	padding-top: 50px;
     margin-right: 0%;
-	}
-.btn-login{ 
-	background:#1b2c5d; 
-	color:rgba(255,255,255,1.00); 
+}
+.btn-login{
+	background:#1b2c5d;
+	color:rgba(255,255,255,1.00);
 	border:none;
 	float: right;
-	}
+}
 #text-login{
 	color:#FFFFFF;
 	font-family:"Roboto-Light", san-serif;
@@ -48,9 +48,8 @@
 	color:#FFFFFF;
 	font-family:"Roboto-Light", san-serif;
 	text-decoration: underline;
-	
-	}
-	
+}
+
 .cont_unidades{
     padding-top: 50px;
     max-width:645px;
@@ -61,36 +60,35 @@
 	background:#FFFFFF;
 	top:0;
 	border:none;
-	}
+}
 .input-log{
 	border: none;
     padding: 5px;
     height: 36px;
-	}
-	.footer-log{
-		
-	}
+}
+.footer-log{
+
+}
 .text-usuario{
 	text-align:center;
 	color:#FFFFFF;
 	font-family:'Roboto-Regular', sans-serif;
-	}
+}
 .img-user{
 	border-color: #27E7FF !important;
     border: 5px;
     border-style: solid;
     padding: 5px;
-
-	}
+}
 .usuario{
-	    text-indent: 0 !important; 
-		}
+	text-indent: 0 !important;
+}
 .item-menu{
 	color:#FFFFFF;
 	font-family:'Roboto-Regular', sans-serif;
 	border-bottom:1px rgba(255,255,255,0.40) solid;
 	font-size:24px;
-	}
+}
 .logout{
 	position: absolute;
     bottom: 0;
@@ -100,7 +98,7 @@
 	background: #1b3b6e;
     height: 100px;
     padding: 20px;
-	}
+}
 .item-logout{
 	background: #3399cc;
     width: 90%;
@@ -111,11 +109,11 @@
     border-radius: 5px;
 	color: #FFFFFF;
 	font-family:'Roboto-Bold', sans-serif;
-		}
+}
 .item-logout a {
 	color: #FFFFFF;
 	font-family:'Roboto-Bold', sans-serif;
-	}
+}
 .text-unidades{
 	font-family:'Roboto-Regular', sans-serif;
 	text-align:right;
@@ -124,23 +122,23 @@
 	font-size:30px;
 	font-size: 45px;
     margin-right: 55px;
-	}
+}
 .text-unidades2{
 	color:#434343;
 	font-family:'Roboto-Regular', sans-serif;
 	text-align:right;
 	margin-right: 55px;
-	}
+}
 .link-unidad{
 	color:transparent;
 	/*text-shadow: 0px 0px 21.06px rgba(126, 128, 131, 0.75);*/
-	}
+}
 
 .link-unidad:hover{
 	text-decoration:none !important;
 	color:#FFFFFF !important;
 	text-shadow: 0px 0px 21.06px rgba(126, 128, 131, 0.75);
-	}
+}
 .num-unidad{
 	visibility: visible;
     position: relative;
@@ -161,184 +159,189 @@
     /*margin-top: 6px;*/
     border-radius: 50%;
 }
-.link-leccion{    
+.link-leccion{
 	color: #003c6a;
     text-decoration: none;
-	}
-	
-.link-leccion:hover{    
+}
+
+.link-leccion:hover{
 	color: #003c6a;
     text-decoration: none;
-	}
+}
 
 .lecciones-slide{
 	margin-top:50px;
-	}
+}
 .text-leccion{
 	color:#003c6a;
-	font-family: 'Roboto-Light', sans-serif;
 	text-align:right;
 	margin-right: 75px;
-	}
+}
 .img-introlecc{
 	width: 67%;
     height: 80%;
-	}
+}
 .btn-slider{
 	background: #1fa3d4;
     width: 40px !important;
     height: 40px !important;
     padding: 5px;
-	}	
+}
 .subtitulo-leccion{
-	    color: #00a79d;
-		}
+    color: #3fa8f0;
+}
 .cont-video{
-	    margin-left: 35px;
-		}
+	margin-left: 35px;
+}
 .casco{
 	position: absolute;
-    top: 15%;
-    left: 55%;
+    top: 14%;
+    left: 57%;
     width: 340px;
-	}
+}
 .casco>a:hover, .casco>a:focus {
-	background:url(../../plataforma/vistas/curso1/unidad2/epp/images/play.png) center center no-repeat;
-}	
+	background:url(/images/play.png) center center no-repeat;
+}
 .casco-punto{
 	position: absolute;
-    top: 8%;
-    left: 49%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-casco.png);
+    top: 1%;
+    left: 50%;
+    background: url(/images/punto-monja.png) no-repeat;
+    transform: rotate(230deg);
     width: 128px;
     height: 82px;
 }
-.casco h4{    
+.casco h4{
 	width: 100%;
-    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
     padding: 10px;
     color: #FFF;
     font-size: 14px;
 	font-family:'Roboto-Regular', sans-serif;
-	}
+}
 .img-pieza{
 	width:100%;
-	height:100%;
-	}	
+    height:100%;
+    margin-top: 5px;
+    margin-left: 9px;
+}
 .back-piezas{
-	background: url(../../plataforma/vistas/curso1/unidad2/epp/images/back_piezas.png) no-repeat;
+	background: url(/images/back_piezas.png) no-repeat;
     background-position: right center;
-	}
+}
 .pantalon{
 	position: absolute;
     top: 42%;
     left: 58%;
     width: 340px;
-	}
+}
 .pantalon h4{
 	 width: 100%;
-    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
     padding: 10px;
     color: #FFF;
     font-size: 12px;
 	font-family:'Roboto-Regular', sans-serif;
-	}
+}
 .pantalon-punto{
 	position: absolute;
     top: 50%;
     left: 47%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-pantalon.png);
+    background: url(/images/punto-pantalon.png);
     width: 224px;
     height: 127px;
-	}	
+}
 .botas{
 	position: absolute;
     top: 70%;
     left: 55%;
     width: 340px;
-	}
+}
 .botas h4{
 	width: 100%;
-    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
     padding: 10px;
     color: #FFF;
     font-size: 12.4px;
 	font-family:'Roboto-Regular', sans-serif;
-	}
-.botas-punto{    
+}
+.botas-punto{
 	position: absolute;
     top: 76%;
     left: 52%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-botas.png);
+    background: url(/images/punto-botas.png);
     width: 98px;
     height: 93px;
-	}
+}
 .chaqueton{
 	position: absolute;
-    top: 67%;
-    left: 20%;
+    top: 68%;
+    left: 19%;
     width: 340px;
-	}
+}
 .chaqueton h4{
 	width: 100%;
-    background: linear-gradient(to left,transparent,transparent,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
     padding: 10px;
+    padding-right: 0px;
     color: #FFF;
     font-size: 14px;
     font-family: 'Roboto-Regular', sans-serif;
-	}
+}
 .chaqueton-punto{
 	position: absolute;
     top: 49%;
     left: 41%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-chaqueton.png);
+    background: url(/images/punto-chaqueton.png);
     width: 137px;
     height: 142px;
-	}
+}
 .guantes{
 	position: absolute;
-    top: 42%;
-    left: 16%;
+    top: 43%;
+    left: 13%;
     width: 340px;
-	}
+}
 .guantes h4{
 	width: 100%;
-    background: linear-gradient(to left,transparent,transparent,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
     padding: 15px;
+    padding-right: 0px;
     color: #FFF;
     font-size: 14px;
     font-family: 'Roboto-Regular', sans-serif;
-	}
+}
 .guantes-punto{
 	position: absolute;
     top: 48%;
     left: 35%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-guantes.png);
+    background: url(/images/punto-guantes.png);
     width: 131px;
     height: 32px;
-	}
+}
 .monja{
 	position: absolute;
-    top: 14%;
-    left: 19%;
+    top: 11%;
+    left: 11%;
     width: 340px;
-	}
+}
 .monja h4{
 	width: 100%;
-    background: linear-gradient(to left,transparent,transparent,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
+    background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d);
     padding: 15px;
+    padding-right: 0px;
     color: #FFF;
     font-size: 12px;
     font-family: 'Roboto-Regular', sans-serif;
-	}
+}
 .monja-punto{
 	position: absolute;
     top: 12%;
     left: 40%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto-monja.png);
+    background: url(/images/punto-monja.png);
     width: 126px;
     height: 45px;
-	}
+}
 .fade-menu-left{
 	background: rgba(0,0,0,0.7);
 }
@@ -380,7 +383,7 @@
 	position: absolute;
     top: 4%;
     left: 49%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    background: url(/images/punto.png);
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -396,7 +399,7 @@
 .casco-pieza-posicion{
 	position:relative;
 	}
-.linea-casco{ 
+.linea-casco{
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -411,7 +414,7 @@
 	position: absolute;
     top: 68%;
     left: 47%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    background: url(/images/punto.png);
     width: 25px;
     height: 25px;
 	cursor:pointer;
@@ -424,7 +427,7 @@
     width: 380px;
 	display:none;
 	}
-.linea-pantalon{ 
+.linea-pantalon{
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -438,9 +441,9 @@
 	}
 .punto-pieza-botas{
 	position: absolute;
-    top: 86%;
+    top: 87%;
     left: 52%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    background: url(/images/punto.png);
     width: 25px;
     height: 25px;
 	cursor:pointer;
@@ -452,7 +455,7 @@
     width: 310px;
 	display:none;
 	}
-.linea-botas{ 
+.linea-botas{
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -466,9 +469,9 @@
 	}
 .punto-pieza-chaqueton{
 	position: absolute;
-    top: 49%;
+    top: 50%;
     left: 48%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    background: url(/images/punto.png);
     width: 25px;
     height: 25px;
 	cursor:pointer;
@@ -488,7 +491,7 @@
     width: 280px;
 	display:none;
 	}
-.linea-chaqueton{ 
+.linea-chaqueton{
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -501,9 +504,9 @@
 	}
 .punto-pieza-guantes{
 	position: absolute;
-    top: 48%;
-    left: 43%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    top: 49.5%;
+    left: 42%;
+    background: url(/images/punto.png);
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -529,7 +532,7 @@
     width: 340px;
 	display:none;
 	}
-.linea-guantes{ 
+.linea-guantes{
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -545,7 +548,7 @@
 	position: absolute;
     top: 10%;
     left: 51%;
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/punto.png);
+    background: url(/images/punto.png);
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -557,7 +560,7 @@
     width: 320px;
 	display:none;
 	}
-.monja-pieza h4{    
+.monja-pieza h4{
 	width: 100%;
     background: linear-gradient(to left,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,#00a79d,transparent,transparent);
     padding: 10px;
@@ -565,7 +568,7 @@
     font-size: 14px;
 	font-family:'Roboto-Regular', sans-serif;
 	}
-.linea-monja{ 
+.linea-monja{
 	border-style: solid;
     border-width: 3px;
     border-color: rgb(41, 214, 197);
@@ -588,7 +591,7 @@
 	font-family:'Roboto-Black', sans-serif;
 	color:#fff200;
 	}
- .navbar{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/encabezado.jpg) right center repeat-x !important;
+ .navbar{background: url(/images/encabezado.jpg) right center repeat-x !important;
     font-size: 22px;
     color:#fff !important;
     font-family: 'Roboto', sans-serif;
@@ -606,7 +609,7 @@ font-family: 'Roboto', sans-serif;
 
 .textounidad strong{color:yellow;}
 
- 
+
 
 .cont_unidades{
     padding-top: 50px;
@@ -642,12 +645,12 @@ color:#fff;
 
 .activo{/*background: url(../images/btn_unidades.png) center center no-repeat;*/}
 
-.unidad2-img{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/img-menu-2.png) center center no-repeat;}
-.unidad4-img{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/img-menu-4.png) center center no-repeat;}
+.unidad2-img{background: url(/images/img-menu-2.png) center center no-repeat;}
+.unidad4-img{background: url(/images/img-menu-4.png) center center no-repeat;}
 
-.revisado{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/btn_revisado.png) center center no-repeat;}
+.revisado{background: url(/images/btn_revisado.png) center center no-repeat;}
 
-.inactivo{background: url(../../plataforma/vistas/curso1/unidad2/epp/images/btn_unidadesbloq.png) center center no-repeat; color: transparent;}
+.inactivo{background: url(/images/btn_unidadesbloq.png) center center no-repeat; color: transparent;}
 
 .btn-guardar{color:#fff;background-color:#1b2c5d;border-color:#2e6da4}
 .btn-guardar:focus,.btn-primary.focus{color:#fff;background-color:#286090;border-color:#122b40}
@@ -866,7 +869,7 @@ text-align: justify;}
     min-height: 100%;
     height:auto !important; /* cross-browser */
     height: 100%; /* cross-browser */
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/fondo_unidades.jpg) center fixed no-repeat;
+    background: url(/images/fondo_unidades.jpg) center fixed no-repeat;
 	background-size:cover;
     overflow:hidden-x;
 }
@@ -997,7 +1000,7 @@ text-align: justify;}
 	min-height: 100%;
     height:auto !important; /* cross-browser */
     height: 100%; /* cross-browser */
-    background: url(../../plataforma/vistas/curso1/unidad2/epp/images/fondo_lecciones.png) center fixed no-repeat;
+    background: url(/images/fondo_lecciones.png) center fixed no-repeat;
 	background-size:cover;
     overflow:hidden-x;
 	}
@@ -1017,7 +1020,7 @@ text-align: justify;}
 	color: #003c6a;
 	font-size:24px;
 	list-style:none;
-	
+
 	}
 .item-checkbox label{
     font-family: 'Roboto-Light',sans-serif;
@@ -1026,14 +1029,14 @@ text-align: justify;}
 .item-checkbox b{
     font-family: 'Roboto-Black',sans-serif;
 	}
-	
+
 .item-checkbox input[type="checkbox"]{ display: none; }
 
 .item-checkbox input[type="checkbox"] + label span{
  display: inline-block;
  width: 25px;
  height: 25px;
- background: url(../../plataforma/vistas/curso1/unidad2/epp/images/check-inactive.png) left top no-repeat;
+ background: url(/images/check-inactive.png) left top no-repeat;
  margin: -1px 4px 0 0;
  vertical-align: middle;
  cursor:pointer;
@@ -1042,7 +1045,7 @@ text-align: justify;}
 .item-checkbox input[type="checkbox"]:checked + label span{
 width: 25px;
  height: 25px;
- background: url(../../plataforma/vistas/curso1/unidad2/epp/images/check-active.png) no-repeat;
+ background: url(/images/check-active.png) no-repeat;
 }
 .opciones-memo{
     color: #337ab7;
@@ -1050,8 +1053,12 @@ width: 25px;
     font-weight: normal;
 }
 
+.pull-left {
+    margin-right: 9px !important;
+}
+
 @media(min-width:768px) {
-	
+
     #wrapper {
         padding-left: 250px;
     }
