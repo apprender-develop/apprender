@@ -111,7 +111,8 @@
                 else
                     $(".ContentPregunta").eq(pos).addClass("slideRight");*/
 
-		$(".ContentPregunta").eq(pos).css({display:'block'});
+        $(".ContentPregunta").eq(pos).css({display:'block'});
+        $(".Pregunta-Btn--Sig").css({"display":"inline-block"});
 		$(".ContentPregunta").eq(pos).animate({'opacity':'1'}, 0);
 
         posAct = pos;
