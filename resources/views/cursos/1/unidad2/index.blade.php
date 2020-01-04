@@ -30,7 +30,7 @@
     <!--[if lt IE 9]>
 				<script src="../js/html5.js"></script>
             <![endif]-->
-        <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
+        <script src="{{ asset('js/jamarrom/unidad2/jquery.js') }}"></script>
     <script src="{{asset('/js/jamarrom/jquery-ui.js')}}"></script>
     <script src="{{asset('/js/jamarrom/jquery.bxslider.min.js')}}"></script>
     <script src="{{asset('/js/jamarrom/index.js')}}"></script>
