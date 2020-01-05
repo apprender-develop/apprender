@@ -50,13 +50,13 @@
 
                  <li>
                   <a href="#">
-                  <i class="fas fa-user-tie fa-lg"></i> Profile
+                  <i class="fas fa-user-tie fa-lg"></i> Perfil
                   </a>
                   </li>
 
                  <li>
                   <a href="#">
-                  <i class="fa fa-users fa-lg"></i> Users
+                  <i class="fa fa-users fa-lg"></i> Usuarios
                   </a>
                 </li>
             </ul>

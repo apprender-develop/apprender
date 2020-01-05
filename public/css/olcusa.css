@@ -118,9 +118,10 @@
 }
 @media (max-width: 767px) {
   .nav-side-menu {
-    position: relative;
+    position: sticky;
     width: 100%;
     margin-bottom: 10px;
+    z-index: 999;
   }
   .nav-side-menu .toggle-btn {
     display: block;
