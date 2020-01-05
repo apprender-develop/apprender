@@ -65,7 +65,7 @@
     </div>
 @endsection
 
-@section('javascriptww')
+@section('javascript')
 <script src="{{ asset('js/chart.js') }}"></script>
 <script>
 var ctx = document.getElementById('myChart');

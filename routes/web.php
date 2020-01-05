@@ -64,3 +64,8 @@ Route::post('/encuesta', 'EncuestaController@guardar')->middleware('auth')->name
 Route::get('/test/useragent', 'SandboxController@useragent');
 
 Route::get('/iframe/vestir', 'GeneralController@vestir');
+
+
+Route::get('test/dashboard', function(){
+    return view('sandbox.dashboard');
+});
