@@ -15,11 +15,11 @@ class RolesTableSeeder extends Seeder
     {
         $roles = [
             [
-                'name' => 'super-administrador'
+                'name' => 'administrador'
             ],
             [
-                'name' => 'administrador'
-            ]
+                'name' => 'cliente'
+            ],
         ];
         foreach ($roles as $key => $value) {
             Role::firstOrCreate($value);
