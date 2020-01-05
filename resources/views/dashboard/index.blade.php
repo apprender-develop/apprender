@@ -1,7 +1,7 @@
 @extends('layouts.delta')
 
 @section('style')
-    <link href="{{ asset('css/chart.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/chart.css') }}" rel="stylesheet"> --}}
     <style>
         canvas {
     /* border: 1px dotted red; */
@@ -65,7 +65,7 @@
     </div>
 @endsection
 
-@section('javascript')
+@section('javascriptww')
 <script src="{{ asset('js/chart.js') }}"></script>
 <script>
 var ctx = document.getElementById('myChart');

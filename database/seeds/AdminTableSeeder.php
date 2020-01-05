@@ -34,7 +34,7 @@ class AdminTableSeeder extends Seeder
                 if ($pass === false) {
                     $this->command->info('las contraseñas no coinciden.');
                 } else {
-                    $user['password'] = $password;
+                    $user['password'] = bcrypt($password);
                 }
             }
             $adminUser = User::firstorcreate($user);

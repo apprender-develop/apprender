@@ -11,6 +11,8 @@
 |
 */
 
+Auth::routes();
+
 /**
  * Login Route(s)
  */
@@ -39,15 +41,15 @@ Route::post('/user/password-change', 'Auth\CustomController@changePassword')->mi
 
 Route::get('/', 'GeneralController@welcome');
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/curso/{curso_id}/', 'CursosController@show')->middleware('auth')->name('curso');
 Route::get('/curso/{curso_id}/unidad/{unidad_id}/tema/{tema}', 'CursosController@unidad')->middleware('auth')->name('curso.unidad');
 
 Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
-    Route::get('graficas', 'DashboardController@index');
+    Route::get('graficas', 'DashboardController@index')
+        ->name('dashboard.graficas')
+        ->middleware('role_or_permission:super-administrador|administrador|dashboard-index');
 });
 
 Route::group(['prefix' => 'sandbox'], function () {
