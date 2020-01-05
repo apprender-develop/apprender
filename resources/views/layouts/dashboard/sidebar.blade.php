@@ -6,7 +6,7 @@
 
         <ul id="menu-content" class="menu-content collapse out">
             <li>
-                <a href="#">
+                <a class="d-block" href="{{route('dashboard.graficas')}}">
                     <i class="fas fa-tachometer-alt fa-lg"></i> Dashboard
                 </a>
             </li>
@@ -49,13 +49,13 @@
 
 
             <li>
-                <a href="#">
+                <a class="d-block" href="#">
                     <i class="fas fa-user-tie fa-lg"></i> Perfil
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a class="d-block" href="{{route('dashboard.usuarios.index')}}">
                     <i class="fa fa-users fa-lg"></i> Usuarios
                 </a>
             </li>
