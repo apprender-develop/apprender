@@ -27,6 +27,9 @@
   height: 100%;
   width: 200px;
   color: #e1ffff;
+  -webkit-box-shadow: 100px 100px 100px 100px rgba(0,0,0,0.55);
+  -moz-box-shadow: 100px 100px 100px 100px rgba(0,0,0,0.55);
+  box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.55);
 }
 
 .nav-side-menu .brand {
