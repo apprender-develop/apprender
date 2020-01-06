@@ -1,11 +1,11 @@
-<div class="card border-0">
+<div class="card shadow-lg mb-5 rounded border-0 pb-3">
     <div class="card-header bg-transparent">
-        <h5 class="card-title">Gráfica aprobados / no aprobados</h5>
+        <h5 class="card-title">Rendimiento</h5>
     </div>
-    <div class="card-body p-0">
+    <div class="card-body">
         <div class="chart-container text-center">
             <canvas id="chart-apna"></canvas>
-            <small class="text-muted">Calificación minima aprobatoria: 6.</small>
+            <small class="text-muted">Calificación mínima aprobatoria: 6.</small>
         </div>
     </div>
 </div>

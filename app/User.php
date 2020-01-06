@@ -50,4 +50,9 @@ class User extends Authenticatable
         $fecha = new Fechas;
         return $fecha->nueva($this->created_at, true);
     }
+
+    public function clientes()
+    {
+        return $this->whereHas("roles", function($q){ $q->where("name", "cliente"); });
+    }
 }

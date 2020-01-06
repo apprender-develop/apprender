@@ -22,9 +22,9 @@
 @section('content')
     <div class="col-12">
         <div class="card-columns">
-            <div class="card border-0">
+            <div class="card shadow-lg mb-5 rounded border-0">
                 <div class="card-header bg-transparent">
-                    <h5 class="card-title">Cursos a los que mas accesan</h5>
+                    <h5 class="card-title">Cursos</h5>
                 </div>
                 <div class="card-body p-0">
                     <div class="chart-container">
@@ -35,9 +35,9 @@
                     {{-- <small class="text-muted">Last updated 3 mins ago</small> --}}
                 {{-- </div> --}}
             </div>
-            <div class="card border-0">
+            <div class="card shadow-lg mb-5 rounded border-0">
                 <div class="card-header bg-transparent">
-                    <h5 class="card-title">Ingreso de usuarios por mes</h5>
+                    <h5 class="card-title">Ingreso de usuarios</h5>
                 </div>
                 <div class="card-body p-0">
                     <div class="chart-container">
@@ -50,6 +50,10 @@
             </div>
             {{-- GRAFICA DE APROBADOS / NO APROBADOS --}}
             @include('dashboard.graficas._apna')
+            {{-- Total Usuarios Registrados --}}
+            @include('dashboard.datos._tur')
+            {{-- Calificacion plataforma --}}
+            @include('dashboard.graficas._caliPlataforma')
         </div>
     </div>
 @endsection
