@@ -1337,3 +1337,35 @@ legend
 	color: #fff;
 }
 
+
+/************************************************************************************/
+
+.Unidad-Subtemas{
+	color: #3fa8f0;
+	margin-top: 17px;
+    margin-left: 150px;
+    margin-right: 5px;
+}
+
+.Unidad-ListUnidades {
+	margin-top: 17px;
+}
+
+.Unidad-ListUnidades li a {
+	color: #000;
+	padding: 0px 6px;
+}
+
+.Unidad-ListUnidades li a.Inactivo {
+	color: #9c9c9c;
+}
+
+.Unidad-ListUnidades li a:hover {
+	color: #fff;
+	background: #0351af;
+}
+
+.Unidad-ListUnidades li a.Inactivo:hover {
+	color: #9c9c9c;
+	background: #fff;
+}

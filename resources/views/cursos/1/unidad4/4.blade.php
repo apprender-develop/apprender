@@ -23,20 +23,20 @@
     <div class="Unidad-ContentInfo u-inline-block u-textCenter">
 
         <div class="Unidad-ContentVideo u-inline-block">
-            <video src="/videos/chorro de poder.mp4" height="100%"
+            <video id="videoGaleria0" class="videoGaleria" src="/videos/chorro de poder.mp4" height="100%"
                 controls=""></video>
             <p><strong>Chorro de poder</strong></p>
         </div>
 
         <div class="Unidad-ContentVideo u-inline-block">
-            <video src="/videos/chorro de proteccion.mp4" height="100%"
+            <video id="videoGaleria1" class="videoGaleria" src="/videos/chorro de proteccion.mp4" height="100%"
                 controls=""></video>
             <p><strong>Chorro de protección</strong></p>
         </div>
 
 
         <div class="Unidad-ContentVideo u-inline-block u-sinMargen">
-            <video src="/videos/Chorro directo.mp4" height="100%"
+            <video id="videoGaleria2" class="videoGaleria" src="/videos/Chorro directo.mp4" height="100%"
                 controls=""></video>
             <p><strong>Chorro directo</strong></p>
         </div>

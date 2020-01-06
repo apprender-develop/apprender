@@ -125,6 +125,20 @@
 
     <section class="Unidad-Content u-imagenFondoCover u-textLeft">
         <a href="{{route('curso', ['curso_id' => 1]).'?unidad=4'}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
+
+        <p class="Unidad-Subtemas u-inline-block"><strong>Subtemas:</strong></p>
+		<ul class="Unidad-ListUnidades u-inline-block">
+			<li class="u-inline-block"><a href="https://apprender.online/curso/1/unidad/4/tema/1" class="u-inline-block"><strong>4.1</strong></a></li>
+			<li class="u-inline-block"><a href="https://apprender.online/curso/1/unidad/4/tema/2" class="u-inline-block"><strong>4.2</strong></a></li>
+			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>4.3</strong></a></li>
+			<li class="u-inline-block"><a href="https://apprender.online/curso/1/unidad/4/tema/4" class="u-inline-block"><strong>4.4</strong></a></li>
+			<li class="u-inline-block"><a href="https://apprender.online/curso/1/unidad/4/tema/5" class="u-inline-block"><strong>4.5</strong></a></li>
+			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>4.6</strong></a></li>
+			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>4.7</strong></a></li>
+			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>4.8</strong></a></li>
+        </ul>
+
+
         {{-- <a href="curso1.php" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a> --}}
         @include("cursos.1.unidad4.$tema")
     </section>

@@ -1,6 +1,27 @@
 @charset "UTF-8";
 
 
+@media only screen and (min-width: 1650px)
+{
+	.Inicio-ListMisCursos li {
+		width: 359px !important;
+	}
+
+	.Inicio-ItemMisCursos {
+		width: 334px;
+	}
+
+	.Inicio-ImgItemMisCursos {
+		width: 330px;
+		height: 421px;
+	}
+
+	.Inicio-ItemMisCursos p {
+		height: 426px;
+		padding-top: 200px;
+	}
+}
+
 @media only screen and (max-width: 1580px)
 {
 	.Curso-TxtUnidades {
