@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-lg-9" style="padding-left: 25px;">
                     <h3 class="text-yellow">Casco</h3>
-                    <h4 class="info_modals"> <b>Casco2.</b> Protección contra impactos y altas temperaturas. Cuenta con
+                    <h4 class="info_modals"> <b>Casco.</b> Protección contra impactos y altas temperaturas. Cuenta con
                         protección de tela nomex en la nuquera. </h4>
                 </div>
 
