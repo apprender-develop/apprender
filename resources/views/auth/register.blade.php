@@ -62,8 +62,8 @@
             <p class="u-textRight"><a class="Login-TxtTengoCuenta u-inline-block"
                     href="{{route('login') }}"><strong>Tengo cuenta</strong></a></p>
 
-            <p class="u-textRight"><a class="Login-TxtTengoCuenta u-inline-block"
-                    href="{{route('login') }}"><strong>Recuperar contraseña</strong></a></p>
+            {{-- <p class="u-textRight"><a class="Login-TxtTengoCuenta u-inline-block"
+                    href="{{route('login') }}"><strong>Recuperar contraseña</strong></a></p> --}}
 
             <figure class="Notificaciones-Cargado u-textCenter">
                 <img src="images/loading.gif" alt="Cargando..." />

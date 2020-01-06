@@ -44,11 +44,16 @@
                 <input type="submit" name="btnEntrar" id="btnEntrar"
                     class="Login-Boton u-boton u-efecto u-textCenter u-redondeado--05 u-inline-block" value="ENTRAR">
             </div>
-            @if (Route::has('password.request'))
+            {{-- @if (Route::has('password.request'))
                 <a class="btn btn-link text-white" href="{{ route('password.request') }}">
                     {{ __('Forgot Your Password?') }}
                 </a>
-            @endif
+            @endif --}}
+            <p class="u-textRight"><a class="Login-TxtTengoCuenta u-inline-block"
+                href="{{route('password.request') }}"><strong>Recuperar contraseña</strong></a></p>
+            <p class="u-textRight"><a href="{{route('register')}}" class="Login-TxtTengoCuenta u-inline-block"><strong>
+                    << Regresar</strong> </a>
+            </p>
             <figure class="Notificaciones-Cargado u-textCenter">
                 <img src="images/loading.gif" alt="Cargando..." />
             </figure>
