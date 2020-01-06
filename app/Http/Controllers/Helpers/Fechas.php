@@ -81,6 +81,7 @@ class Fechas
     public function nueva($date = null, Bool $human = null)
     {
         $date = is_string($date) ? new Carbon($date) : $date;
+        $date = $date->setTimezone('America/Mexico_City');
         $human = $human === null ? false : $human;
         $datereturn = $date;
         if ($human == true) {
