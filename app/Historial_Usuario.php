@@ -20,9 +20,9 @@ class Historial_Usuario extends Model
         return $this->morphTo();
     }
 
-    public function temrinal()
+    public function terminal()
     {
-        return $this->belongsTo(Terminal::class);
+        return $this->belongsTo(Terminal::class, 'terminal_id');
     }
 
     public function fechaLeible()

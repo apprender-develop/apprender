@@ -22,7 +22,7 @@ class UsuariosController extends Controller
 
     public function show($user_id)
     {
-        $user = $this->mUser->with('historial')->where('id', $user_id)->first();
+        $user = $this->mUser->with('historial.terminal')->where('id', $user_id)->first();
 
         return view('dashboard.usuarios.show', compact('user'));
     }

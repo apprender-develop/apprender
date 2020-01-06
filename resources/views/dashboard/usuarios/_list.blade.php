@@ -15,7 +15,7 @@
                 <td class="align-middle">{{$user->nombreCompleto}}</td>
                 <td class="align-middle">{{$user->email}}</td>
                 <td class="align-middle">{{$user->pseudoficha}}</td>
-                <td class="align-middle">{{$user->historial->last()->created_at}}</td>
+                <td class="align-middle">{{$user->historial->last()->fechaLeible()}}</td>
                 <td class="align-middle">
                     <a class="btn btn-info" href="{{route('dashboard.usuarios.show', ['user_id' => $user->id])}}">Historial</a>
                 </td>
