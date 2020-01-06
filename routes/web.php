@@ -53,6 +53,9 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard'], function () {
     Route::get('usuarios/', 'Dashboard\UsuariosController@index')
         ->name('dashboard.usuarios.index')
         ->middleware('role_or_permission:super-administrador|administrador|dashboard-index');
+    Route::get('usuario/{usuario_id}/mostrar', 'Dashboard\UsuariosController@show')
+        ->name('dashboard.usuarios.show')
+        ->middleware('role_or_permission:super-administrador|administrador|dashboard-index');
 });
 
 Route::group(['prefix' => 'sandbox'], function () {
