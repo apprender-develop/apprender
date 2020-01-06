@@ -124,6 +124,19 @@
 
     <section class="Unidad-Content u-imagenFondoCover u-textLeft">
         <a href="{{route('curso', ['curso_id' => 1])}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
+
+        <p class="Unidad-Subtemas u-inline-block"><strong>Subtemas:</strong></p>
+		<ul class="Unidad-ListUnidades u-inline-block">
+			<li class="u-inline-block"><a href="{{route('curso.unidad', ['curso_id' => 1, 'unidad_id' => 2, 'tema' => 1])}}" class="u-inline-block"><strong>2.1</strong></a></li>
+			<li class="u-inline-block"><a href="{{route('curso.unidad', ['curso_id' => 1, 'unidad_id' => 2, 'tema' => 2])}}" class="u-inline-block"><strong>2.2</strong></a></li>
+			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>2.3</strong></a></li>
+			<li class="u-inline-block"><a href="{{route('curso.unidad', ['curso_id' => 1, 'unidad_id' => 2, 'tema' => 4])}}" class="u-inline-block"><strong>2.4</strong></a></li>
+			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>2.5</strong></a></li>
+			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>2.6</strong></a></li>
+			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>2.7</strong></a></li>
+	    </ul>
+        <div></div>
+
         {{-- <a href="{{route('curso', ['curso_id' => 1])}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a> --}}
         @include("cursos.1.unidad2.$tema")
 
