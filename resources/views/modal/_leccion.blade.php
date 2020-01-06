@@ -389,7 +389,7 @@
                         class="img-responsive" /></div>
                 <h3 class="texto-modal-pieza">6. Colocarse los <b class="texto-bold-pieza">guantes</b> guardando los
                     puños bajo las mangas del chaquetón.<br />
-                    Esta vestimenta deberá colocarse en por lo menos 60 segundos, sin cometer errores.</h3>
+                    Ésta vestimenta deberá colocarse en por lo menos 60 segundos, sin cometer errores.</h3>
             </div>
             <div class="modal-footer modal-footer-leccion">
 
