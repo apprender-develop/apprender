@@ -33,7 +33,7 @@
     @yield('style')
 </head>
 
-<body>
+<body class="bg-secondary">
     <div class="container-fluid">
         <div class="row">
             @include('layouts.dashboard.sidebar')
