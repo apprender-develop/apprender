@@ -19,4 +19,11 @@ class UsuariosController extends Controller
         $users = $this->mUser->whereHas("roles", function($q){ $q->where("name", "cliente"); })->get();
         return view('dashboard.usuarios.index', compact('users'));
     }
+
+    public function show($user_id)
+    {
+        $user = $this->mUser->with('historial')->where('id', $user_id)->first();
+
+        return view('dashboard.usuarios.show', compact('user'));
+    }
 }
