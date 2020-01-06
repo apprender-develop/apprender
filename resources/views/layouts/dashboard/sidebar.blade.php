@@ -6,6 +6,17 @@
 
         <ul id="menu-content" class="menu-content collapse out">
             <li>
+                <a class="d-block"  href="{{ route('logout') }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                            <i class="fas fa-sign-out-alt fa-lg"></i> {{ __('Logout') }}
+
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </li>
+            <li>
                 <a class="d-block" href="{{route('dashboard.graficas')}}">
                     <i class="fas fa-tachometer-alt fa-lg"></i> Dashboard
                 </a>
