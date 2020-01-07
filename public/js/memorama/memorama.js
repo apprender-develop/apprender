@@ -25,7 +25,7 @@
                     $(this).find('.front').attr('class', "face prueba");
                 } else if (entro == 2) {
                     carta2 = $(this).data('id');
-                    $(this).attr('class', 'flip click_add active');
+                    $(this).attr('class', 'flip click_add active col-xl-3 col-md-3 col-sm-3 col-4');
                     $(this).find('.card').attr('class', "card flipped");
                     $(this).find('.front').attr('class', "face prueba");
                 }
@@ -33,7 +33,7 @@
                 if (carta1 == carta2) {
                     count++;
                     entro = 0;
-                    modalExtintor(count);
+                    modalExtintor(carta1);
                     carta1 = '';
                     carta2 = '';
                     if (count == countImage) {
