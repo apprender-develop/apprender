@@ -30,7 +30,7 @@
     <!--[if lt IE 9]>
 				<script src="../js/html5.js"></script>
             <![endif]-->
-    <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
+    <script src="{{ asset('js/jamarrom/unidad2/jquery.js') }}"></script>
     <script src="{{asset('/js/jamarrom/jquery-ui.js')}}"></script>
     <script src="{{asset('/js/jamarrom/jquery.bxslider.min.js')}}"></script>
     <script src="{{asset('/js/jamarrom/index.js')}}"></script>
@@ -137,7 +137,7 @@
 			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>4.7</strong></a></li>
 			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>4.8</strong></a></li>
         </ul>
-
+        <div></div>
 
         {{-- <a href="curso1.php" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a> --}}
         @include("cursos.1.unidad4.$tema")
