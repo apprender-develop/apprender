@@ -2,69 +2,70 @@
 
     var timer;
     var interval;
-$(document).ready(function() {
-    var countImage = 6;
-    var contador = 0;
-    var time = 60000;
-    var data_compare = [];
-    var count = 0;
-    var entro=0;
-    var isMarch = false;
-    var carta1;
-    var carta2;
-    var acumularTime = 0;
-    $( "body" ).on("click",".click_add",function(){
-        if( $(this).hasClass('active') ){
-           return false;
-        }else{
-            entro++;
-            if(entro==1){
-              carta1 = $(this).data('id');
-            $(this).attr('class' ,'flip click_add active');
-            $(this).find('.card').attr('class',"card flipped");
-            $(this).find('.front').attr('class',"face prueba");
-            }else if(entro==2){
-               carta2 = $(this).data('id');
-            $(this).attr('class' ,'flip click_add active');
-            $(this).find('.card').attr('class',"card flipped");
-            $(this).find('.front').attr('class',"face prueba");
-            }
-
-              if(carta1 == carta2 ){
-                count++;
-                entro=0;
-                carta1 = '';
-                    carta2 ='';
-                if(count == countImage){
-                    stop();
-                    $(".Memorama-Mensaje").slideDown("fast");
-
-                            $('html, body').animate(
-                                {
-                                    scrollTop: $(".Memorama-Mensaje").offset().top - 109
-                                }, 1000, 'swing');
+    $(document).ready(function () {
+        var countImage = 6;
+        var contador = 0;
+        var time = 60000;
+        var data_compare = [];
+        var count = 0;
+        var entro = 0;
+        var isMarch = false;
+        var carta1;
+        var carta2;
+        var acumularTime = 0;
+        $("body").on("click", ".click_add", function () {
+            if ($(this).hasClass('active')) {
+                return false;
+            } else {
+                entro++;
+                if (entro == 1) {
+                    carta1 = $(this).data('id');
+                    $(this).attr('class', 'flip click_add active col-xl-3 col-md-3 col-sm-3 col-4');
+                    $(this).find('.card').attr('class', "card flipped");
+                    $(this).find('.front').attr('class', "face prueba");
+                } else if (entro == 2) {
+                    carta2 = $(this).data('id');
+                    $(this).attr('class', 'flip click_add active');
+                    $(this).find('.card').attr('class', "card flipped");
+                    $(this).find('.front').attr('class', "face prueba");
                 }
-              }else{
-                if(entro==2){
-                  setTimeout(function(){
-                   console.log('carta1: '+ carta1 );
-                   console.log('carta2: '+ carta2 );
-                    entro=0;
-                    $('body').find("[data-id='" + carta1 + "']").find('.card').attr('class',"card");
-                    $('body').find("[data-id='" + carta1 + "']").find('.card').find('.face').attr('class',"face front");
-                    $('body').find("[data-id='" + carta1 + "']").attr('class' ,'flip click_add');
-                    $('body').find("[data-id='" + carta2 + "']").find('.card').attr('class',"card" );
-                    $('body').find("[data-id='" + carta2 + "']").find('.card').find('.face').attr('class',"face front");
-                    $('body').find("[data-id='" + carta2 + "']").attr('class' ,'flip click_add');
-                    $('.click_add').prop('disabled',false);
+
+                if (carta1 == carta2) {
+                    count++;
+                    entro = 0;
+                    modalExtintor(count);
                     carta1 = '';
-                    carta2 ='';
-                }, 400);
-                }
+                    carta2 = '';
+                    if (count == countImage) {
+                        stop();
+                        $(".Memorama-Mensaje").slideDown("fast");
 
-              }
-        }
-      });
+                        $('html, body').animate(
+                            {
+                                scrollTop: $(".Memorama-Mensaje").offset().top - 109
+                            }, 1000, 'swing');
+                    }
+                } else {
+                    if (entro == 2) {
+                        setTimeout(function () {
+                            console.log('carta1: ' + carta1);
+                            console.log('carta2: ' + carta2);
+                            entro = 0;
+                            $('body').find("[data-id='" + carta1 + "']").find('.card').attr('class', "card");
+                            $('body').find("[data-id='" + carta1 + "']").find('.card').find('.face').attr('class', "face front");
+                            $('body').find("[data-id='" + carta1 + "']").attr('class', 'flip click_add col-xl-3 col-md-3 col-sm-3 col-4');
+                            $('body').find("[data-id='" + carta2 + "']").find('.card').attr('class', "card");
+                            $('body').find("[data-id='" + carta2 + "']").find('.card').find('.face').attr('class', "face front");
+                            $('body').find("[data-id='" + carta2 + "']").attr('class', 'flip click_add col-xl-3 col-md-3 col-sm-3 col-4');
+                            $('.click_add').prop('disabled', false);
+                            carta1 = '';
+                            carta2 = '';
+                        }, 400);
+                    }
+
+                }
+            }
+        });
 
 
         var createItems = function (image, num) {
