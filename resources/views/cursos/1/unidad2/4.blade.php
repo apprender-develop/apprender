@@ -313,7 +313,7 @@
 
 		<a style="width: 0px;" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" >
 
-			<span class="glyphicon glyphicon-chevron-left btn-slider" aria-hidden="true" id="flechaL" style="display: none;" onclick="cambiarligaLeft();"></span>
+			<span class="glyphicon glyphicon-chevron-left btn-slider" aria-hidden="true" id="flechaL" style="display: none; padding-top: 11px; padding-left: 6px; padding-right: 6px;" onclick="cambiarligaLeft();"></span>
 
 			<span class="sr-only">Previous</span>
 
@@ -321,8 +321,8 @@
 
 		<a style="width: 0px;" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 
-			<span class="glyphicon glyphicon-chevron-right btn-slider" aria-hidden="true" id="flechaR"  onclick="cambiarligaRight();"></span>
-			<span class="glyphicon  btn-slider" aria-hidden="true" id="flechaSalir" style="display: none;top:50%;margin-left: -34px;"  onclick="cambiarligaRight();">Salir</span>
+			<span class="glyphicon glyphicon-chevron-right btn-slider" aria-hidden="true" id="flechaR" style="padding-top: 11px; padding-left: 6px; padding-right: 6px;" onclick="cambiarligaRight();"></span>
+			<span class="glyphicon  btn-slider" aria-hidden="true" id="flechaSalir" style="display: none; top: 50%; margin-left: -48px; font: 22px 'open_san'; padding-top: 13px; padding-left: 6px; padding-right: 10px;"  onclick="cambiarligaRight();">Salir</span>
 			<span class="sr-only">Next</span>
 
 		</a>
