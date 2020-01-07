@@ -2,60 +2,69 @@
 
     var timer;
     var interval;
+$(document).ready(function() {
+    var countImage = 6;
+    var contador = 0;
+    var time = 60000;
+    var data_compare = [];
+    var count = 0;
+    var entro=0;
+    var isMarch = false;
+    var carta1;
+    var carta2;
+    var acumularTime = 0;
+    $( "body" ).on("click",".click_add",function(){
+        if( $(this).hasClass('active') ){
+           return false;
+        }else{
+            entro++;
+            if(entro==1){
+              carta1 = $(this).data('id');
+            $(this).attr('class' ,'flip click_add active');
+            $(this).find('.card').attr('class',"card flipped");
+            $(this).find('.front').attr('class',"face prueba");
+            }else if(entro==2){
+               carta2 = $(this).data('id');
+            $(this).attr('class' ,'flip click_add active');
+            $(this).find('.card').attr('class',"card flipped");
+            $(this).find('.front').attr('class',"face prueba");
+            }
 
-    $(document).ready(function () {
-        var countImage = 6;
-        var contador = 0;
-        var time = 60000;
-        var data_compare = [];
-        var count = 0;
-        var isMarch = false;
-        var acumularTime = 0;
-        $('body').data('id_body', '0');
-
-        $("body").on("click", ".click_add", function () {
-            if ($(this).hasClass('active')) {
-                return false;
-            } else {
-
-                var id_body = $('body').data('id_body');
-                var id_now = $(this).data('id');
-                $(this).addClass('active');
-                $(this).find('.card').addClass('flipped');
-                if (id_body == 0) {
-                    $('body').data('id_body', id_now);
-
-                } else {
-
-                    if (id_body == id_now) {
-                        $('body').find("[data-id='" + id_now + "']").removeClass('click_add');
-                        $('body').find("[data-id='" + id_now + "']").removeClass('active');
-                        $('body').data('id_body', '0');
-                        count++;
-                        //alert('sadasda'+id_body+"->"+id_now);
-                        modalExtintor(id_body);
-
-                        if (count == countImage) {
-                            stop();
-
-                            $(".Memorama-Mensaje").slideDown("fast");
+              if(carta1 == carta2 ){
+                count++;
+                entro=0;
+                carta1 = '';
+                    carta2 ='';
+                if(count == countImage){
+                    stop();
+                    $(".Memorama-Mensaje").slideDown("fast");
 
                             $('html, body').animate(
                                 {
                                     scrollTop: $(".Memorama-Mensaje").offset().top - 109
                                 }, 1000, 'swing');
-                        }
-                    } else {
-                        $('body').data('id_body', '0');
-                        setTimeout(function () {
-                            $('body').find(".active").find('.card').removeClass('flipped');
-                            $('body').find("div").removeClass('active');
-                            $('.click_add').prop('disabled', false);
-                        }, 400);
-                    }
                 }
-            }
-        });
+              }else{
+                if(entro==2){
+                  setTimeout(function(){
+                   console.log('carta1: '+ carta1 );
+                   console.log('carta2: '+ carta2 );
+                    entro=0;
+                    $('body').find("[data-id='" + carta1 + "']").find('.card').attr('class',"card");
+                    $('body').find("[data-id='" + carta1 + "']").find('.card').find('.face').attr('class',"face front");
+                    $('body').find("[data-id='" + carta1 + "']").attr('class' ,'flip click_add');
+                    $('body').find("[data-id='" + carta2 + "']").find('.card').attr('class',"card" );
+                    $('body').find("[data-id='" + carta2 + "']").find('.card').find('.face').attr('class',"face front");
+                    $('body').find("[data-id='" + carta2 + "']").attr('class' ,'flip click_add');
+                    $('.click_add').prop('disabled',false);
+                    carta1 = '';
+                    carta2 ='';
+                }, 400);
+                }
+
+              }
+        }
+      });
 
 
         var createItems = function (image, num) {
