@@ -444,7 +444,7 @@ interval: false
 		}
 
 		if($('#vestir').attr('class') === 'item active'){
-			$('.right').attr("href", "curso1.php");
+			$('.right').attr("href", "//apprender.online/curso/1");
 		}else{
 			nameclass = $('#picar').attr('class');
 		if (nameclass === 'item active') {
