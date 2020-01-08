@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Dashboard;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
+use Illuminate\Database\Eloquent\Builder;
 
 class UsuariosController extends Controller
 {
@@ -47,9 +48,19 @@ class UsuariosController extends Controller
         $qr = $request->input('query', null);
 
         if ($qr != null) {
-            $historial = $historial->where(function($query) use ($qr) {
-                $query->orwhere('current_url', 'like', "%$qr%");
-            });
+            $historial = $historial
+                ->whereHas('terminal', function(Builder $query2) use ($qr){
+                    $query2->where(function($query3) use ($qr){
+                        $query3->orwhere('os', 'like', "%$qr%")
+                            ->orwhere('os_version', 'like', "%$qr%")
+                            ->orwhere('browser', 'like', "%$qr%")
+                            ->orwhere('browser_version', 'like', "%$qr%")
+                            ->orwhere('device', 'like', "%$qr%");
+                    });
+                })
+                ->orwhere(function($query) use ($qr) {
+                    $query->orwhere('current_url', 'like', "%$qr%");
+                });
         }
 
         $historial = $historial
@@ -57,6 +68,7 @@ class UsuariosController extends Controller
             ->paginate(10);
 
         if ($request->ajax()) {
+            // dd($historial);
             return view('dashboard.usuarios.detalles._historial', compact('user', 'historial'));
         }
 
