@@ -1369,3 +1369,99 @@ legend
 	color: #9c9c9c;
 	background: #fff;
 }
+
+
+/************************************************************************************/
+
+.Login-Ayuda {
+	width: 24px;
+	height: 21px;
+	background: url(../images/icoAyudaRapido.png) no-repeat;
+	top: 25px;
+	right: 20px;
+	z-index: 99999;
+}
+
+.Login-Ayuda span {
+    width: 30px;
+    font-size: 12px;
+    position: absolute;
+	bottom: -16px;
+	left: -3px;
+}
+
+.Login-Ayuda:hover {
+	top: 22px;
+}
+
+.Login-TxtTengoCuenta {
+	position: relative;
+    z-index: 99999;
+}
+
+.Login-TxtTengoCuenta.SinResalto {
+    z-index: 1;
+}
+
+.ModalRegistro-Txt1 {
+	display: none;
+	width: 300px;
+    font-size: 15.5px;
+    top: -76px;
+    right: -127px;
+    z-index: 999999;
+}
+
+.ModalRegistro-Txt2 {
+	display: none;
+	width: 290px;
+    color: #fff;
+    font-size: 15.5px;
+    top: 147px;
+    left: -303px;
+    z-index: 999999;
+}
+
+.ModalRegistro-Txt3 {
+	display: none;
+	width: 385px;
+    color: #fff;
+    font-size: 15.5px;
+    top: 334px;
+    left: -220px;
+    z-index: 999999;
+}
+
+
+.ModalRegistro-Txt4 {
+	display: none;
+	width: 230px;
+    color: #fff;
+    font-size: 15.5px;
+    top: 276px;
+    left: -140px;
+    z-index: 999999;
+}
+
+.ModalRegistro-Txt5 {
+	display: none;
+	width: 312px;
+    color: #fff;
+    font-size: 15.5px;
+    top: 104px;
+    left: -300px;
+    z-index: 999999;
+}
+
+
+.ModalRegistro-Txt6 {
+	display: none;
+	width: 314px;
+    color: #fff;
+    font-size: 15.5px;
+    top: 228px;
+    left: -137px;
+    z-index: 999999;
+}
+
+

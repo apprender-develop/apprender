@@ -126,6 +126,10 @@
 	.Login-ImgSSPA {
 		width: 440px;
 		height: 158px;
+    }
+
+    .ModalRegistro-Txt1 {
+		right: -70px;
 	}
 }
 
