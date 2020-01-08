@@ -37,7 +37,7 @@
     <div class="container-fluid">
         <div class="row">
             @include('layouts.dashboard.sidebar')
-            <div class="main-panel">
+            <div class="main-panel py-3">
                 @yield('content')
             </div>
             {{-- @include('layouts.dashboard.sidebar') --}}
