@@ -37,7 +37,17 @@
             </div>
         `;
 
-
+        // $(window).on('hashchange', function() {
+        //     if (window.location.hash) {
+        //         var page = window.location.hash.replace('#', '');
+        //         if (page == Number.NaN || page <= 0) {
+        //             return false;
+        //         }else{
+        //             alert('haschange')
+        //             getData(page);
+        //         }
+        //     }
+        // });
 
         function getData(page){
             page == null ? 1 : page
@@ -64,7 +74,6 @@
                 $(this).parent('li').addClass('active');
                 let myurl=$(this).attr('href');
                 let page=$(this).attr('href').split('page=')[1];
-                alert('click pagination a')
                 getData(page);
             });
             $(document).on('keyup', '#searchInput', function() {
