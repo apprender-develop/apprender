@@ -70,12 +70,10 @@
             $(document).on('keyup', '#searchInput', function() {
                 clearTimeout(typingTimer);
                 typingTimer = setTimeout(getData, doneTypingInterval);
-                alert('key up')
             })
 
             $(document).on('keydown', '#searchInput', function() {
                 clearTimeout(typingTimer);
-                alert('key down')
             });
         });
     </script>
