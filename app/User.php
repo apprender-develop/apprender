@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;
 use App\Http\Controllers\Helpers\Fechas;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
@@ -45,14 +46,22 @@ class User extends Authenticatable
         return $this->hasMany(Historial_Usuario::class, 'user_id');
     }
 
-    public function fechaLeible()
+    public function fechaLeible($column_name = null)
     {
+        $date = $column_name === null ? $this->created_at : $this->{$column_name};
+        // dd($date);
         $fecha = new Fechas;
-        return $fecha->nueva($this->created_at, true);
+        return $fecha->nueva($date, true);
     }
 
     public function clientes()
     {
         return $this->whereHas("roles", function($q){ $q->where("name", "cliente"); });
+    }
+
+    public function nuevosPorMes()
+    {
+        $datedbraw = 'count(`id`) as total, DATE_FORMAT(created_at, "%m") as mes, DATE_FORMAT(created_at, "%Y") as year';
+        return $this->whereHas("roles", function($q){ $q->where("name", "cliente"); })->select(DB::raw($datedbraw))->groupBy('mes', 'year')->get();
     }
 }
