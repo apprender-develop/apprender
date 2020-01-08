@@ -6,7 +6,7 @@
 
         <div class="ModalDescargas-ContentList u-inline-block u-textLeft">
             <ul>
-                <li><a href="archivos/basico_seg.pptx" class="u-inline-block PowerPoint" target="_blank">PRESENTACIÓN
+                <li><a href="{{asset('/archivos/basico_seg.pptx')}}" class="u-inline-block PowerPoint" target="_blank">PRESENTACIÓN
                         POWER POINT</a></li>
                 <li><a class="u-inline-block PDF">ARCHIVO PDF</a></li>
                 <li><a class="u-inline-block Word">ARCHIVO WORD</a></li>

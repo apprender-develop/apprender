@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-lg-9" style="padding-left: 25px;">
                     <h3 class="text-yellow">Casco</h3>
-                    <h4 class="info_modals"> <b>Casco2.</b> Protección contra impactos y altas temperaturas. Cuenta con
+                    <h4 class="info_modals"> <b>Casco.</b> Protección contra impactos y altas temperaturas. Cuenta con
                         protección de tela nomex en la nuquera. </h4>
                 </div>
 
@@ -389,7 +389,7 @@
                         class="img-responsive" /></div>
                 <h3 class="texto-modal-pieza">6. Colocarse los <b class="texto-bold-pieza">guantes</b> guardando los
                     puños bajo las mangas del chaquetón.<br />
-                    Esta vestimenta deberá colocarse en por lo menos 60 segundos, sin cometer errores.</h3>
+                    Ésta vestimenta deberá colocarse en por lo menos 60 segundos, sin cometer errores.</h3>
             </div>
             <div class="modal-footer modal-footer-leccion">
 

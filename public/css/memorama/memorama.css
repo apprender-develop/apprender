@@ -102,3 +102,13 @@ cursor: pointer;
 	padding-top: 4px;
 	margin-top: 10px
 }
+
+.prueba{
+    position: absolute;
+    z-index: 1;
+    background: url('');
+    background-size: cover;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}

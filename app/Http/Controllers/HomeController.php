@@ -24,7 +24,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // $user = Auth::user();
+        $isAdmin = Auth::user()->hasRole('super-administrador|administrador');
+
+        if ($isAdmin) {
+            return redirect()->route('dashboard.graficas');
+        }
+
         return view('home', compact('user'));
     }
 }

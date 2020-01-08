@@ -12,4 +12,19 @@ class Encuesta extends Model
     protected $table = 'encuesta';
     protected $guarded = ['id'];
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+
+    public function aprobados()
+    {
+        return $this->where('calificacion', '>', 6)->count();
+    }
+
+    public function noAprobados()
+    {
+        return $this->where('calificacion', '<=', 6)->count();
+    }
+
+    public function apna()
+    {
+        return [$this->aprobados(),$this->noAprobados()];
+    }
 }

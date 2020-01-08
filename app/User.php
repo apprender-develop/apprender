@@ -6,6 +6,8 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;
+use App\Http\Controllers\Helpers\Fechas;
+use Carbon\Carbon;
 
 class User extends Authenticatable
 {
@@ -37,4 +39,20 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function historial()
+    {
+        return $this->hasMany(Historial_Usuario::class, 'user_id');
+    }
+
+    public function fechaLeible()
+    {
+        $fecha = new Fechas;
+        return $fecha->nueva($this->created_at, true);
+    }
+
+    public function clientes()
+    {
+        return $this->whereHas("roles", function($q){ $q->where("name", "cliente"); });
+    }
 }

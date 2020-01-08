@@ -259,7 +259,24 @@ $(document).ready(function () {
 	setTimeout(function () {
 		if (getUrl() == "curso1.php?unidad=4")
 			$(".Curso-ListUnidades li").eq(3).click();
-	}, 200);
+    }, 200);
+
+
+    setTimeout(function()
+	{
+		$('.videoGaleria').on('play', function () { //cuando un audio empieza a reproducirse
+			var current=this;
+			$('.videoGaleria').each(function(j) {
+				if (this != current) { //todos los demás
+					setTimeout(function()
+					{
+						document.getElementById("videoGaleria"+j).pause();
+						document.getElementById("videoGaleria"+j).currentTime = 0;
+					},500);
+				}
+			});
+		});
+	},400);
 });
 
 var listExtintores = [

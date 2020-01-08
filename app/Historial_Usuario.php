@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Http\Controllers\Helpers\Fechas;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -16,5 +18,16 @@ class Historial_Usuario extends Model
     public function evidenciable()
     {
         return $this->morphTo();
+    }
+
+    public function terminal()
+    {
+        return $this->belongsTo(Terminal::class, 'terminal_id');
+    }
+
+    public function fechaLeible()
+    {
+        $fecha = new Fechas;
+        return $fecha->nueva($this->created_at, true);
     }
 }

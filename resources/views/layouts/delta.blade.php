@@ -17,20 +17,34 @@
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> --}}
+    {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/fontawesome/css/all.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/olcusa.css') }}" rel="stylesheet">
+    {{-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --}}
+    {{-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> --}}
+    {{-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> --}}
     {{-- <link href="{{ asset('css/bootstrap.css.map') }}"> --}}
 
     @yield('style')
 </head>
 
-<body>
-    {{-- @include('layouts.navbar') --}}
+<body class="bg-secondary">
     <div class="container-fluid">
+        <div class="row">
+            @include('layouts.dashboard.sidebar')
+            <div class="main-panel">
+                @yield('content')
+            </div>
+            {{-- @include('layouts.dashboard.sidebar') --}}
+        </div>
+    </div>
+    {{-- @include('layouts.navbar') --}}
+    {{-- <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
             @include('layouts.sidebar')
@@ -41,8 +55,8 @@
                 </div>
             </main>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    </div> --}}
+    <script src="{{asset('/js/feather.min.js')}}"></script>
     @yield('javascript')
     @stack('javascript')
 </body>
