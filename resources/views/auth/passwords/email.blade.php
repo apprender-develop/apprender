@@ -74,7 +74,6 @@ Autentificacion-Ajuste u-imagenFondoCover
         }
       ?>
 
-
     <figure class="Login-ImgSSPA slideUp"></figure>
 </article>
 @endsection
