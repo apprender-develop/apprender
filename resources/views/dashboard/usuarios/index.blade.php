@@ -43,6 +43,7 @@
                 if (page == Number.NaN || page <= 0) {
                     return false;
                 }else{
+                    alert('haschange')
                     getData(page);
                 }
             }
@@ -74,7 +75,7 @@
                 let myurl=$(this).attr('href');
                 let page=$(this).attr('href').split('page=')[1];
                 alert('click pagination a')
-                // getData(page);
+                getData(page);
             });
             $(document).on('keyup', '#searchInput', function() {
                 clearTimeout(typingTimer);
