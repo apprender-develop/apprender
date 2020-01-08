@@ -38,10 +38,28 @@ class UsuariosController extends Controller
         return view('dashboard.usuarios.index', compact('users'));
     }
 
-    public function show($user_id)
+    public function show($user_id, Request $request)
     {
-        $user = $this->mUser->with('historial.terminal')->where('id', $user_id)->first();
+        $user = $this->mUser->with(['historial.terminal'])->where('id', $user_id)->first();
 
-        return view('dashboard.usuarios.show', compact('user'));
+        $historial = $user->historial()->with('terminal');
+
+        $qr = $request->input('query', null);
+
+        if ($qr != null) {
+            $historial = $historial->where(function($query) use ($qr) {
+                $query->orwhere('current_url', 'like', "%$qr%");
+            });
+        }
+
+        $historial = $historial
+            ->orderBy('created_at', 'desc')
+            ->paginate(10);
+
+        if ($request->ajax()) {
+            return view('dashboard.usuarios.detalles._historial', compact('user', 'historial'));
+        }
+
+        return view('dashboard.usuarios.show', compact('user', 'historial'));
     }
 }
