@@ -36,6 +36,12 @@
 
 @section('content2')
 <div>
+    <div class="Modal Modal--Ayuda">
+        <div class="ModalProgreso-Center u-inline-block">
+            <span onClick="$('.Modal--Ayuda, .ModalRegistro-Txt7, .ModalRegistro-Txt8').fadeOut();" class="Modal-Cerrar u-inline-block" style="top: 20px;">CERRAR <span>x</span></span>
+       </div>
+    </div>
+
     <header class="Unidad-Header u-imagenFondoCover">
         <h2 class="Unidad-Title u-textRight">BÁSICO DE SEGURIDAD Y PROTECCIÓN AMBIENTAL</h2>
 
@@ -45,6 +51,9 @@
            <li id="unidad-3" class="u-inline-block u-efecto inActivo">Unidad 3</li>
            <li id="unidad-4" class="u-inline-block u-efecto">Unidad 4</li>
            <li id="unidad-5" class="u-inline-block u-efecto inActivo">Unidad 5</li>
+           <p class="ModalRegistro-Txt7 u-positionAbsolute u-textJustify">
+                Al ingresar podrás seleccionar  la unidad deseada en el curso disponible
+            </p>
        </ul>
    </header>
 
@@ -55,7 +64,11 @@
         </div>
 
         <div class="Curso-ContentUnidades u-inline-block">
-            <div>
+            <div style="position: relative;">
+                <p class="ModalRegistro-Txt8 u-positionAbsolute u-textJustify">
+                    Aquí puede elegir el subtema correspondiente al contenido del curso activo para su estudio y comprensión.
+                </p>
+
                 <ul class="Unidad-ListMenuUnidad" style="display: none;"></ul>
 
                 <ul class="Unidad-ListMenuUnidad">

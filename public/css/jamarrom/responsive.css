@@ -129,7 +129,11 @@
     }
 
     .ModalRegistro-Txt1 {
-		right: -70px;
+		right: -60px;
+	}
+
+	.ModalRegistro-Txt1:before {
+		left: 220px;
 	}
 }
 

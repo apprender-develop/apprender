@@ -59,7 +59,9 @@ $(document).ready(function () {
 		slider2.startAuto();
 	});
 
-
+    $(".MainNav-BtnAyuda").click(function(){
+        $('.Modal--Ayuda, .ModalRegistro-Txt7, .ModalRegistro-Txt8').fadeIn();
+    });
 
 	$(".MainNav-BtnOcultar").click(function () {
 		if (ban) {
