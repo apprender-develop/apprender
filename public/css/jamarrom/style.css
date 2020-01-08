@@ -1376,7 +1376,7 @@ legend
 .Login-Ayuda {
 	width: 24px;
 	height: 21px;
-	background: url(../images/icoAyudaRapido.png) no-repeat;
+	background: url(/images/icoAyudaRapido.png) no-repeat;
 	top: 25px;
 	right: 20px;
 	z-index: 99999;
@@ -1401,6 +1401,12 @@ legend
 
 .Login-TxtTengoCuenta.SinResalto {
     z-index: 1;
+}
+
+.Modal--Ayuda {
+    color: #fff;
+    font-size: 15.5px;
+    background-color: rgba(10,38,59,0.7);
 }
 
 .ModalRegistro-Txt1 {

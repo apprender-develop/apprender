@@ -16,19 +16,36 @@
 
 @section('content')
 <div class="Autentificacion-Ajuste u-imagenFondoCover">
+
+    <div class="Modal Modal--Ayuda">
+        <div class="ModalProgreso-Center u-inline-block">
+            <span onClick="$('.Modal, .ModalRegistro-Txt1, .ModalRegistro-Txt2, .ModalRegistro-Txt3').fadeOut();" class="Modal-Cerrar u-inline-block">CERRAR <span>x</span></span>
+       </div>
+   </div>
+
     <article class="Login" id="login">
         <h1 class="Login-Logo slideDown"><span>Apprender</span></h1>
 
         <form name="form-login" id="form-login" class="Login-Form u-redondeado--1 u-desaparecer" method="POST" action="{{ route('register') }}">
+            <a onClick="$('.Modal--Ayuda, .ModalRegistro-Txt1, .ModalRegistro-Txt2, .ModalRegistro-Txt3').fadeIn();" class="Login-Ayuda u-inline-block u-positionAbsolute"><span>Guía</span>
+                <p class="ModalRegistro-Txt1 u-positionAbsolute u-textJustify">
+                    Con este icono encontrarás nuestra guía rápida, la cual te servirá de apoyo para utilizar y navegar cómodamente.
+                </p>
+            </a>
+
             <p class="Login-Titulo u-textLeft">
                 Registro
+            </p>
+
+            <p class="ModalRegistro-Txt2 u-positionAbsolute u-textJustify">
+                Al ingresar por vez primera a la plataforma <strong>Apprender</strong>, deberás registrarte en los campos siguientes
             </p>
 
             @csrf
 
             <input type="text" id="txtNombre" class="text u-box-sizing required  u-redondeado--05"
-                placeholder="Nombre completo" onfocus="if(this.value == 'Nombre completo') { this.value = ''; }"
-                name="nombreCompleto" value="{{ old('nombreCompleto') ? old('nombreCompleto') : 'Nombre completo' }}" required autocomplete="nombreCompleto" autofocus>
+                placeholder="Nombre y apellido" onfocus="if(this.value == 'Nombre y apellido') { this.value = ''; }"
+                name="nombreCompleto" value="{{ old('nombreCompleto') ? old('nombreCompleto') : 'Nombre y apellido' }}" required autocomplete="nombreCompleto" autofocus>
             @error('nombreCompleto')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
@@ -46,7 +63,7 @@
             @enderror
 
             <input type="email" id="txtEmail" class="text u-box-sizing required  u-redondeado--05"
-                placeholder="E-mail" onfocus="if(this.value == 'E-mail') { this.value = ''; }" name="email" value="{{ old('email') ? old('email') : 'E-mail' }}" required autocomplete="email">
+                placeholder="Correo institucional" onfocus="if(this.value == 'Correo institucional') { this.value = ''; }" name="email" value="{{ old('email') ? old('email') : 'Correo institucional' }}" required autocomplete="email">
             @error('email')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
@@ -58,6 +75,10 @@
                 <input type="button" name="btnEntrar" id="btnEntrar"
                     class="Login-Boton u-boton u-efecto u-textCenter u-redondeado--05 u-inline-block" value="ENTRAR">
             </div>
+
+            <p class="ModalRegistro-Txt3 u-positionAbsolute u-textJustify">
+                Después de registrarte en la plataforma <strong>Apprender</strong>, deberás iniciar sesión en la opción Tengo Cuenta
+            </p>
 
             <p class="u-textRight"><a class="Login-TxtTengoCuenta u-inline-block"
                     href="{{route('login') }}"><strong>Tengo cuenta</strong></a></p>

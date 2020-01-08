@@ -19,7 +19,7 @@
 
     <div class="Modal Modal--Ayuda">
         <div class="ModalProgreso-Center u-inline-block">
-            <span onClick="$('.Modal, .ModalRegistro-Txt1, .ModalRegistro-Txt2, .ModalRegistro-Txt3').fadeOut();" class="Modal-Cerrar u-inline-block">CERRAR <span>x</span></span>
+            <span onClick="$('.Modal, .ModalRegistro-Txt1, .ModalRegistro-Txt4').fadeOut();" class="Modal-Cerrar u-inline-block">CERRAR <span>x</span></span>
        </div>
    </div>
 
@@ -29,7 +29,7 @@
         <form name="form-login" id="form-login" class="Login-Form u-redondeado--1 u-desaparecer" action="{{ route('login') }}" method="POST">
             @csrf
 
-            <a onClick="$('.Modal--Ayuda, .ModalRegistro-Txt1, .ModalRegistro-Txt2, .ModalRegistro-Txt3').fadeIn();" class="Login-Ayuda u-inline-block u-positionAbsolute"><span>Guía</span>
+            <a onClick="$('.Modal--Ayuda, .ModalRegistro-Txt1, .ModalRegistro-Txt4').fadeIn();" class="Login-Ayuda u-inline-block u-positionAbsolute"><span>Guía</span>
                 <p class="ModalRegistro-Txt1 u-positionAbsolute u-textJustify">
                     Con este icono encontrarás nuestra guía rápida, la cual te servirá de apoyo para utilizar y navegar cómodamente.
                 </p>
@@ -37,10 +37,6 @@
 
             <p class="Login-Titulo u-textLeft">
                 Iniciar sesión
-            </p>
-
-            <p class="ModalRegistro-Txt2 u-positionAbsolute u-textJustify">
-                Al ingresar por vez primera a la plataforma <strong>Apprender</strong>, deberás registrarte en los campos siguientes
             </p>
 
             <input type="text" name="identity" id="txtUsuario"
@@ -67,15 +63,15 @@
                 </a>
             @endif --}}
 
-            <p class="ModalRegistro-Txt3 u-positionAbsolute u-textJustify">
-                Después de registrarte en la plataforma <strong>Apprender</strong>, deberás iniciar sesión en la opción Tengo Cuenta
+            <p class="ModalRegistro-Txt4 u-positionAbsolute u-textJustify">
+                Si olvidas tu contraseña puedes recuperar tu acceso aquí
             </p>
 
             <p class="u-textRight"><a class="Login-TxtTengoCuenta u-inline-block"
                 href="{{route('password.request') }}"><strong>Recuperar contraseña</strong></a></p>
-            <p class="u-textRight"><a href="{{route('register')}}" class="Login-TxtTengoCuenta u-inline-block"><strong>
+            <!--<p class="u-textRight"><a href="{{route('register')}}" class="Login-TxtTengoCuenta u-inline-block"><strong>
                     << Regresar</strong> </a>
-            </p>
+            </p>-->
             <figure class="Notificaciones-Cargado u-textCenter">
                 <img src="images/loading.gif" alt="Cargando..." />
             </figure>
