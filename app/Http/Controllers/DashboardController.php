@@ -7,6 +7,7 @@ use App\Evaluacion_Plataforma;
 use App\Historial_Usuario;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
@@ -31,8 +32,50 @@ class DashboardController extends Controller
         // dd($hisUsr);
 
         // NUEVOS USUARIOS POR MES
+        $nubm_data = $this->usuariosPorMes();
+
+        // CURSOS MAS VISITADOS
+        $cmv = $this->cursosVisitados();
+        // $cmv = $cmv['labels'];
+        // dd($cmv);
+
+        return view('dashboard.index', compact('apna', 'tur', 'caliPlataforma', 'nubm_data', 'cmv'));
+    }
+
+    public function cursosVisitados()
+    {
+        $selectRaw = 'COUNT(current_url) as total, current_url';
+        $cmv = $this->mHistorialUsuario->select(DB::raw($selectRaw))
+                ->where('current_url', 'like', '%unidad%')
+                ->groupBy('current_url')
+                ->orderBy('total', 'desc')
+                ->limit(5)
+                ->get();
+        // dd($cmv);
+
+        $labels = [];
+        $total = [];
+        foreach ($cmv as $row) {
+            $curso = '';
+            $exploded = explode('curso/', $row->current_url);
+            // dd($exploded[1]);
+            $curso .= explode('/', $exploded[1])[0];
+            $exploded = explode('unidad/', $row->current_url);
+            $curso .= '.' . explode('/', $exploded[1])[0];
+            $exploded = explode('tema/', $row->current_url);
+            $curso .= '.' . explode('/', $exploded[1])[0];
+            $labels[] = $curso;
+            $total[] = $row->total;
+        }
+        return [
+            'labels' => $labels,
+            'data' => $total
+        ];
+    }
+
+    public function usuariosPorMes()
+    {
         $nubm = $this->mUser->nuevosPorMes();
-        $nubmd_years = [];
         $nubmd_data = [];
         foreach ($nubm as $row) {
             if (array_key_exists($row->year, $nubmd_data)) {
@@ -43,8 +86,7 @@ class DashboardController extends Controller
                 ];
             }
         }
-        // dd(json_encode($nubm_data[2020]));
-        return view('dashboard.index', compact('apna', 'tur', 'caliPlataforma', 'nubm_data'));
+        return $nubm_data;
     }
 
     public function caliPlataforma()
