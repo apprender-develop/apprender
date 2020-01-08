@@ -35,19 +35,8 @@
                     {{-- <small class="text-muted">Last updated 3 mins ago</small> --}}
                 {{-- </div> --}}
             </div>
-            <div class="card shadow-lg mb-5 rounded border-0">
-                <div class="card-header bg-transparent">
-                    <h5 class="card-title">Ingreso de usuarios</h5>
-                </div>
-                <div class="card-body p-0">
-                    <div class="chart-container">
-                        <canvas id="myChart2"></canvas>
-                    </div>
-                </div>
-                {{-- <div class="card-footer"> --}}
-                    {{-- <small class="text-muted">Last updated 3 mins ago</small> --}}
-                {{-- </div> --}}
-            </div>
+            {{-- REGISTRO DE USUARIOS --}}
+            @include('dashboard.graficas._registroUsuarios')
             {{-- GRAFICA DE APROBADOS / NO APROBADOS --}}
             @include('dashboard.graficas._apna')
             {{-- Total Usuarios Registrados --}}
@@ -99,37 +88,5 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-</script>
-<script>
-    var ctx = document.getElementById('myChart2');
-    var myLineChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
-            datasets: [{
-                label: '',
-                data: [12, 19, 3, 5, 2, 3],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            maintainAspectRatio: false,
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
-    });
 </script>
 @endsection
