@@ -14,9 +14,28 @@ class UsuariosController extends Controller
         $this->mUser = new User;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $users = $this->mUser->whereHas("roles", function($q){ $q->where("name", "cliente"); })->get();
+        $users = $this->mUser->whereHas("roles", function($q){ $q->where("name", "cliente"); });
+
+        $qr = $request->input('query', null);
+
+        if ($qr != null) {
+            $users = $users->where(function($query) use ($qr) {
+                    $query->orwhere('nombreCompleto', 'like', "%$qr%")
+                        ->orwhere('email', 'like', "%$qr%")
+                        ->orwhere('created_at', 'like', "%$qr%")
+                        ->orwhere('pseudoficha', 'like', "%$qr%")
+                        ->get();
+                });
+        }
+
+        $users = $users->paginate(5);
+
+        if ($request->ajax()) {
+            return view('dashboard.usuarios._list', compact('users'));
+
+        }
         return view('dashboard.usuarios.index', compact('users'));
     }
 
