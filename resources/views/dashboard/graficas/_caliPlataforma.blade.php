@@ -31,6 +31,12 @@
         },
         options: {
             maintainAspectRatio: false,
+            scale: {
+                ticks: {
+                    min: 0,
+                    max: 10
+                }
+            }
         }
     });
 </script>
