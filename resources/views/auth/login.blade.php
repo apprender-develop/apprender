@@ -26,13 +26,13 @@
                 Iniciar sesión
             </p>
 
-            <input type="email" name="email" id="txtUsuario"
+            <input type="text" name="identity" id="txtUsuario"
                 class="Login-Usuario text u-box-sizing required  u-redondeado--05"
-                placeholder="INGRESE E-MAIL DE USUARIO"
+                placeholder="E-MAIL O FICHA"
                 onfocus="if(this.value == 'INGRESE E-MAIL DE USUARIO') { this.value = ''; }"
                 value="<?php if(isset($_POST['btnEntrar'])) { if(!empty($msj)) { echo $usuario; } } ?>"
                 required autocomplete="email" autofocus>
-            @error('email')
+            @error('identity')
                     <strong>{{ $message }}</strong>
             @enderror
             <input type="password" name="password" id="txtContrasenia"
