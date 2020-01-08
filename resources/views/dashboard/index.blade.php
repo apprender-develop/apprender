@@ -32,6 +32,8 @@
             @include('dashboard.datos._tur')
             {{-- Calificacion plataforma --}}
             @include('dashboard.graficas._caliPlataforma')
+            {{-- Calificación general plataforma --}}
+            @include('dashboard.datos._caliPlataforma')
         </div>
     </div>
 @endsection

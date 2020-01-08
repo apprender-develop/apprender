@@ -28,6 +28,15 @@ class DashboardController extends Controller
 
         $caliPlataforma = $this->caliPlataforma();
 
+        $caliTotal = 0;
+        $caliPlataformaA = json_decode($caliPlataforma);
+
+        foreach ($caliPlataformaA as $value) {
+            $caliTotal += $value;
+        }
+
+        $caliTotal = $caliTotal / 50 * 10;
+
         // $hisUsr = $this->mHistorialUsuario->ingresoDiarioUsuarios();
         // dd($hisUsr);
 
@@ -39,7 +48,7 @@ class DashboardController extends Controller
         // $cmv = $cmv['labels'];
         // dd($cmv);
 
-        return view('dashboard.index', compact('apna', 'tur', 'caliPlataforma', 'nubm_data', 'cmv'));
+        return view('dashboard.index', compact('apna', 'tur', 'caliPlataforma', 'nubm_data', 'cmv', 'caliTotal'));
     }
 
     public function cursosVisitados()
