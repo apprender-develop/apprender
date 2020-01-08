@@ -7,7 +7,7 @@
             </div>
             <div class="col-10">
 
-                <p class="card-text text-right" style="font-size: 42px;">{{round($caliTotal,2)}}</p>
+                <p class="card-text text-right" style="font-size: 42px;">{{round($caliTotal,1)}}</p>
             </div>
         </div>
     </div>
