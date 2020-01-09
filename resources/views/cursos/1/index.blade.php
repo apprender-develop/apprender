@@ -38,7 +38,7 @@
 <div>
     <div class="Modal Modal--Ayuda">
         <div class="ModalProgreso-Center u-inline-block">
-            <span onClick="$('.Modal--Ayuda, .ModalRegistro-Txt7, .ModalRegistro-Txt8').fadeOut();" class="Modal-Cerrar u-inline-block" style="top: 20px;">CERRAR <span>x</span></span>
+            <span onClick="$('.Modal--Ayuda').fadeOut(); $('[class*=ModalRegistro').fadeOut();" class="Modal-Cerrar u-inline-block" style="top: 20px;">CERRAR <span>x</span></span>
        </div>
     </div>
 

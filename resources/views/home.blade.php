@@ -19,7 +19,43 @@
     @include('modal._progreso')
     @include('modal._evaluaciones')
 
+
+    <div class="Modal Modal--Ayuda">
+        <div class="ModalProgreso-Center u-inline-block">
+            <span onClick="$('.Modal--Ayuda').fadeOut(); $('[class*=ModalRegistro').fadeOut();" class="Modal-Cerrar u-inline-block">CERRAR <span>x</span></span>
+       </div>
+   </div>
+
     <section class="Inicio u-imagenFondoCover">
+
+        <p class="ModalRegistro-Txt13 u-positionAbsolute u-textJustify">
+            Con esta opción puedes regresar al menú interactivo de Apprender
+        </p>
+
+        <p class="ModalRegistro-Txt14 u-positionAbsolute u-textJustify">
+            Cuando un curso se habilita puedes acceder a el, dando clic
+        </p>
+
+        <p class="ModalRegistro-Txt15 u-positionAbsolute u-textJustify">
+            Bienvenido a tu perfil, aquí podrás visualizar tus evaluaciones progreso y evaluarnos.
+        </p>
+
+        <p class="ModalRegistro-Txt16 u-positionAbsolute u-textJustify">
+            <strong>¿Necesitas ayuda?</strong> Con esta opción encontrarás lo que buscas para tus dudas sobre <strong>Apprender</strong>
+        </p>
+
+        <p class="ModalRegistro-Txt17 u-positionAbsolute u-textJustify">
+            Con este icono encontrarás nuestra guía rápida, la cual te servirá de apoyo para utilizar y navegar cómodamente.
+        </p>
+
+        <p class="ModalRegistro-Txt18 u-positionAbsolute u-textJustify">
+            Aquí podrás cerrar sesión y salir de la plataforma
+        </p>
+
+        <p class="ModalRegistro-Txt19 u-positionAbsolute u-textCenter">
+            Con estas flechas slider de navegación podrás avanzar o retroceder entre cursos
+        </p>
+
         <ul class="Inicio-ListMisCursos u-textCenter">
             <li class="u-inline-block">
                 <a href="{{route('curso', ['curso_id' => 1])}}" class="Inicio-ItemMisCursos u-inline-block">

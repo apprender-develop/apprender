@@ -9,6 +9,11 @@
 <link href="{{asset('/css/jamarrom/style.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/jamarrom/animations.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/jamarrom/responsive.css')}}" rel="stylesheet" type="text/css">
+<style type="text/css">
+    html,body{
+        height: 100%;
+    }
+</style>
 @endsection
 
 @section('javascript')

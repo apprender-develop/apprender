@@ -60,8 +60,10 @@ $(document).ready(function () {
 	});
 
     $(".MainNav-BtnAyuda").click(function(){
-        $('.Modal--Ayuda, .ModalRegistro-Txt7, .ModalRegistro-Txt8').fadeIn();
+        $('.Modal--Ayuda').fadeIn();
+        $('[class*=ModalRegistro').fadeIn();
     });
+
 
 	$(".MainNav-BtnOcultar").click(function () {
 		if (ban) {

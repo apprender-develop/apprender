@@ -96,6 +96,12 @@
     @include('cursos.1._glosario')
     @include('cursos.1._descarga')
 
+    <div class="Modal Modal--Ayuda">
+        <div class="ModalProgreso-Center u-inline-block">
+            <span onClick="$('.Modal--Ayuda').fadeOut(); $('[class*=ModalRegistro').fadeOut();" class="Modal-Cerrar u-inline-block" style="top: 20px;">CERRAR <span>x</span></span>
+       </div>
+   </div>
+
     <header class="Unidad-Header u-imagenFondoCover u-textRight">
         <h2 class="Unidad-Title">BÁSICO DE SEGURIDAD Y PROTECCIÓN AMBIENTAL</h2>
 
@@ -103,9 +109,17 @@
        <ul class="Unidad-ListHeader u-textRight u-inline-block">
            <li class="icoGlosario u-inline-block">
                <a class="u-inline-block">GLOSARIO</a>
+
+                <p class="ModalRegistro-Txt9 u-positionAbsolute u-textJustify">
+                    Tenemos un Glosario de términos  y definiciones para lograr una mejor comprensión del curso seleccionado
+                </p>
            </li>
            <li class="icoDescarga u-inline-block">
                <a class=" u-inline-block">DESCARGAS</a>
+
+                <p class="ModalRegistro-Txt10 u-positionAbsolute u-textJustify">
+                    Contamos con material de soporte para su estudio
+                </p>
            </li>
        </ul>
        <div class="u-textRight u-inline-block">
@@ -125,6 +139,10 @@
     <section class="Unidad-Content u-imagenFondoCover u-textLeft">
         <a href="{{route('curso', ['curso_id' => 1])}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a>
 
+        <p class="ModalRegistro-Txt11 u-positionAbsolute u-textJustify">
+            Con esta opción podrá regresar al Menú de subtemas.
+        </p>
+
         <p class="Unidad-Subtemas u-inline-block"><strong>Subtemas:</strong></p>
 		<ul class="Unidad-ListUnidades u-inline-block">
 			<li class="u-inline-block"><a href="{{route('curso.unidad', ['curso_id' => 1, 'unidad_id' => 2, 'tema' => 1])}}" class="u-inline-block"><strong>2.1</strong></a></li>
@@ -134,7 +152,12 @@
 			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>2.5</strong></a></li>
 			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>2.6</strong></a></li>
 			<li class="u-inline-block"><a class="u-inline-block Inactivo"><strong>2.7</strong></a></li>
-	    </ul>
+        </ul>
+
+        <p class="ModalRegistro-Txt12 u-positionAbsolute u-textJustify">
+            Aquí puede elegir los subtemas de la unidad correspondiente al contenido para su estudio.
+        </p>
+
         <div></div>
 
         {{-- <a href="{{route('curso', ['curso_id' => 1])}}" class="BtnVolver u-inline-block u-positionAbsolute">Volver</a> --}}

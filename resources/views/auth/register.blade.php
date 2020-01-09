@@ -12,6 +12,11 @@
     <link href="{{'/css/jamarrom/style.css'}}" rel="stylesheet" type="text/css">
     <link href="{{'/css/jamarrom/animations.css'}}" rel="stylesheet" type="text/css">
     <link href="{{'/css/jamarrom/responsive.css'}}" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        html,body{
+            height: 100%;
+        }
+    </style>
 @endsection
 
 @section('content')
