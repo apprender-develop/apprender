@@ -677,8 +677,15 @@ legend
 }
 
 .Inicio-ItemMisCursos.NoDisponible .Inicio-ImgItemMisCursos{
-	-webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	*/
+	filter: url(filter.svg#grayscale); /* Firefox 3.5+ */
+  	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+	-o-filter: grayscale(1); /* opera */
+	-moz-filter: grayscale(1); /* Mozilla */
+	-ms-filter: grayscale(1); /* Explorer */
 }
 
 .Inicio-ItemMisCursos p {
@@ -905,7 +912,9 @@ legend
 	display: none;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(10,38,59,0.97);
+    background-color: rgba(10,38,59,0.97);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c0a263b,endColorstr=#4c0a263b); /* needed for IE 6-8 */
+    zoom: 1; /* needed for IE 6-8 */
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -916,7 +925,9 @@ legend
 .Modal--Ayuda {
 	color: #fff;
 	font-size: 15.5px;
-	background-color: rgba(10,38,59,0.7);
+    background-color: rgba(10,38,59,0.7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c0a263b,endColorstr=#4c0a263b); /* needed for IE 6-8 */
+    zoom: 1; /* needed for IE 6-8 */
 }
 
 .ModalProgreso, .ModalAyuda{
