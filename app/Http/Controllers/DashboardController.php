@@ -105,11 +105,19 @@ class DashboardController extends Controller
         // dd($total_evaluaciones);
         $caliPlataforma = [];
 
-        $caliPlataforma[] = $evaluacion_plataforma->first()->total_contenido / $total_evaluaciones * 10;
-        $caliPlataforma[] = $evaluacion_plataforma->first()->total_facil / $total_evaluaciones * 10;
-        $caliPlataforma[] = $evaluacion_plataforma->first()->total_grafico / $total_evaluaciones * 10;
-        $caliPlataforma[] = $evaluacion_plataforma->first()->total_interactivo / $total_evaluaciones * 10;
-        $caliPlataforma[] = $evaluacion_plataforma->first()->total_intuitivo / $total_evaluaciones * 10;
+        if ($total_evaluaciones == 0) {
+            $caliPlataforma[] = 0;
+            $caliPlataforma[] = 0;
+            $caliPlataforma[] = 0;
+            $caliPlataforma[] = 0;
+            $caliPlataforma[] = 0;
+        } else {
+            $caliPlataforma[] = $evaluacion_plataforma->first()->total_contenido / $total_evaluaciones * 10;
+            $caliPlataforma[] = $evaluacion_plataforma->first()->total_facil / $total_evaluaciones * 10;
+            $caliPlataforma[] = $evaluacion_plataforma->first()->total_grafico / $total_evaluaciones * 10;
+            $caliPlataforma[] = $evaluacion_plataforma->first()->total_interactivo / $total_evaluaciones * 10;
+            $caliPlataforma[] = $evaluacion_plataforma->first()->total_intuitivo / $total_evaluaciones * 10;
+        }
         return json_encode($caliPlataforma);
     }
 }
