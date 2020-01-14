@@ -85,7 +85,7 @@ class DashboardController extends Controller
     public function usuariosPorMes()
     {
         $nubm = $this->mUser->nuevosPorMes();
-        $nubmd_data = [];
+        $nubm_data = [];
         foreach ($nubm as $row) {
             if (array_key_exists($row->year, $nubmd_data)) {
                 $nubm_data[$row->year][] = $row->total;
