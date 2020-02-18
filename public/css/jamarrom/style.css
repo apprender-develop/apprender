@@ -92,7 +92,7 @@ input[type="radio"], input[type=checkbox]
 
 input:focus, textarea:focus, .inputSeleccionado
 {
-	outline: 2px solid #ff8900;
+	outline: 2px solid #8c8c8c;
 }
 
 input[type="checkbox"]
@@ -223,7 +223,7 @@ legend
 .Autentificacion-Ajuste
 {
 	height: 100%;
-	background: url(/images/fondos/bgLogin.jpg) center no-repeat;
+	background: url(/images/fondos/bgLogin2.jpg) center no-repeat;
 	position: relative;
 }
 
@@ -257,7 +257,7 @@ legend
 	content: "";
 	width: 500px;
     height: 160px;
-    background: url(/images/logo.png) no-repeat;
+    background: url(/images/logo2.png) no-repeat;
     background-size: 100%;
 	position: absolute;
 	top: 65px;
@@ -275,7 +275,7 @@ legend
 {
 	width: 590px;
     height: 212px;
-    background: url(/images/logoSSPAPemex.png) no-repeat;
+    background: url(/images/logoSSPAPemex2.png) no-repeat;
     background-size: 100%;
 	position: absolute;
 	bottom: 0px;
@@ -284,7 +284,7 @@ legend
 
 .Login-Titulo
 {
-	color: #ffffff;
+	color: #fafafa;
 	font: 20px 'fjallaoneregular';
 	margin-bottom: 30px;
 }
@@ -292,8 +292,8 @@ legend
 .Login-Form
 {
 	width: 268px;
-	background-color: #3359b1;
-	border: 1px solid #7fcaff;
+	background-color: #5b5b5b;
+	border: 1px solid #b7b7b7;
 	padding: 50px 40px;
 	position: absolute;
     right: 19%;
@@ -350,11 +350,26 @@ legend
 }
 
 .Login-TxtTengoCuenta{
+    color: #fafafa;
 	margin-top: 20px;
 }
 
 .Login-TxtTengoCuenta:hover{
-	color: #8dd1ff;
+	color: #fafafa;
+}
+
+.Login-AvisoF {
+    width: 309px;
+    color: #fff;
+    font: 20px 'montserratmedium';
+    line-height: 24px;
+    background-color: #3359b1;
+    border-radius: 1em;
+    padding: 30px 20px;
+    position: absolute;
+    z-index: 99999;
+    top: 2%;
+    right: 19%;
 }
 
 /************************************************************************************/

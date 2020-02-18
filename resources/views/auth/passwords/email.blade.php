@@ -35,6 +35,10 @@ Autentificacion-Ajuste u-imagenFondoCover
 </div>
 
 <article class="Login" id="login">
+
+    <p class="Login-AvisoF slideDown">¡¡Gracias por su participación!!<br />
+        hemos concluido la etapa de prueba.</p>
+
     <h1 class="Login-Logo slideDown"><span>Apprender</span></h1>
 
     <form name="form-login" id="form-login" class="Login-Form u-redondeado--1 u-desaparecer" method="POST"
