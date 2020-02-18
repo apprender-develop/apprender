@@ -13,9 +13,9 @@ class DeleteClienteTableSeeder extends Seeder
     public function run()
     {
         $mUser = new User;
-        $adminUser = $mUser->where('email', 'admin@gmail.com')->get();
+        $adminUser = $mUser->where('email', 'admin@gmail.com')->first();
 
-        $delete = $mUser->wherenotin('id', $adminUser->id)->delete();
+        $delete = $mUser->where('id', '!=', $adminUser->id)->delete();
 
         $this->command->comment('Usuarios de tipo cliente eliminados');
     }
