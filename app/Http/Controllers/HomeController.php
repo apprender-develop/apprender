@@ -30,6 +30,7 @@ class HomeController extends Controller
             return redirect()->route('dashboard.graficas');
         }
 
+        $user = Auth::user();
         return view('home', compact('user'));
     }
 }
